@@ -5,6 +5,7 @@ This project is a **Crop Recommendation System** that predicts suitable crops ba
 ---
 
 ## Project Structure
+```
 ├── models/ # Saved trained models
 ├── results/ # Model evaluation results and visualizations
 ├── xai/ # Explainable AI outputs (SHAP, LIME)
@@ -16,6 +17,7 @@ This project is a **Crop Recommendation System** that predicts suitable crops ba
 ├── simplescreenrecorder-...mkv # Screen recording of the platform
 ├── requirments.txt # Python dependencies
 └── README.md # Project documentation
+```
 
 ---
 
@@ -69,12 +71,46 @@ streamlit run stream.py
 
 ---
 
-## Jupyter Notebook
-- `main.ipynb` contains the full pipeline:
-  - Data preprocessing
-  - Model training and evaluation
-  - XAI analysis
-- `model.ipynb` (optional) contains additional experiments with individual models.
+## Dependencies
+```
+streamlit>=1.20.0
+pandas>=2.0.0
+numpy>=1.24.0
+joblib>=1.3.0
+shap>=0.42.0
+matplotlib>=3.7.0
+lime>=0.2.2.1
+seaborn>=0.12.2
+scikit-learn>=1.3.0
+```
+
+---
+
+## Pipeline Overview
+
+1. **Data Preprocessing**
+   - Handling missing values and outliers.
+   - Scaling numerical features and encoding categorical features.
+   - Feature engineering to improve model performance.
+
+2. **Model Development**
+   - Train Logistic Regression, Random Forest, XGBoost, and Ensemble models.
+   - Evaluate models using metrics such as Accuracy, F1-score, Confusion Matrix, and Classification Report.
+   - Save trained models in `models/` for reuse.
+
+3. **Explainable AI Analysis**
+   - Generate SHAP summary and force plots for global and local interpretation.
+   - Generate LIME explanations for individual predictions.
+   - Store visualizations and results in `xai/`.
+
+4. **Streamlit Web Application**
+   - Users input soil and environmental features such as Nitrogen, Phosphorus, Potassium, pH, rainfall, and temperature.
+   - App predicts suitable crops using multiple models.
+   - Visualizes model outputs and XAI explanations in an interactive interface.
+
+5. **Results**
+   - Model evaluation results including metrics and plots stored in `results/`.
+   - Screen recordings available for demonstration in `simplescreenrecorder-...mkv`.
 
 ---
 
@@ -111,3 +147,4 @@ streamlit run stream.py
 ## License
 
 This project is licensed under the MIT License.
+
