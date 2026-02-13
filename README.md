@@ -1,6 +1,6 @@
 # Crop Recommendation System
 
-This project is a **Crop Recommendation System** that predicts suitable crops based on input features. It includes model development, explainable AI analysis, and a Streamlit-based platform for inference and visualization.
+This project is a **Crop Recommendation System** that predicts suitable crops based on input features. It includes model development, explainable AI analysis, a Streamlit app, and a FastAPI service for programmatic inference.
 
 ---
 
@@ -13,7 +13,10 @@ This project is a **Crop Recommendation System** that predicts suitable crops ba
 ├── Crop_recommendation.xlsx # Dataset
 ├── main.ipynb # Main notebook for data processing, model development, and evaluation
 ├── model.ipynb # Optional notebook for specific model experiments
+├── main.py # FastAPI app for crop prediction + XAI response
 ├── stream.py # Streamlit app for inference and visualization
+├── test.py # Extensive API validation script
+├── test_api.py # API schema and behavior checks
 ├── simplescreenrecorder-...mkv # Screen recording of the platform
 ├── requirments.txt # Python dependencies
 └── README.md # Project documentation
@@ -44,6 +47,11 @@ This project is a **Crop Recommendation System** that predicts suitable crops ba
 - Visualization of feature importance and explanation results (SHAP & LIME).
 - Designed for ease of use, allowing non-technical users to explore model outputs.
 
+### FastAPI Service
+- Exposes prediction APIs for integration with clients/tools.
+- Returns output for all 3 models: Logistic Regression, Random Forest, and XGBoost.
+- Includes predicted crop, confidence, top-3 crops, SHAP contributions, and LIME explanations.
+
 ---
 
 ## Installation
@@ -71,17 +79,86 @@ streamlit run stream.py
 
 ---
 
-## Dependencies
+## Run API
 ```
-streamlit>=1.20.0
-pandas>=2.0.0
-numpy>=1.24.0
-joblib>=1.3.0
-shap>=0.42.0
-matplotlib>=3.7.0
-lime>=0.2.2.1
-seaborn>=0.12.2
-scikit-learn>=1.3.0
+uvicorn main:app --host 0.0.0.0 --port 8000
+```
+
+### API Endpoints
+- `GET /health`  
+  Returns service status.
+- `POST /predict`  
+  Returns predictions and explanations for all three models.
+
+### Sample Request
+`POST /predict`
+```json
+{
+  "N": 90,
+  "P": 42,
+  "K": 43,
+  "temperature": 25.6,
+  "humidity": 71.4,
+  "ph": 6.4
+}
+```
+
+### Sample Response (shape)
+```json
+{
+  "input": {
+    "N": 90.0,
+    "P": 42.0,
+    "K": 43.0,
+    "temperature": 25.6,
+    "humidity": 71.4,
+    "ph": 6.4
+  },
+  "models": {
+    "logistic_regression": {
+      "model": "logistic_regression",
+      "prediction": {"crop": "jute", "predicted_class": 8, "confidence": 0.85},
+      "top3": [{"rank": 1, "crop": "jute", "confidence": 0.85}],
+      "shap": {"base_value": 0.12, "values": {}, "sorted_by_abs": []},
+      "lime": {"class_index": 8, "explanations": [{"feature": "humidity > 70.0", "weight": 0.21}]}
+    },
+    "random_forest": {},
+    "xgboost": {}
+  }
+}
+```
+
+### Quick cURL Test
+```bash
+curl --json '{"N":90,"P":42,"K":43,"temperature":25.6,"humidity":71.4,"ph":6.4}' http://127.0.0.1:8000/predict
+```
+
+### Run API Tests
+```bash
+python test.py
+python test_api.py
+```
+
+---
+
+## Dependencies
+``` 
+fastapi>=0.129.0
+uvicorn[standard]>=0.40.0
+httpx>=0.28.1
+streamlit>=1.54.0
+pandas>=2.3.3
+numpy<2.4
+matplotlib>=3.10.8
+scikit-learn==1.6.1
+xgboost>=3.2.0
+shap>=0.43
+lime>=0.2.0.1
+openpyxl>=3.1.5
+seaborn>=0.13.2
+numba>=0.61
+torch>=2.10.0
+ipykernel>=7.2.0
 ```
 
 ---

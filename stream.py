@@ -8,6 +8,7 @@ import lime.lime_tabular
 import streamlit.components.v1 as components
 import tempfile
 import os
+from pathlib import Path
 
 st.set_page_config(
     page_title="Crop Prediction with XAI",
@@ -16,20 +17,27 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
+PROJECT_ROOT = Path(__file__).resolve().parent
+
 # --- Load Models and Explainers ---
 @st.cache_resource
 def load_resources():
     try:
-        lr_model = joblib.load('models/logistic_model.pkl')
-        rf_model = joblib.load('models/random_forest_model.pkl')
-        xgb_model = joblib.load('models/xgb_model.pkl')
-        label_encoder = joblib.load('models/label_encoder.pkl')
+        lr_model = joblib.load(PROJECT_ROOT / 'models/logistic_model.pkl')
+        rf_model = joblib.load(PROJECT_ROOT / 'models/random_forest_model.pkl')
+        xgb_model = joblib.load(PROJECT_ROOT / 'models/xgb_model.pkl')
+        label_encoder = joblib.load(PROJECT_ROOT / 'models/label_encoder.pkl')
 
-        shap_explainer_lr = joblib.load('xai/shap_logistic.pkl')
-        shap_explainer_rf = joblib.load('xai/shap_rf.pkl')
-        shap_explainer_xgb = joblib.load('xai/shap_xgb.pkl')
+        shap_explainer_lr = joblib.load(PROJECT_ROOT / 'xai/shap_logistic.pkl')
+        shap_explainer_rf = joblib.load(PROJECT_ROOT / 'xai/shap_rf.pkl')
+        try:
+            shap_explainer_xgb = joblib.load(PROJECT_ROOT / 'xai/shap_xgb.pkl')
+        except Exception as shap_xgb_err:
+            st.warning(f"XGBoost SHAP explainer file invalid/unavailable: {shap_xgb_err}. Rebuilding...")
+            shap_explainer_xgb = shap.TreeExplainer(xgb_model)
+            joblib.dump(shap_explainer_xgb, PROJECT_ROOT / 'xai/shap_xgb.pkl')
 
-        full_dataset = pd.read_excel('/home/linux/coding/rescearch_work/Xai/Crop_recommendation.xlsx')
+        full_dataset = pd.read_excel(PROJECT_ROOT / 'Crop_recommendation.xlsx')
         feature_cols = ['N', 'P', 'K', 'temperature', 'humidity', 'ph']
         X_train = full_dataset[feature_cols]
 
@@ -44,7 +52,7 @@ def load_resources():
 
     except Exception as e:
         st.error(f"❌ Error loading resources: {e}")
-        st.stop()
+        raise
 
 # Load all models and explainers
 lr_model, rf_model, xgb_model, label_encoder, shap_explainer_lr, shap_explainer_rf, shap_explainer_xgb, lime_explainer, X_train = load_resources()
@@ -75,7 +83,7 @@ st.title('🌾 Crop Recommendation with Explainable AI (XAI)')
 st.write("This application predicts the best crop to grow and explains why, using SHAP and LIME.")
 
 st.subheader('📥 Your Input Features')
-st.dataframe(input_df, use_container_width=True)
+st.dataframe(input_df, width="stretch")
 
 if st.button('Predict and Compare All Models', type="primary"):
     with st.spinner("Running predictions and generating explanations..."):
