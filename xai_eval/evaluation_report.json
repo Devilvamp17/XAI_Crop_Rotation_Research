@@ -1,0 +1,13 @@
+{
+  "shap": {
+    "deletion_auc": 0.1233927789342124
+  },
+  "lime": {
+    "deletion_auc": 0.1475480522046079,
+    "fidelity_r2": -80.74680232330215
+  },
+  "stability": {
+    "avg_overlap": 0.9625,
+    "avg_rank_corr": 0.9790476190476192
+  }
+}

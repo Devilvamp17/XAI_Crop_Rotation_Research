@@ -1,0 +1,42 @@
+[
+  {
+    "id": "r2_p01_standard",
+    "query": "Give the recommendation in the strict 5-section format.",
+    "recommendation_input": {"N": 88, "P": 40, "K": 42, "temperature": 26.1, "humidity": 70.2, "ph": 6.5, "top_k": 3}
+  },
+  {
+    "id": "r2_p02_location_india",
+    "query": "Use location enrichment for Mumbai and explain uncertainty clearly.",
+    "recommendation_input": {"location": "Mumbai, India", "N": 95, "P": 45, "K": 40, "top_k": 3}
+  },
+  {
+    "id": "r2_p03_calendar_conflict",
+    "query": "If calendar changes top crop, explain why and suggest fallback.",
+    "recommendation_input": {"location": "Delhi, India", "N": 90, "P": 42, "K": 43, "top_k": 3}
+  },
+  {
+    "id": "r2_p04_farmer_style",
+    "query": "Explain for a small farmer with simple language and exactly 3 action bullets.",
+    "recommendation_input": {"N": 70, "P": 30, "K": 20, "temperature": 29.0, "humidity": 62.0, "ph": 6.1, "top_k": 3}
+  },
+  {
+    "id": "r2_p05_no_tools",
+    "query": "Do not use any external tools. Give concise recommendation.",
+    "recommendation_input": {"N": 84, "P": 38, "K": 36, "temperature": 27.8, "humidity": 68.5, "ph": 6.4, "top_k": 3}
+  },
+  {
+    "id": "r2_p06_missing_npk_fail",
+    "query": "I only know location, please decide the crop.",
+    "recommendation_input": {"location": "Pune, India", "P": 30, "K": 25, "top_k": 3}
+  },
+  {
+    "id": "r2_p07_technical_xai",
+    "query": "Give a technical SHAP/LIME-focused summary for an agronomy researcher.",
+    "recommendation_input": {"N": 110, "P": 55, "K": 65, "temperature": 31.2, "humidity": 78.0, "ph": 6.8, "top_k": 3}
+  },
+  {
+    "id": "r2_p08_conservative",
+    "query": "If confidence is below 0.6, provide a conservative plan with risk warning.",
+    "recommendation_input": {"location": "Chennai, India", "N": 60, "P": 25, "K": 20, "top_k": 3}
+  }
+]

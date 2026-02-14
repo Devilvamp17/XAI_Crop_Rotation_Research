@@ -1,227 +1,179 @@
-# Crop Recommendation System
+# LLM-Integrated Crop Recommendation + XAI
 
-This project is a **Crop Recommendation System** that predicts suitable crops based on input features. It includes model development, explainable AI analysis, a Streamlit app, and a FastAPI service for programmatic inference.
+Production-style crop recommendation stack with:
+- ML inference (`xgboost`, `random_forest`, `logistic_regression`)
+- Per-instance SHAP + LIME explanations
+- Season-aware calendar re-ranking
+- LLM advisory layer with strict output contract and fallback
+- Offline XAI evaluation (faithfulness, fidelity, stability, calibration)
 
----
-
-## Project Structure
-```
-├── models/ # Saved trained models
-├── results/ # Model evaluation results and visualizations
-├── xai/ # Explainable AI outputs (SHAP, LIME)
-├── .python-version # Python version used
-├── Crop_recommendation.xlsx # Dataset
-├── main.ipynb # Main notebook for data processing, model development, and evaluation
-├── model.ipynb # Optional notebook for specific model experiments
-├── main.py # FastAPI app for crop prediction + XAI response
-├── stream.py # Streamlit app for inference and visualization
-├── test.py # Extensive API validation script
-├── test_api.py # API schema and behavior checks
-├── simplescreenrecorder-...mkv # Screen recording of the platform
-├── requirments.txt # Python dependencies
-└── README.md # Project documentation
-```
-
----
-
-## Features
-
-### Machine Learning Models
-- **Logistic Regression** – Baseline model for crop classification.
-- **Random Forest** – Robust ensemble tree-based classifier.
-- **XGBoost** – Gradient boosting model for high performance.
-- **Ensemble Models** – Combines predictions using blending or voting strategies for improved accuracy.
-
-### Explainable AI (XAI)
-- **SHAP (SHapley Additive exPlanations)**
-  - Provides global and local feature contribution analysis.
-  - Helps understand how each input feature affects predictions.
-- **LIME (Local Interpretable Model-agnostic Explanations)**
-  - Generates local explanations for individual predictions.
-  - Useful for debugging models and building trust in predictions.
-- All XAI outputs are stored in the `xai/` folder for reference.
-
-### Streamlit Web Platform
-- Interactive user interface for real-time crop recommendations.
-- Supports multiple model predictions and comparison.
-- Visualization of feature importance and explanation results (SHAP & LIME).
-- Designed for ease of use, allowing non-technical users to explore model outputs.
-
-### FastAPI Service
-- Exposes prediction APIs for integration with clients/tools.
-- Returns output for all 3 models: Logistic Regression, Random Forest, and XGBoost.
-- Includes predicted crop, confidence, top-3 crops, SHAP contributions, and LIME explanations.
-
----
-
-## Installation
-
-1. Clone the repository:
-  ```
-  git clone <repository-url>
-  cd <repository-folder>
-  ```
-2. Install dependencies:
-  ```
-  pip install -r requirments.txt
-  ```
-
----
-
-## Run Streamlit App
-```
-streamlit run stream.py
+## Repository Structure
+```text
+.
+├── api/                    # Agent/orchestration API (port 8100)
+├── core/                   # Configuration loader (.env)
+├── model_service/          # Client for model API (port 8000)
+├── services/               # External service adapters (geocode/weather/soil/calendar/LLM)
+├── scripts/                # Prompt suite + setup scripts
+├── prompts/                # Prompt and routing test suites
+├── testing/                # Automated tests
+├── xai_eval/               # Evaluation pipeline + generated reports
+├── models/                 # Trained model artifacts
+├── xai/                    # Precomputed explainers
+├── results/                # Visual outputs
+├── main.py                 # Model API
+├── stream.py               # Streamlit app
+└── system_architecture.md  # Detailed architecture documentation
 ```
 
-- Input crop-related features
-- View predictions from multiple models
-- Explore model explanation using SHAP and LIME
+## Core Capabilities
+- Predict top-k crops from: `N, P, K, temperature, humidity, ph`
+- Return explanation artifacts:
+  - `shap` contributions
+  - `lime` local explanation
+  - `curves.topk_confidence`
+- Enrich missing environmental data from free APIs when location is provided
+- Re-rank model outputs with crop calendar suitability:
+  - `adjusted_confidence = raw_model_confidence * (calendar_suitability + eps)`
+- Return provenance for each feature (`user`, `weather_api`, `soil_api`, fallback)
+- Provide LLM-generated advisory in strict 5-section format
+- Fallback to deterministic template response when LLM fails or violates output rules
 
----
+## APIs
 
-## Run API
-```
+### 1) Model API (`main.py`, port `8000`)
+Run:
+```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-### API Endpoints
-- `GET /health`  
-  Returns service status.
-- `POST /predict`  
-  Returns predictions and explanations for all three models.
+Endpoints:
+- `GET /health`
+- `POST /predict`
 
-### Sample Request
-`POST /predict`
-```json
-{
+Example:
+```bash
+curl --json '{
   "N": 90,
   "P": 42,
   "K": 43,
   "temperature": 25.6,
   "humidity": 71.4,
   "ph": 6.4
-}
+}' http://127.0.0.1:8000/predict
 ```
 
-### Sample Response (shape)
-```json
-{
-  "input": {
-    "N": 90.0,
-    "P": 42.0,
-    "K": 43.0,
-    "temperature": 25.6,
-    "humidity": 71.4,
-    "ph": 6.4
-  },
-  "models": {
-    "logistic_regression": {
-      "model": "logistic_regression",
-      "prediction": {"crop": "jute", "predicted_class": 8, "confidence": 0.85},
-      "top3": [{"rank": 1, "crop": "jute", "confidence": 0.85}],
-      "shap": {"base_value": 0.12, "values": {}, "sorted_by_abs": []},
-      "lime": {"class_index": 8, "explanations": [{"feature": "humidity > 70.0", "weight": 0.21}]}
-    },
-    "random_forest": {},
-    "xgboost": {}
+### 2) Agent API (`api/main.py`, port `8100`)
+Run:
+```bash
+uvicorn api.main:app --host 0.0.0.0 --port 8100
+```
+
+Endpoints:
+- `GET /health`
+- `GET /tools`
+- `GET /llm/health`
+- `GET /metrics/xai`
+- `POST /recommend`
+- `POST /recommend_with_llm`
+
+Example (`/recommend_with_llm`):
+```bash
+curl --json '{
+  "query": "Which crop should I plant and why?",
+  "recommendation_input": {
+    "location": "Delhi, India",
+    "N": 90,
+    "P": 42,
+    "K": 43,
+    "top_k": 3
   }
-}
+}' http://127.0.0.1:8100/recommend_with_llm
 ```
 
-### Quick cURL Test
+## Tool Routing Rules Implemented
+- If prompt says no tools (`do not call/use tools`, etc.) -> no external tools are called
+- If all required features are provided -> no geocode/weather/soil calls
+- If `N/P/K` missing -> returns `400` (never fabricated)
+- If location is provided and `temperature/humidity` missing -> weather API call
+- If location is provided and `ph` missing -> soil API call
+
+## Response Additions (Agent)
+`POST /recommend` and `/recommend_with_llm` include:
+- `raw_model_confidence`
+- `calendar_suitability`
+- `adjusted_confidence`
+- `eps`
+- `llm_curves`:
+  - `decision_stages`
+  - `topk_confidence`
+  - `shap_cumulative`
+- `provenance`
+- `tool_calls`
+- `warnings`
+
+## LLM Providers and Fallback
+Configurable provider via `.env`:
+- `LLM_PROVIDER=local|openrouter|openai`
+
+Behavior:
+- Calls provider for advisory text
+- Validates output contract (no CoT leaks, strict 5 sections, confidence terms, checklist bullets)
+- If provider fails (e.g. 402/429/timeout) or output is invalid -> template fallback response is returned
+
+## Environment Variables
+Copy `.env.example` to `.env` and set values.
+
+Important keys:
+- `MODEL_API_BASE_URL`
+- `NOMINATIM_URL`, `NOMINATIM_USER_AGENT`
+- `OPEN_METEO_URL`
+- `SOILGRIDS_URL`
+- `LLM_PROVIDER`
+- `LOCAL_LLM_BASE_URL`, `LOCAL_LLM_MODEL`
+- `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`
+- `OPENAI_API_KEY`, `OPENAI_MODEL`
+
+## Testing
+Run core tests:
 ```bash
-curl --json '{"N":90,"P":42,"K":43,"temperature":25.6,"humidity":71.4,"ph":6.4}' http://127.0.0.1:8000/predict
+uv run python testing/test_system_extensive.py
+uv run python testing/test_tool_routing_suite.py
+uv run python testing/test_agent_pipeline.py
 ```
 
-### Run API Tests
+Prompt suite:
 ```bash
-python test.py
-python test_api.py
+uv run python scripts/run_prompt_suite.py
+```
+Outputs:
+- `artifacts/llm_prompt_outputs.json`
+- `artifacts/llm_prompt_outputs.md`
+
+## XAI Evaluation Pipeline
+Run:
+```bash
+uv run python xai_eval/evaluate.py
+```
+Generated:
+- `xai_eval/report.json`
+- `xai_eval/evaluation_report.json` (legacy compatibility)
+- `xai_eval/calibration_report.json`
+
+Metrics include:
+- SHAP faithfulness (`deletion_auc`)
+- LIME faithfulness (`deletion_auc`)
+- LIME local fidelity (`fidelity_r2`)
+- Stability (`avg_overlap`, `avg_rank_corr`)
+
+## Streamlit
+Run:
+```bash
+streamlit run stream.py
 ```
 
----
-
-## Dependencies
-``` 
-fastapi>=0.129.0
-uvicorn[standard]>=0.40.0
-httpx>=0.28.1
-streamlit>=1.54.0
-pandas>=2.3.3
-numpy<2.4
-matplotlib>=3.10.8
-scikit-learn==1.6.1
-xgboost>=3.2.0
-shap>=0.43
-lime>=0.2.0.1
-openpyxl>=3.1.5
-seaborn>=0.13.2
-numba>=0.61
-torch>=2.10.0
-ipykernel>=7.2.0
-```
-
----
-
-## Pipeline Overview
-
-1. **Data Preprocessing**
-   - Handling missing values and outliers.
-   - Scaling numerical features and encoding categorical features.
-   - Feature engineering to improve model performance.
-
-2. **Model Development**
-   - Train Logistic Regression, Random Forest, XGBoost, and Ensemble models.
-   - Evaluate models using metrics such as Accuracy, F1-score, Confusion Matrix, and Classification Report.
-   - Save trained models in `models/` for reuse.
-
-3. **Explainable AI Analysis**
-   - Generate SHAP summary and force plots for global and local interpretation.
-   - Generate LIME explanations for individual predictions.
-   - Store visualizations and results in `xai/`.
-
-4. **Streamlit Web Application**
-   - Users input soil and environmental features such as Nitrogen, Phosphorus, Potassium, pH, rainfall, and temperature.
-   - App predicts suitable crops using multiple models.
-   - Visualizes model outputs and XAI explanations in an interactive interface.
-
-5. **Results**
-   - Model evaluation results including metrics and plots stored in `results/`.
-   - Screen recordings available for demonstration in `simplescreenrecorder-...mkv`.
-
----
-
-## XAI Analysis
-- **SHAP**: Visualizes feature contributions for each prediction.
-- **LIME**: Provides local interpretable explanations for model outputs.
-- All XAI results are stored in the `xai/` folder for reference.
-
----
-
-## Screen Recording
-- `simplescreenrecorder-2025-06-08_12.39.29.mkv` demonstrates the functionality of the platform and how users can interact with the models via the Streamlit app.
-
----
-
-## Contributing
-1. Fork the repository
-2. Create a new branch
-   ```
-   git checkout -b feature-branch
-   ```
-3. Commit your changes
-   ```
-   git commit -m 'Add new feature'
-   ```
-4. Push to the branch
-   ```
-   git push origin feature-branch
-   ```
-5. Create a pull request
-
----
- 
-## License
-
-This project is licensed under the MIT License.
-
+## Notes
+- Do not commit real API keys.
+- Keep `.env` local.
+- Free API services can rate-limit; caching is enabled for geocode/soil flows.
+- For full architecture details, see `system_architecture.md`.

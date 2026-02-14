@@ -1,0 +1,2513 @@
+[
+  {
+    "id": "r2_p01_standard",
+    "query": "Give the recommendation in the strict 5-section format.",
+    "request": {
+      "query": "Give the recommendation in the strict 5-section format.",
+      "recommendation_input": {
+        "N": 88,
+        "P": 40,
+        "K": 42,
+        "temperature": 26.1,
+        "humidity": 70.2,
+        "ph": 6.5,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "jute",
+        "confidence": 0.09899492263793945,
+        "raw_model_confidence": 0.7030586004257202,
+        "calendar_suitability": 0.3,
+        "adjusted_confidence": 0.09899492263793945,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "jute",
+            "raw_model_confidence": 0.28284263610839844,
+            "calendar_suitability": 0.3,
+            "adjusted_confidence": 0.09899492263793945
+          },
+          {
+            "crop": "coffee",
+            "raw_model_confidence": 0.7030586004257202,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.035152930021286014
+          },
+          {
+            "crop": "blackgram",
+            "raw_model_confidence": 0.002535202307626605,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.00012676011538133026
+          }
+        ],
+        "shap": {
+          "base_value": 0.5501730442047119,
+          "values": {
+            "N": 2.5332813262939453,
+            "P": 0.1170453131198883,
+            "K": 0.20201006531715393,
+            "temperature": 0.028504343703389168,
+            "humidity": 1.823186993598938,
+            "ph": 0.03651786968111992
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 2.5332813262939453,
+              "abs_value": 2.5332813262939453
+            },
+            {
+              "feature": "humidity",
+              "value": 1.823186993598938,
+              "abs_value": 1.823186993598938
+            },
+            {
+              "feature": "K",
+              "value": 0.20201006531715393,
+              "abs_value": 0.20201006531715393
+            },
+            {
+              "feature": "P",
+              "value": 0.1170453131198883,
+              "abs_value": 0.1170453131198883
+            },
+            {
+              "feature": "ph",
+              "value": 0.03651786968111992,
+              "abs_value": 0.03651786968111992
+            },
+            {
+              "feature": "temperature",
+              "value": 0.028504343703389168,
+              "abs_value": 0.028504343703389168
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 5,
+          "explanations": [
+            {
+              "feature": "N > 84.25",
+              "weight": 0.15774218748047567
+            },
+            {
+              "feature": "60.26 < humidity <= 80.47",
+              "weight": 0.03878002667986505
+            },
+            {
+              "feature": "28.00 < P <= 51.00",
+              "weight": 0.038395883079366165
+            },
+            {
+              "feature": "32.00 < K <= 49.00",
+              "weight": 0.03652229749570266
+            },
+            {
+              "feature": "6.43 < ph <= 6.92",
+              "weight": 0.003928547659219715
+            },
+            {
+              "feature": "25.60 < temperature <= 28.56",
+              "weight": 0.0007881435362524008
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "blackgram"
+            ],
+            "y": [
+              0.7030586004257202,
+              0.28284263610839844,
+              0.002535202307626605
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.7030586004257202,
+              0.28284263610839844,
+              0.09899492263793945
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "blackgram"
+            ],
+            "y": [
+              0.7030586004257202,
+              0.28284263610839844,
+              0.002535202307626605
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.5343859912914071,
+              0.9189803033291057,
+              0.9615935527479045,
+              0.9862838131735352,
+              0.9939871178901671,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "humidity",
+              "K",
+              "P",
+              "ph",
+              "temperature"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "global",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "coffee",
+                "confidence": 0.7030586004257202
+              },
+              {
+                "rank": 2,
+                "crop": "jute",
+                "confidence": 0.28284263610839844
+              },
+              {
+                "rank": 3,
+                "crop": "blackgram",
+                "confidence": 0.002535202307626605
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "jute",
+                "raw_model_confidence": 0.28284263610839844,
+                "calendar_suitability": 0.3,
+                "adjusted_confidence": 0.09899492263793945
+              },
+              {
+                "crop": "coffee",
+                "raw_model_confidence": 0.7030586004257202,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.035152930021286014
+              },
+              {
+                "crop": "blackgram",
+                "raw_model_confidence": 0.002535202307626605,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.00012676011538133026
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": true
+        },
+        "provenance": {
+          "N": {
+            "value": 88.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 40.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 42.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 26.1,
+            "source": "user"
+          },
+          "humidity": {
+            "value": 70.2,
+            "source": "user"
+          },
+          "ph": {
+            "value": 6.5,
+            "source": "user"
+          }
+        },
+        "tool_calls": [
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Calendar adjustment changed the top recommendation.",
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Action checklist must contain exactly 3 bullet points"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nJute is selected after season-aware re-ranking. Model preferred coffee (raw prob high) but calendar suitability was 0.00, so final is jute.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.7031\nSeason-adjusted confidence: 0.0990 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.2828, suit=0.30, adj=0.0990); coffee (raw=0.7031, suit=0.00, adj=0.0352); blackgram (raw=0.0025, suit=0.00, adj=0.0001)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "get_crop_calendar"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p02_location_india",
+    "query": "Use location enrichment for Mumbai and explain uncertainty clearly.",
+    "request": {
+      "query": "Use location enrichment for Mumbai and explain uncertainty clearly.",
+      "recommendation_input": {
+        "location": "Mumbai, India",
+        "N": 95,
+        "P": 45,
+        "K": 40,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "jute",
+        "confidence": 0.165491646528244,
+        "raw_model_confidence": 0.4728332757949829,
+        "calendar_suitability": 0.3,
+        "adjusted_confidence": 0.165491646528244,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "jute",
+            "raw_model_confidence": 0.4728332757949829,
+            "calendar_suitability": 0.3,
+            "adjusted_confidence": 0.165491646528244
+          },
+          {
+            "crop": "coffee",
+            "raw_model_confidence": 0.42460277676582336,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.021230138838291168
+          },
+          {
+            "crop": "blackgram",
+            "raw_model_confidence": 0.01834051124751568,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.000917025562375784
+          }
+        ],
+        "shap": {
+          "base_value": 0.684004545211792,
+          "values": {
+            "N": 0.8142807483673096,
+            "P": 0.2822912335395813,
+            "K": 0.6680129766464233,
+            "temperature": 0.008666357956826687,
+            "humidity": 0.27692538499832153,
+            "ph": 0.18100005388259888
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 0.8142807483673096,
+              "abs_value": 0.8142807483673096
+            },
+            {
+              "feature": "K",
+              "value": 0.6680129766464233,
+              "abs_value": 0.6680129766464233
+            },
+            {
+              "feature": "P",
+              "value": 0.2822912335395813,
+              "abs_value": 0.2822912335395813
+            },
+            {
+              "feature": "humidity",
+              "value": 0.27692538499832153,
+              "abs_value": 0.27692538499832153
+            },
+            {
+              "feature": "ph",
+              "value": 0.18100005388259888,
+              "abs_value": 0.18100005388259888
+            },
+            {
+              "feature": "temperature",
+              "value": 0.008666357956826687,
+              "abs_value": 0.008666357956826687
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 8,
+          "explanations": [
+            {
+              "feature": "32.00 < K <= 49.00",
+              "weight": 0.05849251633924432
+            },
+            {
+              "feature": "60.26 < humidity <= 80.47",
+              "weight": 0.01783634967380229
+            },
+            {
+              "feature": "28.00 < P <= 51.00",
+              "weight": 0.016114986198560763
+            },
+            {
+              "feature": "25.60 < temperature <= 28.56",
+              "weight": 0.004823511165097071
+            },
+            {
+              "feature": "6.43 < ph <= 6.92",
+              "weight": 0.001902245983767754
+            },
+            {
+              "feature": "N > 84.25",
+              "weight": 0.0011527862634710848
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "jute",
+              "coffee",
+              "blackgram"
+            ],
+            "y": [
+              0.4728332757949829,
+              0.42460277676582336,
+              0.01834051124751568
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.4728332757949829,
+              0.4728332757949829,
+              0.165491646528244
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "jute",
+              "coffee",
+              "blackgram"
+            ],
+            "y": [
+              0.4728332757949829,
+              0.42460277676582336,
+              0.01834051124751568
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.3649557330676787,
+              0.6643551307318677,
+              0.7908763634658936,
+              0.9149926551622835,
+              0.9961157904967024,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "K",
+              "P",
+              "humidity",
+              "ph",
+              "temperature"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "Maharashtra",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "jute",
+                "confidence": 0.4728332757949829
+              },
+              {
+                "rank": 2,
+                "crop": "coffee",
+                "confidence": 0.42460277676582336
+              },
+              {
+                "rank": 3,
+                "crop": "blackgram",
+                "confidence": 0.01834051124751568
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "jute",
+                "raw_model_confidence": 0.4728332757949829,
+                "calendar_suitability": 0.3,
+                "adjusted_confidence": 0.165491646528244
+              },
+              {
+                "crop": "coffee",
+                "raw_model_confidence": 0.42460277676582336,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.021230138838291168
+              },
+              {
+                "crop": "blackgram",
+                "raw_model_confidence": 0.01834051124751568,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.000917025562375784
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": false
+        },
+        "provenance": {
+          "N": {
+            "value": 95.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 45.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 40.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 26.1,
+            "source": "weather_api"
+          },
+          "humidity": {
+            "value": 70.0,
+            "source": "weather_api"
+          },
+          "ph": {
+            "value": 6.5,
+            "source": "soil_api_fallback"
+          }
+        },
+        "tool_calls": [
+          "geocode_location",
+          "get_weather",
+          "get_soil_properties",
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Weather values are estimated from Open-Meteo current conditions.",
+          "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+          "Soil values are estimated from SoilGrids.",
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Missing required sections"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nJute is selected after season-aware re-ranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.4728\nSeason-adjusted confidence: 0.1655 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.4728, suit=0.30, adj=0.1655); coffee (raw=0.4246, suit=0.00, adj=0.0212); blackgram (raw=0.0183, suit=0.00, adj=0.0009)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "geocode_location",
+      "get_crop_calendar",
+      "get_soil_properties",
+      "get_weather"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p03_calendar_conflict",
+    "query": "If calendar changes top crop, explain why and suggest fallback.",
+    "request": {
+      "query": "If calendar changes top crop, explain why and suggest fallback.",
+      "recommendation_input": {
+        "location": "Delhi, India",
+        "N": 90,
+        "P": 42,
+        "K": 43,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "jute",
+        "confidence": 0.04320978820323944,
+        "raw_model_confidence": 0.6301550269126892,
+        "calendar_suitability": 0.3,
+        "adjusted_confidence": 0.04320978820323944,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "jute",
+            "raw_model_confidence": 0.12345653772354126,
+            "calendar_suitability": 0.3,
+            "adjusted_confidence": 0.04320978820323944
+          },
+          {
+            "crop": "coffee",
+            "raw_model_confidence": 0.6301550269126892,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.03150775134563446
+          },
+          {
+            "crop": "rice",
+            "raw_model_confidence": 0.03065541945397854,
+            "calendar_suitability": 0.4,
+            "adjusted_confidence": 0.013794938754290343
+          }
+        ],
+        "shap": {
+          "base_value": 0.5501730442047119,
+          "values": {
+            "N": 1.9499402046203613,
+            "P": -1.3789705038070679,
+            "K": 0.2014409750699997,
+            "temperature": -0.4224337339401245,
+            "humidity": 1.370108962059021,
+            "ph": 0.014440154656767845
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 1.9499402046203613,
+              "abs_value": 1.9499402046203613
+            },
+            {
+              "feature": "P",
+              "value": -1.3789705038070679,
+              "abs_value": 1.3789705038070679
+            },
+            {
+              "feature": "humidity",
+              "value": 1.370108962059021,
+              "abs_value": 1.370108962059021
+            },
+            {
+              "feature": "temperature",
+              "value": -0.4224337339401245,
+              "abs_value": 0.4224337339401245
+            },
+            {
+              "feature": "K",
+              "value": 0.2014409750699997,
+              "abs_value": 0.2014409750699997
+            },
+            {
+              "feature": "ph",
+              "value": 0.014440154656767845,
+              "abs_value": 0.014440154656767845
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 5,
+          "explanations": [
+            {
+              "feature": "N > 84.25",
+              "weight": 0.16841461710742162
+            },
+            {
+              "feature": "humidity <= 60.26",
+              "weight": 0.09912906823949265
+            },
+            {
+              "feature": "32.00 < K <= 49.00",
+              "weight": 0.04965397446183643
+            },
+            {
+              "feature": "28.00 < P <= 51.00",
+              "weight": 0.026798844042936466
+            },
+            {
+              "feature": "6.43 < ph <= 6.92",
+              "weight": -0.010790008967038855
+            },
+            {
+              "feature": "temperature <= 22.77",
+              "weight": -0.00724668572142932
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "rice"
+            ],
+            "y": [
+              0.6301550269126892,
+              0.12345653772354126,
+              0.03065541945397854
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.6301550269126892,
+              0.12345653772354126,
+              0.04320978820323944
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "rice"
+            ],
+            "y": [
+              0.6301550269126892,
+              0.12345653772354126,
+              0.03065541945397854
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.3653397013327138,
+              0.6237028402709054,
+              0.8804056857252723,
+              0.9595526328085012,
+              0.9972945007354578,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "P",
+              "humidity",
+              "temperature",
+              "K",
+              "ph"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "India",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "coffee",
+                "confidence": 0.6301550269126892
+              },
+              {
+                "rank": 2,
+                "crop": "jute",
+                "confidence": 0.12345653772354126
+              },
+              {
+                "rank": 3,
+                "crop": "rice",
+                "confidence": 0.03065541945397854
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "jute",
+                "raw_model_confidence": 0.12345653772354126,
+                "calendar_suitability": 0.3,
+                "adjusted_confidence": 0.04320978820323944
+              },
+              {
+                "crop": "coffee",
+                "raw_model_confidence": 0.6301550269126892,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.03150775134563446
+              },
+              {
+                "crop": "rice",
+                "raw_model_confidence": 0.03065541945397854,
+                "calendar_suitability": 0.4,
+                "adjusted_confidence": 0.013794938754290343
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": true
+        },
+        "provenance": {
+          "N": {
+            "value": 90.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 42.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 43.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 20.4,
+            "source": "weather_api"
+          },
+          "humidity": {
+            "value": 58.0,
+            "source": "weather_api"
+          },
+          "ph": {
+            "value": 6.5,
+            "source": "soil_api_fallback"
+          }
+        },
+        "tool_calls": [
+          "geocode_location",
+          "get_weather",
+          "get_soil_properties",
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Weather values are estimated from Open-Meteo current conditions.",
+          "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+          "Soil values are estimated from SoilGrids.",
+          "Calendar adjustment changed the top recommendation.",
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Missing raw/adjusted confidence terms"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nJute is selected after season-aware re-ranking. Model preferred coffee (raw prob high) but calendar suitability was 0.00, so final is jute.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.6302\nSeason-adjusted confidence: 0.0432 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.1235, suit=0.30, adj=0.0432); coffee (raw=0.6302, suit=0.00, adj=0.0315); rice (raw=0.0307, suit=0.40, adj=0.0138)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "geocode_location",
+      "get_crop_calendar",
+      "get_soil_properties",
+      "get_weather"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p04_farmer_style",
+    "query": "Explain for a small farmer with simple language and exactly 3 action bullets.",
+    "request": {
+      "query": "Explain for a small farmer with simple language and exactly 3 action bullets.",
+      "recommendation_input": {
+        "N": 70,
+        "P": 30,
+        "K": 20,
+        "temperature": 29.0,
+        "humidity": 62.0,
+        "ph": 6.1,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "maize",
+        "confidence": 0.5784625053405763,
+        "raw_model_confidence": 0.964104175567627,
+        "calendar_suitability": 0.55,
+        "adjusted_confidence": 0.5784625053405763,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "maize",
+            "raw_model_confidence": 0.964104175567627,
+            "calendar_suitability": 0.55,
+            "adjusted_confidence": 0.5784625053405763
+          },
+          {
+            "crop": "mothbeans",
+            "raw_model_confidence": 0.00930827111005783,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.00046541355550289154
+          },
+          {
+            "crop": "blackgram",
+            "raw_model_confidence": 0.002302276436239481,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.00011511382181197406
+          }
+        ],
+        "shap": {
+          "base_value": 0.5159661173820496,
+          "values": {
+            "N": 2.6084988117218018,
+            "P": -0.1769799441099167,
+            "K": 1.7777268886566162,
+            "temperature": -0.1089894101023674,
+            "humidity": 0.33452683687210083,
+            "ph": 0.03152352198958397
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 2.6084988117218018,
+              "abs_value": 2.6084988117218018
+            },
+            {
+              "feature": "K",
+              "value": 1.7777268886566162,
+              "abs_value": 1.7777268886566162
+            },
+            {
+              "feature": "humidity",
+              "value": 0.33452683687210083,
+              "abs_value": 0.33452683687210083
+            },
+            {
+              "feature": "P",
+              "value": -0.1769799441099167,
+              "abs_value": 0.1769799441099167
+            },
+            {
+              "feature": "temperature",
+              "value": -0.1089894101023674,
+              "abs_value": 0.1089894101023674
+            },
+            {
+              "feature": "ph",
+              "value": 0.03152352198958397,
+              "abs_value": 0.03152352198958397
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 11,
+          "explanations": [
+            {
+              "feature": "37.00 < N <= 84.25",
+              "weight": 0.06546621937933009
+            },
+            {
+              "feature": "K <= 20.00",
+              "weight": 0.06349440629769641
+            },
+            {
+              "feature": "60.26 < humidity <= 80.47",
+              "weight": 0.044329929006318186
+            },
+            {
+              "feature": "28.00 < P <= 51.00",
+              "weight": 0.014548914951852482
+            },
+            {
+              "feature": "temperature > 28.56",
+              "weight": -0.008315395305329725
+            },
+            {
+              "feature": "5.97 < ph <= 6.43",
+              "weight": 0.004394578096708889
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "maize",
+              "mothbeans",
+              "blackgram"
+            ],
+            "y": [
+              0.964104175567627,
+              0.00930827111005783,
+              0.002302276436239481
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.964104175567627,
+              0.964104175567627,
+              0.5784625053405763
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "maize",
+              "mothbeans",
+              "blackgram"
+            ],
+            "y": [
+              0.964104175567627,
+              0.00930827111005783,
+              0.002302276436239481
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.5177395298682691,
+              0.8705859561082433,
+              0.9369834436103202,
+              0.9721107408311682,
+              0.993743154728943,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "K",
+              "humidity",
+              "P",
+              "temperature",
+              "ph"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "global",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "maize",
+                "confidence": 0.964104175567627
+              },
+              {
+                "rank": 2,
+                "crop": "mothbeans",
+                "confidence": 0.00930827111005783
+              },
+              {
+                "rank": 3,
+                "crop": "blackgram",
+                "confidence": 0.002302276436239481
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "maize",
+                "raw_model_confidence": 0.964104175567627,
+                "calendar_suitability": 0.55,
+                "adjusted_confidence": 0.5784625053405763
+              },
+              {
+                "crop": "mothbeans",
+                "raw_model_confidence": 0.00930827111005783,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.00046541355550289154
+              },
+              {
+                "crop": "blackgram",
+                "raw_model_confidence": 0.002302276436239481,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.00011511382181197406
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": false
+        },
+        "provenance": {
+          "N": {
+            "value": 70.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 30.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 20.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 29.0,
+            "source": "user"
+          },
+          "humidity": {
+            "value": 62.0,
+            "source": "user"
+          },
+          "ph": {
+            "value": 6.1,
+            "source": "user"
+          }
+        },
+        "tool_calls": [
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Missing required sections"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nMaize is selected after season-aware re-ranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.9641\nSeason-adjusted confidence: 0.5785 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\nmaize (raw=0.9641, suit=0.55, adj=0.5785); mothbeans (raw=0.0093, suit=0.00, adj=0.0005); blackgram (raw=0.0023, suit=0.00, adj=0.0001)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "get_crop_calendar"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p05_no_tools",
+    "query": "Do not use any external tools. Give concise recommendation.",
+    "request": {
+      "query": "Do not use any external tools. Give concise recommendation.",
+      "recommendation_input": {
+        "N": 84,
+        "P": 38,
+        "K": 36,
+        "temperature": 27.8,
+        "humidity": 68.5,
+        "ph": 6.4,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "coffee",
+        "confidence": 0.9039195746183396,
+        "raw_model_confidence": 0.8608757853507996,
+        "calendar_suitability": 1.0,
+        "adjusted_confidence": 0.9039195746183396,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "coffee",
+            "raw_model_confidence": 0.8608757853507996,
+            "calendar_suitability": 1.0,
+            "adjusted_confidence": 0.9039195746183396
+          },
+          {
+            "crop": "jute",
+            "raw_model_confidence": 0.12469347566366196,
+            "calendar_suitability": 1.0,
+            "adjusted_confidence": 0.13092814944684505
+          },
+          {
+            "crop": "rice",
+            "raw_model_confidence": 0.0011683509219437838,
+            "calendar_suitability": 1.0,
+            "adjusted_confidence": 0.001226768468040973
+          }
+        ],
+        "shap": {
+          "base_value": 0.5501730442047119,
+          "values": {
+            "N": 2.5505001544952393,
+            "P": 0.20023870468139648,
+            "K": 0.20201006531715393,
+            "temperature": 0.028504343703389168,
+            "humidity": 1.832058310508728,
+            "ph": 0.03651786968111992
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 2.5505001544952393,
+              "abs_value": 2.5505001544952393
+            },
+            {
+              "feature": "humidity",
+              "value": 1.832058310508728,
+              "abs_value": 1.832058310508728
+            },
+            {
+              "feature": "K",
+              "value": 0.20201006531715393,
+              "abs_value": 0.20201006531715393
+            },
+            {
+              "feature": "P",
+              "value": 0.20023870468139648,
+              "abs_value": 0.20023870468139648
+            },
+            {
+              "feature": "ph",
+              "value": 0.03651786968111992,
+              "abs_value": 0.03651786968111992
+            },
+            {
+              "feature": "temperature",
+              "value": 0.028504343703389168,
+              "abs_value": 0.028504343703389168
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 5,
+          "explanations": [
+            {
+              "feature": "37.00 < N <= 84.25",
+              "weight": -0.04825098982885665
+            },
+            {
+              "feature": "28.00 < P <= 51.00",
+              "weight": 0.040419221769700295
+            },
+            {
+              "feature": "32.00 < K <= 49.00",
+              "weight": 0.03842090191508788
+            },
+            {
+              "feature": "60.26 < humidity <= 80.47",
+              "weight": 0.030742911921979116
+            },
+            {
+              "feature": "25.60 < temperature <= 28.56",
+              "weight": 0.005321949671864389
+            },
+            {
+              "feature": "5.97 < ph <= 6.43",
+              "weight": 0.0008361095555471115
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "rice"
+            ],
+            "y": [
+              0.8608757853507996,
+              0.12469347566366196,
+              0.0011683509219437838
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.8608757853507996,
+              0.8608757853507996,
+              0.9039195746183396
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "coffee",
+              "jute",
+              "rice"
+            ],
+            "y": [
+              0.8608757853507996,
+              0.12469347566366196,
+              0.0011683509219437838
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.5258948137533977,
+              0.9036520792419894,
+              0.945305103841512,
+              0.9865928866001392,
+              0.9941226090511556,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "humidity",
+              "K",
+              "P",
+              "ph",
+              "temperature"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "global",
+          "month": 2,
+          "suitability": {
+            "coffee": 1.0,
+            "jute": 1.0,
+            "rice": 1.0
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "coffee",
+                "confidence": 0.8608757853507996
+              },
+              {
+                "rank": 2,
+                "crop": "jute",
+                "confidence": 0.12469347566366196
+              },
+              {
+                "rank": 3,
+                "crop": "rice",
+                "confidence": 0.0011683509219437838
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "coffee",
+                "raw_model_confidence": 0.8608757853507996,
+                "calendar_suitability": 1.0,
+                "adjusted_confidence": 0.9039195746183396
+              },
+              {
+                "crop": "jute",
+                "raw_model_confidence": 0.12469347566366196,
+                "calendar_suitability": 1.0,
+                "adjusted_confidence": 0.13092814944684505
+              },
+              {
+                "crop": "rice",
+                "raw_model_confidence": 0.0011683509219437838,
+                "calendar_suitability": 1.0,
+                "adjusted_confidence": 0.001226768468040973
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": false
+        },
+        "provenance": {
+          "N": {
+            "value": 84.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 38.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 36.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 27.8,
+            "source": "user"
+          },
+          "humidity": {
+            "value": 68.5,
+            "source": "user"
+          },
+          "ph": {
+            "value": 6.4,
+            "source": "user"
+          }
+        },
+        "tool_calls": [],
+        "warnings": [
+          "LLM fallback applied: validation_failed: Missing raw/adjusted confidence terms"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nCoffee is selected after season-aware re-ranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.8609\nSeason-adjusted confidence: 0.9039 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\ncoffee (raw=0.8609, suit=1.00, adj=0.9039); jute (raw=0.1247, suit=1.00, adj=0.1309); rice (raw=0.0012, suit=1.00, adj=0.0012)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nNo high-risk warning: adjusted confidence is at or above threshold."
+    },
+    "inferred_tools_used": [],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p06_missing_npk_fail",
+    "query": "I only know location, please decide the crop.",
+    "request": {
+      "query": "I only know location, please decide the crop.",
+      "recommendation_input": {
+        "location": "Pune, India",
+        "P": 30,
+        "K": 25,
+        "top_k": 3
+      }
+    },
+    "status_code": 400,
+    "ok": false,
+    "error": {
+      "detail": {
+        "message": "Missing required N/P/K values. Cannot fabricate these features.",
+        "missing_features": [
+          "N"
+        ],
+        "hint": "Provide soil test values for N, P, K."
+      }
+    }
+  },
+  {
+    "id": "r2_p07_technical_xai",
+    "query": "Give a technical SHAP/LIME-focused summary for an agronomy researcher.",
+    "request": {
+      "query": "Give a technical SHAP/LIME-focused summary for an agronomy researcher.",
+      "recommendation_input": {
+        "N": 110,
+        "P": 55,
+        "K": 65,
+        "temperature": 31.2,
+        "humidity": 78.0,
+        "ph": 6.8,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "jute",
+        "confidence": 0.08390088453888893,
+        "raw_model_confidence": 0.2397168129682541,
+        "calendar_suitability": 0.3,
+        "adjusted_confidence": 0.08390088453888893,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "jute",
+            "raw_model_confidence": 0.2397168129682541,
+            "calendar_suitability": 0.3,
+            "adjusted_confidence": 0.08390088453888893
+          },
+          {
+            "crop": "cotton",
+            "raw_model_confidence": 0.06586971879005432,
+            "calendar_suitability": 0.35,
+            "adjusted_confidence": 0.026347887516021726
+          },
+          {
+            "crop": "blackgram",
+            "raw_model_confidence": 0.0654120147228241,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.003270600736141205
+          }
+        ],
+        "shap": {
+          "base_value": 0.684004545211792,
+          "values": {
+            "N": 0.28766852617263794,
+            "P": 0.17239823937416077,
+            "K": -1.0889990329742432,
+            "temperature": -0.28760936856269836,
+            "humidity": 0.3346642553806305,
+            "ph": 0.11776924878358841
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "K",
+              "value": -1.0889990329742432,
+              "abs_value": 1.0889990329742432
+            },
+            {
+              "feature": "humidity",
+              "value": 0.3346642553806305,
+              "abs_value": 0.3346642553806305
+            },
+            {
+              "feature": "N",
+              "value": 0.28766852617263794,
+              "abs_value": 0.28766852617263794
+            },
+            {
+              "feature": "temperature",
+              "value": -0.28760936856269836,
+              "abs_value": 0.28760936856269836
+            },
+            {
+              "feature": "P",
+              "value": 0.17239823937416077,
+              "abs_value": 0.17239823937416077
+            },
+            {
+              "feature": "ph",
+              "value": 0.11776924878358841,
+              "abs_value": 0.11776924878358841
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 8,
+          "explanations": [
+            {
+              "feature": "60.26 < humidity <= 80.47",
+              "weight": 0.025167435473044987
+            },
+            {
+              "feature": "51.00 < P <= 68.00",
+              "weight": 0.014006628992931305
+            },
+            {
+              "feature": "K > 49.00",
+              "weight": 0.0062589580387984725
+            },
+            {
+              "feature": "temperature > 28.56",
+              "weight": -0.006015843146067981
+            },
+            {
+              "feature": "6.43 < ph <= 6.92",
+              "weight": 0.003984405327387985
+            },
+            {
+              "feature": "N > 84.25",
+              "weight": -0.00247869842046256
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "jute",
+              "cotton",
+              "blackgram"
+            ],
+            "y": [
+              0.2397168129682541,
+              0.06586971879005432,
+              0.0654120147228241
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.2397168129682541,
+              0.2397168129682541,
+              0.08390088453888893
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "jute",
+              "cotton",
+              "blackgram"
+            ],
+            "y": [
+              0.2397168129682541,
+              0.06586971879005432,
+              0.0654120147228241
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.4757305962152294,
+              0.6219290967862752,
+              0.7475974539882987,
+              0.8732399681140705,
+              0.9485523556558003,
+              1.0
+            ],
+            "feature_order": [
+              "K",
+              "humidity",
+              "N",
+              "temperature",
+              "P",
+              "ph"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "global",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "jute",
+                "confidence": 0.2397168129682541
+              },
+              {
+                "rank": 2,
+                "crop": "cotton",
+                "confidence": 0.06586971879005432
+              },
+              {
+                "rank": 3,
+                "crop": "blackgram",
+                "confidence": 0.0654120147228241
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "jute",
+                "raw_model_confidence": 0.2397168129682541,
+                "calendar_suitability": 0.3,
+                "adjusted_confidence": 0.08390088453888893
+              },
+              {
+                "crop": "cotton",
+                "raw_model_confidence": 0.06586971879005432,
+                "calendar_suitability": 0.35,
+                "adjusted_confidence": 0.026347887516021726
+              },
+              {
+                "crop": "blackgram",
+                "raw_model_confidence": 0.0654120147228241,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.003270600736141205
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": false
+        },
+        "provenance": {
+          "N": {
+            "value": 110.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 55.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 65.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 31.2,
+            "source": "user"
+          },
+          "humidity": {
+            "value": 78.0,
+            "source": "user"
+          },
+          "ph": {
+            "value": 6.8,
+            "source": "user"
+          }
+        },
+        "tool_calls": [
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Contains internal reasoning leak"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nJute is selected after season-aware re-ranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.2397\nSeason-adjusted confidence: 0.0839 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.2397, suit=0.30, adj=0.0839); cotton (raw=0.0659, suit=0.35, adj=0.0263); blackgram (raw=0.0654, suit=0.00, adj=0.0033)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "get_crop_calendar"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  },
+  {
+    "id": "r2_p08_conservative",
+    "query": "If confidence is below 0.6, provide a conservative plan with risk warning.",
+    "request": {
+      "query": "If confidence is below 0.6, provide a conservative plan with risk warning.",
+      "recommendation_input": {
+        "location": "Chennai, India",
+        "N": 60,
+        "P": 25,
+        "K": 20,
+        "top_k": 3
+      }
+    },
+    "status_code": 200,
+    "ok": true,
+    "response": {
+      "recommendation": {
+        "final_crop": "maize",
+        "confidence": 0.5736905336380006,
+        "raw_model_confidence": 0.9561508893966675,
+        "calendar_suitability": 0.55,
+        "adjusted_confidence": 0.5736905336380006,
+        "eps": 0.05,
+        "top3": [
+          {
+            "crop": "maize",
+            "raw_model_confidence": 0.9561508893966675,
+            "calendar_suitability": 0.55,
+            "adjusted_confidence": 0.5736905336380006
+          },
+          {
+            "crop": "mothbeans",
+            "raw_model_confidence": 0.016811668872833252,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.0008405834436416627
+          },
+          {
+            "crop": "pigeonpeas",
+            "raw_model_confidence": 0.003002708312124014,
+            "calendar_suitability": 0.0,
+            "adjusted_confidence": 0.0001501354156062007
+          }
+        ],
+        "shap": {
+          "base_value": 0.5159661173820496,
+          "values": {
+            "N": 2.6084988117218018,
+            "P": -0.1769799441099167,
+            "K": 1.7777268886566162,
+            "temperature": -0.1089894101023674,
+            "humidity": 0.33452683687210083,
+            "ph": 0.03152352198958397
+          },
+          "sorted_by_abs": [
+            {
+              "feature": "N",
+              "value": 2.6084988117218018,
+              "abs_value": 2.6084988117218018
+            },
+            {
+              "feature": "K",
+              "value": 1.7777268886566162,
+              "abs_value": 1.7777268886566162
+            },
+            {
+              "feature": "humidity",
+              "value": 0.33452683687210083,
+              "abs_value": 0.33452683687210083
+            },
+            {
+              "feature": "P",
+              "value": -0.1769799441099167,
+              "abs_value": 0.1769799441099167
+            },
+            {
+              "feature": "temperature",
+              "value": -0.1089894101023674,
+              "abs_value": 0.1089894101023674
+            },
+            {
+              "feature": "ph",
+              "value": 0.03152352198958397,
+              "abs_value": 0.03152352198958397
+            }
+          ]
+        },
+        "lime": {
+          "class_index": 11,
+          "explanations": [
+            {
+              "feature": "37.00 < N <= 84.25",
+              "weight": 0.08032617233406521
+            },
+            {
+              "feature": "K <= 20.00",
+              "weight": 0.07815823424907516
+            },
+            {
+              "feature": "humidity <= 60.26",
+              "weight": 0.04066512609249632
+            },
+            {
+              "feature": "6.43 < ph <= 6.92",
+              "weight": 0.012296682983224238
+            },
+            {
+              "feature": "temperature > 28.56",
+              "weight": -0.008762549863660185
+            },
+            {
+              "feature": "P <= 28.00",
+              "weight": -0.003315984078154779
+            }
+          ]
+        },
+        "curves": {
+          "topk_confidence": {
+            "x": [
+              "maize",
+              "mothbeans",
+              "pigeonpeas"
+            ],
+            "y": [
+              0.9561508893966675,
+              0.016811668872833252,
+              0.003002708312124014
+            ]
+          }
+        },
+        "llm_curves": {
+          "decision_stages": {
+            "x": [
+              "raw_model",
+              "calendar_rerank",
+              "final"
+            ],
+            "y": [
+              0.9561508893966675,
+              0.9561508893966675,
+              0.5736905336380006
+            ]
+          },
+          "topk_confidence": {
+            "x": [
+              "maize",
+              "mothbeans",
+              "pigeonpeas"
+            ],
+            "y": [
+              0.9561508893966675,
+              0.016811668872833252,
+              0.003002708312124014
+            ]
+          },
+          "shap_cumulative": {
+            "x": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6
+            ],
+            "y": [
+              0.5177395298682691,
+              0.8705859561082433,
+              0.9369834436103202,
+              0.9721107408311682,
+              0.993743154728943,
+              1.0
+            ],
+            "feature_order": [
+              "N",
+              "K",
+              "humidity",
+              "P",
+              "temperature",
+              "ph"
+            ]
+          }
+        },
+        "xai_eval": {
+          "report": {
+            "shap": {
+              "deletion_auc": 0.1233927789342124
+            },
+            "lime": {
+              "deletion_auc": 0.1475480522046079,
+              "fidelity_r2": -80.74680232330215
+            },
+            "stability": {
+              "avg_overlap": 0.9625,
+              "avg_rank_corr": 0.9790476190476192
+            }
+          },
+          "calibration": {
+            "bins": [
+              0.0,
+              0.1,
+              0.2,
+              0.30000000000000004,
+              0.4,
+              0.5,
+              0.6000000000000001,
+              0.7000000000000001,
+              0.8,
+              0.9,
+              1.0
+            ],
+            "accuracy": [
+              0.0,
+              0.0,
+              1.0,
+              0.0,
+              0.5,
+              0.8,
+              0.5625,
+              0.7333333333333333,
+              1.0,
+              0.9973333333333333
+            ],
+            "avg_confidence": [
+              0.0,
+              0.0,
+              0.22681665420532227,
+              0.0,
+              0.48267388343811035,
+              0.5475311875343323,
+              0.6496337652206421,
+              0.7525336742401123,
+              0.8534603118896484,
+              0.9719057679176331
+            ],
+            "bucket_sizes": [
+              0,
+              0,
+              1,
+              0,
+              2,
+              5,
+              16,
+              15,
+              26,
+              375
+            ],
+            "ece": 0.038858395273035196
+          }
+        },
+        "calendar_adjustment": {
+          "region": "Tamil Nadu",
+          "month": 2,
+          "suitability": {
+            "wheat": 0.88,
+            "rice": 0.4,
+            "maize": 0.55,
+            "cotton": 0.35,
+            "jute": 0.3
+          },
+          "details": {
+            "raw_topk": [
+              {
+                "rank": 1,
+                "crop": "maize",
+                "confidence": 0.9561508893966675
+              },
+              {
+                "rank": 2,
+                "crop": "mothbeans",
+                "confidence": 0.016811668872833252
+              },
+              {
+                "rank": 3,
+                "crop": "pigeonpeas",
+                "confidence": 0.003002708312124014
+              }
+            ],
+            "adjusted_topk": [
+              {
+                "crop": "maize",
+                "raw_model_confidence": 0.9561508893966675,
+                "calendar_suitability": 0.55,
+                "adjusted_confidence": 0.5736905336380006
+              },
+              {
+                "crop": "mothbeans",
+                "raw_model_confidence": 0.016811668872833252,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.0008405834436416627
+              },
+              {
+                "crop": "pigeonpeas",
+                "raw_model_confidence": 0.003002708312124014,
+                "calendar_suitability": 0.0,
+                "adjusted_confidence": 0.0001501354156062007
+              }
+            ]
+          },
+          "base_model": "xgboost",
+          "conflict": false
+        },
+        "provenance": {
+          "N": {
+            "value": 60.0,
+            "source": "user"
+          },
+          "P": {
+            "value": 25.0,
+            "source": "user"
+          },
+          "K": {
+            "value": 20.0,
+            "source": "user"
+          },
+          "temperature": {
+            "value": 29.0,
+            "source": "weather_api"
+          },
+          "humidity": {
+            "value": 56.0,
+            "source": "weather_api"
+          },
+          "ph": {
+            "value": 6.5,
+            "source": "soil_api_fallback"
+          }
+        },
+        "tool_calls": [
+          "geocode_location",
+          "get_weather",
+          "get_soil_properties",
+          "get_crop_calendar"
+        ],
+        "warnings": [
+          "Weather values are estimated from Open-Meteo current conditions.",
+          "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+          "Soil values are estimated from SoilGrids.",
+          "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+          "LLM fallback applied: validation_failed: Contains internal reasoning leak"
+        ]
+      },
+      "llm_response": "1) Final recommended crop + short reason\nMaize is selected after season-aware re-ranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.9562\nSeason-adjusted confidence: 0.5737 (after crop calendar). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\nmaize (raw=0.9562, suit=0.55, adj=0.5737); mothbeans (raw=0.0168, suit=0.00, adj=0.0008); pigeonpeas (raw=0.0030, suit=0.00, adj=0.0002)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate recent field weather against model assumptions.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan, prefer in-season options, and do manual agronomy review."
+    },
+    "inferred_tools_used": [
+      "geocode_location",
+      "get_crop_calendar",
+      "get_soil_properties",
+      "get_weather"
+    ],
+    "quality": {
+      "score": 100,
+      "required_hits": 5,
+      "cot_leaks": [],
+      "has_raw_confidence": true,
+      "has_adjusted_confidence": true,
+      "checklist_bullet_count": 3,
+      "invalid_tool_mentions": [],
+      "no_tools_violation": false,
+      "length_ok": true
+    }
+  }
+]

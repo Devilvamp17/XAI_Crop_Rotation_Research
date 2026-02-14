@@ -14,3 +14,5 @@ seaborn>=0.13.2
 numba>=0.61
 torch>=2.10.0
 ipykernel>=7.2.0
+scipy>=1.13.0
+python-dotenv>=1.2.1

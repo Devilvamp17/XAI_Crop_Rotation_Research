@@ -10,20 +10,34 @@ import numpy as np
 import pandas as pd
 import shap
 from fastapi import FastAPI, HTTPException
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, model_validator
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 FEATURE_COLUMNS = ["N", "P", "K", "temperature", "humidity", "ph"]
-TOP_N = 3
+DEFAULT_MODELS = ["logistic_regression", "random_forest", "xgboost"]
 
 
-class CropRequest(BaseModel):
+class CropFeatures(BaseModel):
     N: float = Field(..., description="Nitrogen value")
     P: float = Field(..., description="Phosphorous value")
     K: float = Field(..., description="Potassium value")
     temperature: float
     humidity: float
     ph: float
+
+
+class PredictRequest(BaseModel):
+    input: CropFeatures
+    models: list[str] = Field(default_factory=lambda: DEFAULT_MODELS.copy())
+    top_k: int = Field(default=3, ge=1, le=10)
+
+    @model_validator(mode="after")
+    def validate_models(self) -> "PredictRequest":
+        allowed = set(DEFAULT_MODELS)
+        bad = [m for m in self.models if m not in allowed]
+        if bad:
+            raise ValueError(f"Unsupported models requested: {bad}")
+        return self
 
 
 @lru_cache(maxsize=1)
@@ -37,7 +51,6 @@ def load_resources() -> dict[str, Any]:
     x_train = full_dataset[FEATURE_COLUMNS]
     background = shap.sample(x_train, 100, random_state=42)
 
-    # Build explainers from live models to avoid pickle incompatibility across SHAP versions.
     shap_lr = shap.LinearExplainer(lr_model, background)
     shap_rf = shap.TreeExplainer(rf_model)
     shap_xgb = shap.TreeExplainer(xgb_model)
@@ -93,6 +106,7 @@ def _predict_one_model(
     lime_explainer: lime.lime_tabular.LimeTabularExplainer,
     label_encoder: Any,
     input_df: pd.DataFrame,
+    top_k: int,
 ) -> dict[str, Any]:
     prediction = model.predict(input_df)
     prediction_proba = model.predict_proba(input_df)
@@ -100,12 +114,12 @@ def _predict_one_model(
     predicted_crop = label_encoder.inverse_transform(prediction)[0]
     confidence = float(np.max(prediction_proba[0]))
 
-    top_indices = np.argsort(prediction_proba[0])[::-1][:TOP_N]
+    top_indices = np.argsort(prediction_proba[0])[::-1][:top_k]
     top_crops = label_encoder.inverse_transform(top_indices)
     top_scores = prediction_proba[0][top_indices]
     top3 = [
         {"rank": idx + 1, "crop": str(top_crops[idx]), "confidence": float(top_scores[idx])}
-        for idx in range(TOP_N)
+        for idx in range(len(top_indices))
     ]
 
     predicted_class_index = int(np.where(model.classes_ == predicted_class)[0][0])
@@ -161,10 +175,16 @@ def _predict_one_model(
             "class_index": predicted_class_index,
             "explanations": lime_items,
         },
+        "curves": {
+            "topk_confidence": {
+                "x": [str(c) for c in top_crops.tolist()],
+                "y": [float(s) for s in top_scores.tolist()],
+            }
+        },
     }
 
 
-app = FastAPI(title="Crop Recommendation XAI API", version="1.0.0")
+app = FastAPI(title="Crop Recommendation XAI API", version="1.1.0")
 
 
 @app.get("/health")
@@ -173,16 +193,27 @@ def health() -> dict[str, str]:
 
 
 @app.post("/predict")
-def predict(payload: CropRequest) -> dict[str, Any]:
+def predict(payload: PredictRequest | CropFeatures) -> dict[str, Any]:
     try:
         resources = load_resources()
-        input_df = pd.DataFrame([payload.model_dump()], columns=FEATURE_COLUMNS)
+
+        if isinstance(payload, CropFeatures):
+            features = payload.model_dump()
+            selected_models = DEFAULT_MODELS
+            top_k = 3
+        else:
+            features = payload.input.model_dump()
+            selected_models = payload.models
+            top_k = payload.top_k
+
+        input_df = pd.DataFrame([features], columns=FEATURE_COLUMNS)
 
         label_encoder = resources["label_encoder"]
         lime_explainer = resources["lime_explainer"]
 
         model_outputs = {}
-        for model_name, artifact in resources["models"].items():
+        for model_name in selected_models:
+            artifact = resources["models"][model_name]
             model_outputs[model_name] = _predict_one_model(
                 model_name=model_name,
                 model=artifact["model"],
@@ -190,10 +221,11 @@ def predict(payload: CropRequest) -> dict[str, Any]:
                 lime_explainer=lime_explainer,
                 label_encoder=label_encoder,
                 input_df=input_df,
+                top_k=top_k,
             )
 
         return {
-            "input": payload.model_dump(),
+            "input": features,
             "models": model_outputs,
         }
 

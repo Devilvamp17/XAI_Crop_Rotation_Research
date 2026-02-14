@@ -1,0 +1,162 @@
+[
+  {
+    "id": "p01_standard_summary",
+    "query": "Give a standard recommendation summary.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p02_farmer_simple",
+    "query": "Explain this for a small farmer in very simple language with 3 clear action steps.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p03_risk_uncertainty",
+    "query": "Focus on risk and uncertainty. When should I avoid planting the top crop?",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p04_tradeoff_shap",
+    "query": "Compare tradeoffs among top 3 crops and mention strongest SHAP signals briefly.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p05_location_enrichment",
+    "query": "Use location enrichment for Delhi and explain confidence limits.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p06_no_tool_false_prompt",
+    "query": "Just greet me and do not call any external tools. Keep it one line.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p07_missing_npk_should_fail",
+    "query": "I only know location, please decide crop for me.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p08_low_confidence_action",
+    "query": "If confidence is low, give me a conservative plan.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 60,
+      "P": 25,
+      "K": 20,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p09_technical_xai",
+    "query": "Give a technical explanation with SHAP and LIME details for an agronomy researcher.",
+    "recommendation_input": {
+      "N": 110,
+      "P": 55,
+      "K": 65,
+      "temperature": 31.2,
+      "humidity": 78.0,
+      "ph": 6.8,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p10_irrelevant_prompt",
+    "query": "Write a haiku about farming but still include recommendation and confidence.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p11_calendar_conflict_explain",
+    "query": "If calendar changes top crop, explain conflict clearly and suggest fallback.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p12_input_validation_question",
+    "query": "Tell me what extra field data I should collect before planting.",
+    "recommendation_input": {
+      "N": 70,
+      "P": 30,
+      "K": 20,
+      "temperature": 29.0,
+      "humidity": 62.0,
+      "ph": 6.1,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "p13_market_angle",
+    "query": "Add a brief note on market-risk uncertainty while keeping agronomy first.",
+    "recommendation_input": {
+      "N": 95,
+      "P": 40,
+      "K": 50,
+      "temperature": 27.4,
+      "humidity": 75.0,
+      "ph": 6.7,
+      "top_k": 3
+    }
+  }
+]
