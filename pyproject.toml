@@ -1,0 +1,26 @@
+[project]
+name = "xai-crop-rotation-research"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.129.0",
+    "httpx>=0.28.1",
+    "ipykernel>=7.2.0",
+    "lime>=0.2.0.1",
+    "matplotlib>=3.10.8",
+    "numba>=0.61",
+    "numpy<2.4",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "python-dotenv>=1.2.1",
+    "scikit-learn==1.6.1",
+    "scipy>=1.17.0",
+    "seaborn>=0.13.2",
+    "shap>=0.43",
+    "streamlit>=1.54.0",
+    "torch>=2.10.0",
+    "uvicorn[standard]>=0.40.0",
+    "xgboost>=3.2.0",
+]

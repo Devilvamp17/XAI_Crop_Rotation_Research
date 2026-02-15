@@ -1,0 +1,48 @@
+[
+  {
+    "id": "route_no_tool_full_features",
+    "query": "Give concise recommendation; no location needed.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "temperature": 25.6,
+      "humidity": 71.4,
+      "ph": 6.4,
+      "top_k": 3
+    },
+    "expected": {
+      "status": 200,
+      "must_include_tools": ["get_crop_calendar"],
+      "must_exclude_tools": ["geocode_location", "get_weather", "get_soil_properties"]
+    }
+  },
+  {
+    "id": "route_location_with_npk",
+    "query": "Use location data and explain recommendation.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    },
+    "expected": {
+      "status": 200,
+      "must_include_tools": ["geocode_location", "get_weather", "get_soil_properties", "get_crop_calendar"]
+    }
+  },
+  {
+    "id": "route_location_missing_n",
+    "query": "I only know location and two nutrients.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    },
+    "expected": {
+      "status": 400
+    }
+  }
+]
