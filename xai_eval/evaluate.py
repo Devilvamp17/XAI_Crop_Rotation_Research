@@ -9,6 +9,7 @@ import lime.lime_tabular
 import numpy as np
 import pandas as pd
 from scipy.stats import spearmanr
+from sklearn.linear_model import Ridge
 from sklearn.metrics import r2_score
 from sklearn.model_selection import train_test_split
 
@@ -16,7 +17,14 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from main import FEATURE_COLUMNS, load_resources
+from main import (
+    FEATURE_COLUMNS,
+    LIME_DISCRETIZE_CONTINUOUS,
+    LIME_KERNEL_WIDTH,
+    LIME_NUM_SAMPLES,
+    build_lime_predict_fn,
+    load_resources,
+)
 
 
 def _predict_class_probability(model: Any, x_row: pd.DataFrame, class_index: int) -> float:
@@ -24,222 +32,193 @@ def _predict_class_probability(model: Any, x_row: pd.DataFrame, class_index: int
     return float(proba[class_index])
 
 
-def shap_deletion_auc(
+def _shap_importance_for_row(model: Any, shap_explainer: Any, row_df: pd.DataFrame) -> tuple[np.ndarray, int]:
+    pred_class = int(model.predict(row_df)[0])
+    class_idx = int(np.where(model.classes_ == pred_class)[0][0])
+    shap_vals = shap_explainer.shap_values(row_df)
+    if isinstance(shap_vals, list):
+        vals = np.array(shap_vals[class_idx][0], dtype=float)
+    elif isinstance(shap_vals, np.ndarray):
+        vals = np.array(shap_vals[0, :, class_idx], dtype=float) if shap_vals.ndim == 3 else np.array(shap_vals[0], dtype=float)
+    else:
+        raise ValueError("Unsupported SHAP value type")
+    return vals, class_idx
+
+
+def _lime_importance_for_row(
     model: Any,
-    x_test: pd.DataFrame,
-    shap_explainer: Any,
-    baseline: np.ndarray,
-    max_samples: int = 50,
-) -> float:
-    sample_df = x_test.iloc[:max_samples].copy()
+    lime_explainer: lime.lime_tabular.LimeTabularExplainer,
+    row_array: np.ndarray,
+    columns: list[str],
+    num_samples: int = 5000,
+) -> tuple[np.ndarray, int]:
+    row_df = pd.DataFrame([row_array], columns=columns)
+    pred_class = int(model.predict(row_df)[0])
+    class_idx = int(np.where(model.classes_ == pred_class)[0][0])
+
+    exp = lime_explainer.explain_instance(
+        data_row=row_array,
+        predict_fn=build_lime_predict_fn(model),
+        num_features=len(columns),
+        num_samples=num_samples,
+        labels=(class_idx,),
+    )
+
+    fmap = dict(exp.as_map().get(class_idx, []))
+    vals = np.array([float(fmap.get(i, 0.0)) for i in range(len(columns))], dtype=float)
+    return vals, class_idx
+
+
+def _deletion_auc(model: Any, x_test: pd.DataFrame, baseline: np.ndarray, importance_fn: Any, max_samples: int = 50) -> float:
     auc_values: list[float] = []
-
-    for _, row in sample_df.iterrows():
-        row_df = pd.DataFrame([row.values], columns=x_test.columns)
-        pred_class = int(model.predict(row_df)[0])
-        class_idx = int(np.where(model.classes_ == pred_class)[0][0])
-
-        shap_vals = shap_explainer.shap_values(row_df)
-        if isinstance(shap_vals, list):
-            vals = np.abs(np.array(shap_vals[class_idx][0], dtype=float))
-        elif isinstance(shap_vals, np.ndarray):
-            vals = np.abs(np.array(shap_vals[0, :, class_idx], dtype=float)) if shap_vals.ndim == 3 else np.abs(
-                np.array(shap_vals[0], dtype=float)
-            )
-        else:
-            continue
-
-        order = np.argsort(vals)[::-1]
+    for _, row in x_test.iloc[:max_samples].iterrows():
+        row_array = row.values.astype(float)
+        row_df = pd.DataFrame([row_array], columns=x_test.columns)
+        vals, class_idx = importance_fn(row_df, row_array)
+        order = np.argsort(np.abs(vals))[::-1]
         probs = [_predict_class_probability(model, row_df, class_idx)]
-
-        modified = row.values.astype(float).copy()
+        modified = row_array.copy()
         for feat_idx in order:
             modified[feat_idx] = baseline[feat_idx]
-            mod_df = pd.DataFrame([modified], columns=x_test.columns)
-            probs.append(_predict_class_probability(model, mod_df, class_idx))
-
-        x_axis = np.linspace(0.0, 1.0, len(probs))
-        auc = float(np.trapezoid(probs, x_axis))
-        auc_values.append(auc)
-
+            probs.append(_predict_class_probability(model, pd.DataFrame([modified], columns=x_test.columns), class_idx))
+        auc_values.append(float(np.trapezoid(probs, np.linspace(0.0, 1.0, len(probs)))))
     return float(np.mean(auc_values)) if auc_values else float("nan")
 
 
-def lime_fidelity_r2(
-    model: Any,
-    lime_explainer: lime.lime_tabular.LimeTabularExplainer,
-    x_test: pd.DataFrame,
-    max_samples: int = 25,
-) -> float:
-    model_scores: list[float] = []
-    lime_scores: list[float] = []
+def _insertion_auc(model: Any, x_test: pd.DataFrame, baseline: np.ndarray, importance_fn: Any, max_samples: int = 50) -> float:
+    auc_values: list[float] = []
     for _, row in x_test.iloc[:max_samples].iterrows():
         row_array = row.values.astype(float)
-        pred_class = int(model.predict(pd.DataFrame([row_array], columns=x_test.columns))[0])
-        class_idx = int(np.where(model.classes_ == pred_class)[0][0])
-
-        exp = lime_explainer.explain_instance(
-            data_row=row_array,
-            predict_fn=lambda arr: model.predict_proba(pd.DataFrame(arr, columns=x_test.columns)),
-            num_features=len(x_test.columns),
-            num_samples=2000,
-            labels=(class_idx,),
-        )
-
-        local_pred = exp.local_pred[0] if hasattr(exp, "local_pred") else None
-        model_pred = model.predict_proba(pd.DataFrame([row_array], columns=x_test.columns))[0][class_idx]
-        if local_pred is not None:
-            model_scores.append(float(model_pred))
-            lime_scores.append(float(local_pred))
-
-    if len(model_scores) < 2:
-        return float("nan")
-    return float(r2_score(model_scores, lime_scores))
+        row_df = pd.DataFrame([row_array], columns=x_test.columns)
+        vals, class_idx = importance_fn(row_df, row_array)
+        order = np.argsort(np.abs(vals))[::-1]
+        modified = baseline.astype(float).copy()
+        probs = []
+        for feat_idx in [-1, *order.tolist()]:
+            if feat_idx >= 0:
+                modified[feat_idx] = row_array[feat_idx]
+            probs.append(_predict_class_probability(model, pd.DataFrame([modified], columns=x_test.columns), class_idx))
+        auc_values.append(float(np.trapezoid(probs, np.linspace(0.0, 1.0, len(probs)))))
+    return float(np.mean(auc_values)) if auc_values else float("nan")
 
 
-def lime_deletion_auc(
-    model: Any,
-    lime_explainer: lime.lime_tabular.LimeTabularExplainer,
-    x_test: pd.DataFrame,
-    baseline: np.ndarray,
-    max_samples: int = 40,
-) -> float:
-    sample_df = x_test.iloc[:max_samples].copy()
-    auc_values: list[float] = []
+def _lime_kernel_weights(neighborhood: np.ndarray, center: np.ndarray, feature_std: np.ndarray) -> np.ndarray:
+    safe_std = np.where(feature_std <= 1e-8, 1.0, feature_std)
+    z = (neighborhood - center.reshape(1, -1)) / safe_std.reshape(1, -1)
+    distances = np.linalg.norm(z, axis=1)
+    return np.sqrt(np.exp(-(distances**2) / max(LIME_KERNEL_WIDTH**2, 1e-8)))
 
-    for _, row in sample_df.iterrows():
+
+def _lime_fidelity_metrics(model: Any, x_test: pd.DataFrame, feature_std: np.ndarray, max_samples: int = 30) -> dict[str, Any]:
+    scores: list[float] = []
+    predict_fn = build_lime_predict_fn(model)
+
+    for _, row in x_test.iloc[:max_samples].iterrows():
         row_array = row.values.astype(float)
         row_df = pd.DataFrame([row_array], columns=x_test.columns)
         pred_class = int(model.predict(row_df)[0])
         class_idx = int(np.where(model.classes_ == pred_class)[0][0])
 
-        exp = lime_explainer.explain_instance(
-            data_row=row_array,
-            predict_fn=lambda arr: model.predict_proba(pd.DataFrame(arr, columns=x_test.columns)),
-            num_features=len(x_test.columns),
-            num_samples=2000,
-            labels=(class_idx,),
-        )
+        safe_std = np.where(feature_std <= 1e-8, 1.0, feature_std)
+        noise = np.random.normal(loc=0.0, scale=safe_std.reshape(1, -1), size=(max(LIME_NUM_SAMPLES, 5000), row_array.shape[0]))
+        neighborhood = row_array.reshape(1, -1) + noise
 
-        fmap = dict(exp.as_map().get(class_idx, []))
-        if not fmap:
-            continue
+        y_black_box = predict_fn(neighborhood)[:, class_idx]
+        weights = _lime_kernel_weights(neighborhood, row_array, feature_std)
 
-        order = sorted(range(len(x_test.columns)), key=lambda i: abs(float(fmap.get(i, 0.0))), reverse=True)
-        probs = [_predict_class_probability(model, row_df, class_idx)]
+        surrogate = Ridge(alpha=1.0, fit_intercept=True)
+        surrogate.fit(neighborhood, y_black_box, sample_weight=weights)
+        y_sur = surrogate.predict(neighborhood)
+        r2 = float(r2_score(y_black_box, y_sur))
+        if np.isfinite(r2):
+            scores.append(r2)
 
-        modified = row_array.copy()
-        for feat_idx in order:
-            modified[feat_idx] = baseline[feat_idx]
-            mod_df = pd.DataFrame([modified], columns=x_test.columns)
-            probs.append(_predict_class_probability(model, mod_df, class_idx))
+    if not scores:
+        return {
+            "mean_fidelity_r2": float("nan"),
+            "median_fidelity_r2": float("nan"),
+            "fraction_r2_gt_0": float("nan"),
+            "per_sample_r2": [],
+        }
 
-        x_axis = np.linspace(0.0, 1.0, len(probs))
-        auc = float(np.trapezoid(probs, x_axis))
-        auc_values.append(auc)
+    arr = np.asarray(scores, dtype=float)
+    return {
+        "mean_fidelity_r2": float(np.mean(arr)),
+        "median_fidelity_r2": float(np.median(arr)),
+        "fraction_r2_gt_0": float(np.mean(arr > 0.0)),
+        "per_sample_r2": [float(v) for v in arr.tolist()],
+    }
 
-    return float(np.mean(auc_values)) if auc_values else float("nan")
 
-
-def stability_metrics(
-    model: Any,
-    shap_explainer: Any,
-    x_test: pd.DataFrame,
-    noise_levels: tuple[float, ...] = (0.01, 0.02, 0.05),
-    top_k: int = 3,
-    max_samples: int = 40,
-) -> dict[str, float]:
-    overlaps: list[float] = []
-    rank_corrs: list[float] = []
-
+def _stability_curves(model: Any, shap_explainer: Any, x_test: pd.DataFrame, noise_levels: tuple[float, ...] = (0.0, 0.01, 0.02, 0.05), top_k: int = 3, max_samples: int = 40) -> dict[str, Any]:
+    overlap_by_level: list[float] = []
+    rank_corr_by_level: list[float] = []
     sample_df = x_test.iloc[:max_samples]
 
-    for _, row in sample_df.iterrows():
-        base_df = pd.DataFrame([row.values], columns=x_test.columns)
-        pred_class = int(model.predict(base_df)[0])
-        class_idx = int(np.where(model.classes_ == pred_class)[0][0])
+    for nl in noise_levels:
+        overlaps: list[float] = []
+        rank_corrs: list[float] = []
+        for _, row in sample_df.iterrows():
+            base_df = pd.DataFrame([row.values], columns=x_test.columns)
+            base_vals, _ = _shap_importance_for_row(model, shap_explainer, base_df)
+            base_topk = set(np.argsort(np.abs(base_vals))[::-1][:top_k].tolist())
 
-        base_shap = shap_explainer.shap_values(base_df)
-        if isinstance(base_shap, list):
-            base_vals = np.array(base_shap[class_idx][0], dtype=float)
-        elif isinstance(base_shap, np.ndarray):
-            base_vals = np.array(base_shap[0, :, class_idx], dtype=float) if base_shap.ndim == 3 else np.array(
-                base_shap[0], dtype=float
-            )
-        else:
-            continue
-
-        base_rank = np.argsort(np.abs(base_vals))[::-1]
-        base_topk = set(base_rank[:top_k].tolist())
-
-        for nl in noise_levels:
             noisy = row.values.astype(float).copy()
-            noise = np.random.normal(loc=0.0, scale=nl, size=noisy.shape)
-            noisy += noise
-
+            if nl > 0:
+                noisy += np.random.normal(loc=0.0, scale=nl, size=noisy.shape)
             noisy_df = pd.DataFrame([noisy], columns=x_test.columns)
-            noisy_shap = shap_explainer.shap_values(noisy_df)
-            if isinstance(noisy_shap, list):
-                noisy_vals = np.array(noisy_shap[class_idx][0], dtype=float)
-            elif isinstance(noisy_shap, np.ndarray):
-                noisy_vals = np.array(noisy_shap[0, :, class_idx], dtype=float) if noisy_shap.ndim == 3 else np.array(
-                    noisy_shap[0], dtype=float
-                )
-            else:
-                continue
-
-            noisy_rank = np.argsort(np.abs(noisy_vals))[::-1]
-            noisy_topk = set(noisy_rank[:top_k].tolist())
+            noisy_vals, _ = _shap_importance_for_row(model, shap_explainer, noisy_df)
+            noisy_topk = set(np.argsort(np.abs(noisy_vals))[::-1][:top_k].tolist())
 
             inter = len(base_topk.intersection(noisy_topk))
             union = len(base_topk.union(noisy_topk))
-            overlap = inter / union if union else 0.0
-            overlaps.append(overlap)
+            overlaps.append(inter / union if union else 0.0)
 
             corr, _ = spearmanr(np.abs(base_vals), np.abs(noisy_vals))
             rank_corrs.append(float(corr) if corr is not None and not np.isnan(corr) else 0.0)
 
+        overlap_by_level.append(float(np.mean(overlaps)) if overlaps else float("nan"))
+        rank_corr_by_level.append(float(np.mean(rank_corrs)) if rank_corrs else float("nan"))
+
     return {
-        "avg_overlap": float(np.mean(overlaps)) if overlaps else float("nan"),
-        "avg_rank_corr": float(np.mean(rank_corrs)) if rank_corrs else float("nan"),
+        "noise_levels": [float(x) for x in noise_levels],
+        "topk_overlap": overlap_by_level,
+        "rank_corr": rank_corr_by_level,
+        "avg_overlap": float(np.mean(overlap_by_level)) if overlap_by_level else float("nan"),
+        "avg_rank_corr": float(np.mean(rank_corr_by_level)) if rank_corr_by_level else float("nan"),
     }
 
 
-def calibration_report(model: Any, x_test: pd.DataFrame, y_test: np.ndarray, bins: int = 10) -> dict[str, Any]:
+def _calibration_report(model: Any, x_test: pd.DataFrame, y_test: np.ndarray, bins: int = 10) -> dict[str, Any]:
     probs = model.predict_proba(x_test)
     preds = np.argmax(probs, axis=1)
     conf = np.max(probs, axis=1)
     correct = (preds == y_test).astype(float)
+    edges = np.linspace(0.0, 1.0, bins + 1)
 
-    bin_edges = np.linspace(0.0, 1.0, bins + 1)
-    avg_confidence: list[float] = []
-    accuracy: list[float] = []
+    acc: list[float] = []
+    avg: list[float] = []
     bucket_sizes: list[int] = []
-
     ece = 0.0
-    n = len(conf)
-
     for i in range(bins):
-        lo, hi = bin_edges[i], bin_edges[i + 1]
+        lo, hi = edges[i], edges[i + 1]
         mask = (conf >= lo) & (conf < hi if i < bins - 1 else conf <= hi)
-        count = int(np.sum(mask))
-        bucket_sizes.append(count)
-
-        if count == 0:
-            avg_confidence.append(0.0)
-            accuracy.append(0.0)
+        n = int(np.sum(mask))
+        bucket_sizes.append(n)
+        if n == 0:
+            acc.append(0.0)
+            avg.append(0.0)
             continue
-
-        avg_c = float(np.mean(conf[mask]))
-        acc = float(np.mean(correct[mask]))
-        avg_confidence.append(avg_c)
-        accuracy.append(acc)
-        ece += abs(acc - avg_c) * (count / n)
+        a = float(np.mean(correct[mask]))
+        c = float(np.mean(conf[mask]))
+        acc.append(a)
+        avg.append(c)
+        ece += abs(a - c) * (n / len(conf))
 
     return {
-        "bins": [float(x) for x in bin_edges.tolist()],
-        "accuracy": accuracy,
-        "avg_confidence": avg_confidence,
+        "bins": edges.tolist(),
+        "accuracy": acc,
+        "avg_confidence": avg,
         "bucket_sizes": bucket_sizes,
         "ece": float(ece),
     }
@@ -249,48 +228,86 @@ def run_evaluation(out_dir: Path = Path("xai_eval")) -> dict[str, Any]:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     resources = load_resources()
-    model_artifacts = resources["models"]
-
     data = pd.read_excel(Path("Crop_recommendation.xlsx"))
     x = data[FEATURE_COLUMNS]
     y = resources["label_encoder"].transform(data["label"]) if "label" in data.columns else None
     if y is None:
-        raise ValueError("Dataset must contain a 'label' column for evaluation.")
+        raise ValueError("Dataset must contain label column")
 
-    x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42, stratify=y)
+    x_train, x_test, _, y_test = train_test_split(x, y, test_size=0.2, random_state=42, stratify=y)
+
+    xgb = resources["models"]["xgboost"]["model"]
+    xgb_shap = resources["models"]["xgboost"]["shap"]
 
     lime_explainer = lime.lime_tabular.LimeTabularExplainer(
         training_data=x_train.values,
         feature_names=FEATURE_COLUMNS,
-        class_names=resources["label_encoder"].classes_.tolist(),
+        class_names=resources["label_encoder"].inverse_transform(np.asarray(xgb.classes_, dtype=int)).tolist(),
         mode="classification",
+        discretize_continuous=LIME_DISCRETIZE_CONTINUOUS,
+        kernel_width=LIME_KERNEL_WIDTH,
     )
 
     baseline = x_train.mean().values
+    shap_imp = lambda row_df, row_array: _shap_importance_for_row(xgb, xgb_shap, row_df)
+    lime_imp = lambda row_df, row_array: _lime_importance_for_row(xgb, lime_explainer, row_array, row_df.columns.tolist(), LIME_NUM_SAMPLES)
 
-    # Use XGBoost as primary evaluation target for global summary.
-    xgb = model_artifacts["xgboost"]["model"]
-    xgb_shap = model_artifacts["xgboost"]["shap"]
+    shap_del = _deletion_auc(xgb, x_test, baseline, shap_imp)
+    shap_ins = _insertion_auc(xgb, x_test, baseline, shap_imp)
+    lime_del = _deletion_auc(xgb, x_test, baseline, lambda d, a: lime_imp(d, a)[:2])
+    lime_ins = _insertion_auc(xgb, x_test, baseline, lambda d, a: lime_imp(d, a)[:2])
 
-    result = {
-        "shap": {
-            "deletion_auc": shap_deletion_auc(xgb, x_test, xgb_shap, baseline),
-        },
+    lime_fid = _lime_fidelity_metrics(xgb, x_test, x_train.std().values.astype(float))
+    lime_r2 = float(lime_fid.get("mean_fidelity_r2", float("nan")))
+    lime_status = "reliable" if lime_r2 >= 0.2 else "unreliable"
+
+    stability = _stability_curves(xgb, xgb_shap, x_test)
+
+    overlap_vals = []
+    for _, row in x_test.iloc[:50].iterrows():
+        row_array = row.values.astype(float)
+        row_df = pd.DataFrame([row_array], columns=x_test.columns)
+        svals, _ = _shap_importance_for_row(xgb, xgb_shap, row_df)
+        lvals, _ = _lime_importance_for_row(xgb, lime_explainer, row_array, x_test.columns.tolist(), LIME_NUM_SAMPLES)
+        sset = set(np.argsort(np.abs(svals))[::-1][:3].tolist())
+        lset = set(np.argsort(np.abs(lvals))[::-1][:3].tolist())
+        union = len(sset.union(lset))
+        overlap_vals.append((len(sset.intersection(lset)) / union) if union else 0.0)
+
+    per_model_calib = {name: _calibration_report(artifact["model"], x_test, y_test) for name, artifact in resources["models"].items()}
+
+    report = {
+        "shap": {"deletion_auc": shap_del, "insertion_auc": shap_ins},
         "lime": {
-            "deletion_auc": lime_deletion_auc(xgb, lime_explainer, x_test, baseline),
-            "fidelity_r2": lime_fidelity_r2(xgb, lime_explainer, x_test),
+            "deletion_auc": lime_del,
+            "insertion_auc": lime_ins,
+            "fidelity_r2": lime_r2,
+            "mean_fidelity_r2": lime_fid.get("mean_fidelity_r2"),
+            "median_fidelity_r2": lime_fid.get("median_fidelity_r2"),
+            "fraction_r2_gt_0": lime_fid.get("fraction_r2_gt_0"),
+            "status": lime_status,
         },
-        "stability": stability_metrics(xgb, xgb_shap, x_test),
+        "agreement": {
+            "shap_lime_topk_jaccard": float(np.mean(overlap_vals)) if overlap_vals else float("nan"),
+            "enforce_shap_lime_agreement": lime_status != "unreliable",
+        },
+        "stability": {"avg_overlap": stability.get("avg_overlap"), "avg_rank_corr": stability.get("avg_rank_corr")},
     }
 
-    calibration = calibration_report(xgb, x_test, y_test)
+    curves = {
+        "stability": stability,
+        "calibration": per_model_calib,
+        "lime_fidelity_r2_list": lime_fid.get("per_sample_r2", []),
+    }
 
-    (out_dir / "report.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
-    (out_dir / "evaluation_report.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
+    calibration = dict(per_model_calib.get("xgboost", {}))
+    calibration["per_model"] = per_model_calib
+
+    (out_dir / "report.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
+    (out_dir / "curves.json").write_text(json.dumps(curves, indent=2), encoding="utf-8")
     (out_dir / "calibration_report.json").write_text(json.dumps(calibration, indent=2), encoding="utf-8")
-    return result
+    return report
 
 
 if __name__ == "__main__":
-    report = run_evaluation()
-    print(json.dumps(report, indent=2))
+    print(json.dumps(run_evaluation(), indent=2))

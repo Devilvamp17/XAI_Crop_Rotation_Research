@@ -1,0 +1,74 @@
+[
+  {
+    "id": "chunk_004145",
+    "title": "ICAR Zone Memory Row 4144",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_004138",
+    "title": "ICAR Zone Memory Row 4137",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+  },
+  {
+    "id": "chunk_004143",
+    "title": "ICAR Zone Memory Row 4142",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+  },
+  {
+    "id": "chunk_004139",
+    "title": "ICAR Zone Memory Row 4138",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:chickpea\nSUITABILITY:HIGH\nFAMILY:pulse\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/chickpea\nDATA_QUALITY:incomplete\n\nEVIDENCE:Chickpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004138_delhi_new_delhi_rabi_chickpea.md"
+  },
+  {
+    "id": "chunk_004138",
+    "title": "ICAR Zone Memory Row 4137",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+  },
+  {
+    "id": "chunk_004145",
+    "title": "ICAR Zone Memory Row 4144",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_004143",
+    "title": "ICAR Zone Memory Row 4142",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+  },
+  {
+    "id": "chunk_004139",
+    "title": "ICAR Zone Memory Row 4138",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:chickpea\nSUITABILITY:HIGH\nFAMILY:pulse\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/chickpea\nDATA_QUALITY:incomplete\n\nEVIDENCE:Chickpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004138_delhi_new_delhi_rabi_chickpea.md"
+  },
+  {
+    "id": "chunk_004138",
+    "title": "ICAR Zone Memory Row 4137",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+  },
+  {
+    "id": "chunk_004145",
+    "title": "ICAR Zone Memory Row 4144",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_004143",
+    "title": "ICAR Zone Memory Row 4142",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+  },
+  {
+    "id": "chunk_004139",
+    "title": "ICAR Zone Memory Row 4138",
+    "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:chickpea\nSUITABILITY:HIGH\nFAMILY:pulse\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/chickpea\nDATA_QUALITY:incomplete\n\nEVIDENCE:Chickpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/004138_delhi_new_delhi_rabi_chickpea.md"
+  }
+]

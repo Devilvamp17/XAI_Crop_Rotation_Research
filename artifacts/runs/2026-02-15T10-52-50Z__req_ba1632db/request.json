@@ -1,0 +1,23 @@
+{
+  "request_id": "req_ba1632db",
+  "timestamp": "2026-02-15T10-52-50Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "If confidence is low, give me a conservative plan.",
+  "recommendation_input": {
+    "location": "Delhi, India",
+    "region": null,
+    "month": null,
+    "N": 60.0,
+    "P": 25.0,
+    "K": 20.0,
+    "temperature": null,
+    "humidity": null,
+    "ph": null,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

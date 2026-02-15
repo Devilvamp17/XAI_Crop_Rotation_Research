@@ -1,0 +1,23 @@
+{
+  "request_id": "req_89bda0e2",
+  "timestamp": "2026-02-15T10-47-11Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Keep agronomy first but add a brief market-risk note.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 94.0,
+    "P": 43.0,
+    "K": 48.0,
+    "temperature": 27.1,
+    "humidity": 72.3,
+    "ph": 6.6,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

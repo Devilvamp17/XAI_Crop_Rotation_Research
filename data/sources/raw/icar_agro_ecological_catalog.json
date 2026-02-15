@@ -1,0 +1,225 @@
+{
+  "nid": [
+    {
+      "value": 6635048
+    }
+  ],
+  "uuid": [
+    {
+      "value": "54494cf4-37e1-409c-aa09-0e5bdbdc0a0e"
+    }
+  ],
+  "vid": [
+    {
+      "value": 7900222
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "catalog",
+      "target_type": "node_type",
+      "target_uuid": "b258b2e8-3324-44d7-921e-29a47968a558"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2019-04-10T09:27:15+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 89,
+      "target_type": "user",
+      "target_uuid": "db29c28c-21e4-4ff8-90f5-153a419a6d7e",
+      "url": "/user/89"
+    }
+  ],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 5058329,
+      "target_type": "user",
+      "target_uuid": "28d39dcd-41cb-4a03-8006-0102d66f1e32",
+      "url": "/user/5058329"
+    }
+  ],
+  "title": [
+    {
+      "value": "Agro-Ecological Zoning"
+    }
+  ],
+  "created": [
+    {
+      "value": "2019-04-10T05:36:50+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2019-07-15T05:22:13+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": false
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "moderation_state": [
+    {
+      "value": "published"
+    }
+  ],
+  "path": [
+    {
+      "alias": "/catalog/agro-ecological-zoning",
+      "pid": 4889,
+      "langcode": "en"
+    }
+  ],
+  "body": [
+    {
+      "value": "This provides agro-ecological regions as given by ICAR-NBSS&LUP, Nagpur",
+      "format": null,
+      "processed": "<p>This provides agro-ecological regions as given by ICAR-NBSS&amp;LUP, Nagpur</p>\n",
+      "summary": null
+    }
+  ],
+  "field_accept_web_services_policy": [],
+  "field_asset_jurisdiction": [
+    {
+      "target_id": 2866,
+      "target_type": "taxonomy_term",
+      "target_uuid": "669bcfad-eb44-4226-915e-c1a3f16b6796",
+      "url": "/taxonomy/term/2866"
+    }
+  ],
+  "field_catalog_ogimage": [],
+  "field_city": [],
+  "field_consent": [],
+  "field_custom_payload": [],
+  "field_data_source": [],
+  "field_disclaimer": [],
+  "field_domain": [
+    {
+      "target_id": "4",
+      "target_type": "ogdp_domain",
+      "target_uuid": null,
+      "url": "/ogdp-domain/4"
+    }
+  ],
+  "field_domain_visibility": [
+    {
+      "target_id": "4",
+      "target_type": "ogdp_domain",
+      "target_uuid": null,
+      "url": "/ogdp-domain/4"
+    }
+  ],
+  "field_frequency": [
+    {
+      "target_id": 4429,
+      "target_type": "taxonomy_term",
+      "target_uuid": "fbdf1228-0e26-4ef3-8c73-ca6c44199b2f",
+      "url": "/taxonomy/term/4429"
+    }
+  ],
+  "field_from_api": [
+    {
+      "value": "1"
+    }
+  ],
+  "field_govt_type": [
+    {
+      "value": "Central"
+    }
+  ],
+  "field_group_name": [
+    {
+      "target_id": 184052,
+      "target_type": "taxonomy_term",
+      "target_uuid": "2f83f929-efd5-44de-af27-c856147b83f8",
+      "url": "/taxonomy/term/184052"
+    }
+  ],
+  "field_is_api_available": [],
+  "field_keywords": [
+    {
+      "target_id": 184051,
+      "target_type": "taxonomy_term",
+      "target_uuid": "2974c766-a3ef-490f-89f3-d17522397512",
+      "url": "/taxonomy/term/184051"
+    }
+  ],
+  "field_location": [],
+  "field_ministry_department": [
+    {
+      "target_id": 9419,
+      "target_type": "taxonomy_term",
+      "target_uuid": "9a096f13-64ab-4aea-aa5e-509a45774748",
+      "url": "/taxonomy/term/9419"
+    },
+    {
+      "target_id": 9420,
+      "target_type": "taxonomy_term",
+      "target_uuid": "04c3290c-78ca-4dbd-be67-61174ad9927b",
+      "url": "/taxonomy/term/9420"
+    },
+    {
+      "target_id": 9425,
+      "target_type": "taxonomy_term",
+      "target_uuid": "7823766a-2c35-4a70-9087-4742bebe0db9",
+      "url": "/taxonomy/term/9425"
+    }
+  ],
+  "field_other_org": [],
+  "field_reference_url": [],
+  "field_resource_template_enforce": [],
+  "field_resource_template_file": [],
+  "field_search_keywords": [],
+  "field_sector": [
+    {
+      "target_id": 9212,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cf8b38b7-2f8c-4a8d-8096-0e6ddb7effc2",
+      "url": "/taxonomy/term/9212"
+    },
+    {
+      "target_id": 9216,
+      "target_type": "taxonomy_term",
+      "target_uuid": "352aee50-6777-416f-8d57-12dec4852edd",
+      "url": "/taxonomy/term/9216"
+    }
+  ],
+  "field_state_department": [],
+  "field_view_count": [
+    {
+      "value": 751
+    }
+  ]
+}

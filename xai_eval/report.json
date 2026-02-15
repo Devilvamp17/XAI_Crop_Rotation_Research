@@ -1,13 +1,23 @@
 {
   "shap": {
-    "deletion_auc": 0.1233927789342124
+    "deletion_auc": 0.1233927789342124,
+    "insertion_auc": 0.6633253107538137
   },
   "lime": {
-    "deletion_auc": 0.1475480522046079,
-    "fidelity_r2": -80.74680232330215
+    "deletion_auc": 0.13723559503113697,
+    "insertion_auc": 0.6375603082294886,
+    "fidelity_r2": 0.25305185027815585,
+    "mean_fidelity_r2": 0.25305185027815585,
+    "median_fidelity_r2": 0.2425625371922034,
+    "fraction_r2_gt_0": 1.0,
+    "status": "reliable"
+  },
+  "agreement": {
+    "shap_lime_topk_jaccard": 0.542,
+    "enforce_shap_lime_agreement": true
   },
   "stability": {
-    "avg_overlap": 0.9625,
-    "avg_rank_corr": 0.9790476190476192
+    "avg_overlap": 0.98125,
+    "avg_rank_corr": 0.9917857142857143
   }
 }

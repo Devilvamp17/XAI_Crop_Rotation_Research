@@ -1,0 +1,74 @@
+[
+  {
+    "id": "chunk_001413",
+    "title": "ICAR Zone Memory Row 1412",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+  },
+  {
+    "id": "chunk_001420",
+    "title": "ICAR Zone Memory Row 1419",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_001418",
+    "title": "ICAR Zone Memory Row 1417",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+  },
+  {
+    "id": "chunk_001417",
+    "title": "ICAR Zone Memory Row 1416",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001416_assam_bajali_rabi_mustard.md"
+  },
+  {
+    "id": "chunk_001413",
+    "title": "ICAR Zone Memory Row 1412",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+  },
+  {
+    "id": "chunk_001420",
+    "title": "ICAR Zone Memory Row 1419",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_001418",
+    "title": "ICAR Zone Memory Row 1417",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+  },
+  {
+    "id": "chunk_001417",
+    "title": "ICAR Zone Memory Row 1416",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001416_assam_bajali_rabi_mustard.md"
+  },
+  {
+    "id": "chunk_001406",
+    "title": "ICAR Zone Memory Row 1405",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_KHARIF\nZONE_NAME:Assam kharif memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001405_assam_bajali_kharif_jute.md"
+  },
+  {
+    "id": "chunk_001413",
+    "title": "ICAR Zone Memory Row 1412",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+  },
+  {
+    "id": "chunk_001420",
+    "title": "ICAR Zone Memory Row 1419",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+  },
+  {
+    "id": "chunk_001418",
+    "title": "ICAR Zone Memory Row 1417",
+    "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+  }
+]

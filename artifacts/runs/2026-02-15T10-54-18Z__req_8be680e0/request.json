@@ -1,0 +1,23 @@
+{
+  "request_id": "req_8be680e0",
+  "timestamp": "2026-02-15T10-54-18Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Tell me what extra field data I should collect before planting.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 70.0,
+    "P": 30.0,
+    "K": 20.0,
+    "temperature": 29.0,
+    "humidity": 62.0,
+    "ph": 6.1,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

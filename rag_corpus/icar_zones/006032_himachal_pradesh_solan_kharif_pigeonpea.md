@@ -1,0 +1,20 @@
+# ICAR Zone Memory Row 6032
+
+ZONE_ID:AGROCLIM_HIMACHAL_PRADESH_KHARIF
+ZONE_NAME:Himachal Pradesh kharif memory zone
+STATE:Himachal Pradesh
+DISTRICT:Solan
+SEASON:kharif
+CROP:pigeonpea
+SUITABILITY:HIGH
+FAMILY:pulse
+RISK:drought
+SOIL:district-level soil detail unavailable in source snapshot
+CLIMATE:seasonal crop guidance extracted from cited official sources
+SOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)
+SOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/pigeonpea
+DATA_QUALITY:incomplete
+
+EVIDENCE:Pigeonpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Himachal Pradesh, district=Solan, lgd=25.
+
+Summary: This is a structured memory row for deterministic reranking.

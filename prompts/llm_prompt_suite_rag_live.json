@@ -1,0 +1,146 @@
+[
+  {
+    "id": "rag01_delhi_explain",
+    "query": "Use location enrichment for Delhi and explain why this crop fits current season.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag02_mumbai_uncertainty",
+    "query": "For Mumbai, explain recommendation with uncertainty and practical checks.",
+    "recommendation_input": {
+      "location": "Mumbai, India",
+      "N": 95,
+      "P": 45,
+      "K": 40,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag03_conflict_required",
+    "query": "If calendar changes top crop, explain that conflict clearly.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag04_farmer_simple",
+    "query": "Explain in simple farmer language and give exactly 3 action steps.",
+    "recommendation_input": {
+      "N": 70,
+      "P": 30,
+      "K": 20,
+      "temperature": 29.0,
+      "humidity": 62.0,
+      "ph": 6.1,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag05_technical_xai",
+    "query": "Give technical SHAP/LIME explanation suitable for an agronomy researcher.",
+    "recommendation_input": {
+      "N": 110,
+      "P": 55,
+      "K": 65,
+      "temperature": 31.2,
+      "humidity": 78.0,
+      "ph": 6.8,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag06_no_tools",
+    "query": "Do not use any external tools. Provide concise recommendation.",
+    "recommendation_input": {
+      "N": 84,
+      "P": 38,
+      "K": 36,
+      "temperature": 27.8,
+      "humidity": 68.5,
+      "ph": 6.4,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag07_missing_npk",
+    "query": "I only know location, decide crop.",
+    "recommendation_input": {
+      "location": "Pune, India",
+      "P": 30,
+      "K": 25,
+      "top_k": 3
+    },
+    "expected_status": 400
+  },
+  {
+    "id": "rag08_risk_plan",
+    "query": "If confidence is low, provide a conservative plan.",
+    "recommendation_input": {
+      "location": "Chennai, India",
+      "N": 60,
+      "P": 25,
+      "K": 20,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag09_rice_case",
+    "query": "Recommend for this direct input and include raw vs adjusted confidence.",
+    "recommendation_input": {
+      "N": 99,
+      "P": 50,
+      "K": 45,
+      "temperature": 28.2,
+      "humidity": 80.0,
+      "ph": 6.7,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag10_maize_case",
+    "query": "Give recommendation and mention strongest feature signal from SHAP.",
+    "recommendation_input": {
+      "N": 75,
+      "P": 30,
+      "K": 25,
+      "temperature": 26.8,
+      "humidity": 60.5,
+      "ph": 6.2,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag11_high_uncertain_location",
+    "query": "Use location enrichment for Jaipur and focus on uncertainty limits.",
+    "recommendation_input": {
+      "location": "Jaipur, India",
+      "N": 85,
+      "P": 35,
+      "K": 30,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "rag12_compare_tradeoff",
+    "query": "Compare top 3 crops and explain tradeoff between probability and season fit.",
+    "recommendation_input": {
+      "N": 88,
+      "P": 40,
+      "K": 42,
+      "temperature": 26.1,
+      "humidity": 70.2,
+      "ph": 6.5,
+      "top_k": 3
+    }
+  }
+]

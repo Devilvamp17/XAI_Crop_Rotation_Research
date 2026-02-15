@@ -1,0 +1,23 @@
+{
+  "request_id": "req_439b22b1",
+  "timestamp": "2026-02-15T10-47-41Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "What additional field measurements should I collect before planting?",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 68.0,
+    "P": 27.0,
+    "K": 21.0,
+    "temperature": 29.2,
+    "humidity": 61.5,
+    "ph": 6.0,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

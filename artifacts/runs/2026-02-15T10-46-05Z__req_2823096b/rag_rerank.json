@@ -1,0 +1,15 @@
+{
+  "season": "unknown",
+  "zone_resolution": "unknown",
+  "zone_id": null,
+  "zone_state": null,
+  "zone_district": null,
+  "queries": [],
+  "per_crop_suitability": {
+    "coffee": 1.0,
+    "jute": 1.0,
+    "rice": 1.0
+  },
+  "retrieval_hits": [],
+  "zone_match": null
+}

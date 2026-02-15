@@ -30,16 +30,32 @@ class AgentResponse(BaseModel):
     final_crop: str
     confidence: float
     raw_model_confidence: float
-    calendar_suitability: float
+    rag_suitability: float
     adjusted_confidence: float
     eps: float
+
+    # Backward compatibility aliases (deprecated)
+    calendar_suitability: float
+
     top3: list[dict[str, Any]]
     shap: dict[str, Any]
     lime: dict[str, Any]
     curves: dict[str, Any]
     llm_curves: dict[str, Any]
     xai_eval: dict[str, Any]
-    calendar_adjustment: dict[str, Any]
+
+    rag_rerank: dict[str, Any]
+    calendar_adjustment: dict[str, Any] = Field(default_factory=dict)
+    rerank_conflict: dict[str, Any] | None = None
+    zone_resolution: str
+    zone_id: str | None = None
+
+    # Backward compatibility alias (deprecated)
+    calendar_conflict: dict[str, Any] | None = None
+
+    deprecation: dict[str, str] = Field(default_factory=dict)
+    agreement_metrics: dict[str, Any] = Field(default_factory=dict)
+    confidence_components: dict[str, Any] = Field(default_factory=dict)
     provenance: dict[str, FeatureValue]
     tool_calls: list[str] = Field(default_factory=list)
     warnings: list[str] = Field(default_factory=list)
@@ -53,3 +69,4 @@ class LLMAdvisoryRequest(BaseModel):
 class LLMAdvisoryResponse(BaseModel):
     recommendation: AgentResponse
     llm_response: str
+    archive_run_dir: str | None = None

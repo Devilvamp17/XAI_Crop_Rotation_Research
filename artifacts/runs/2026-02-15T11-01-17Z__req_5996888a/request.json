@@ -1,0 +1,23 @@
+{
+  "request_id": "req_5996888a",
+  "timestamp": "2026-02-15T11-01-17Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Give a technical SHAP/LIME-focused summary for an agronomy researcher.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 110.0,
+    "P": 55.0,
+    "K": 65.0,
+    "temperature": 31.2,
+    "humidity": 78.0,
+    "ph": 6.8,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

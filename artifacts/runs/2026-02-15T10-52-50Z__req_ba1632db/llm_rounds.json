@@ -1,0 +1,5 @@
+{
+  "round1_text": "",
+  "round2_text": "",
+  "chosen_text": "1) Final recommended crop + short reason\nMaize is selected after ICAR RAG reranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.9270\nSeason-adjusted confidence: 0.3250 (after ICAR RAG rerank). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\nmaize (raw=0.9270, suit=0.50, adj=0.3250); kidneybeans (raw=0.0231, suit=0.50, adj=0.0081); mothbeans (raw=0.0163, suit=0.50, adj=0.0057)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate local weather and irrigation conditions against current season.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan and manual agronomy review."
+}

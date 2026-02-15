@@ -1,0 +1,8 @@
+# Calibration Metrics
+
+| model | ece |
+| --- | --- |
+| logistic_regression | 0.01737529906399907 |
+| random_forest | 0.05793181818181825 |
+| xgboost | 0.038858395273035196 |
+

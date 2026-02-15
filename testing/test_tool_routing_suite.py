@@ -32,8 +32,8 @@ def infer_tools_used(response_json: dict[str, Any]) -> list[str]:
         if source in {"soil_api", "soil_api_fallback"}:
             tools.add("get_soil_properties")
 
-    if rec.get("calendar_adjustment"):
-        tools.add("get_crop_calendar")
+    if rec.get("rag_rerank"):
+        tools.add("get_icar_rag_rerank")
 
     if any(
         str(v.get("source", "")).endswith("api") or str(v.get("source", "")).endswith("fallback")
@@ -52,7 +52,7 @@ def main() -> None:
     original_geocode = agent_main.geocode_location
     original_weather = agent_main.get_weather
     original_soil = agent_main.get_soil_properties
-    original_calendar = agent_main.get_crop_calendar
+    original_calendar = agent_main.get_icar_rag_rerank
     original_chat = agent_main.llm_client.chat
     client = TestClient(agent_main.app)
 
@@ -77,13 +77,13 @@ def main() -> None:
         agent_main.geocode_location = lambda location: {"lat": 28.61, "lon": 77.20, "region": "global", "source": "nominatim"}
         agent_main.get_weather = lambda lat, lon: {"temperature": 30.0, "humidity": 65.0, "rainfall": 0.2}
         agent_main.get_soil_properties = lambda lat, lon: {"ph": 6.7, "texture": "unknown"}
-        agent_main.get_crop_calendar = lambda region, month: {"rice": 0.1, "maize": 0.9, "wheat": 0.8}
+        agent_main.get_icar_rag_rerank = lambda region, month: {"rice": 0.1, "maize": 0.9, "wheat": 0.8}
         agent_main.llm_client.chat = lambda system_prompt, user_prompt: (
             "1) Final recommended crop + short reason\n"
             "Maize after calendar rerank.\n\n"
             "2) Confidence interpretation\n"
             "Raw model confidence (from ML): 0.8000\n"
-            "Season-adjusted confidence: 0.1425 (after crop calendar). Threshold reference: 0.60\n\n"
+            "Season-adjusted confidence: 0.1425 (after ICAR RAG rerank). Threshold reference: 0.60\n\n"
             "3) Top-3 tradeoff note (if available)\n"
             "maize (raw=0.1500, suit=0.90, adj=0.1425).\n\n"
             "4) Action checklist\n"
@@ -128,7 +128,7 @@ def main() -> None:
         agent_main.geocode_location = original_geocode
         agent_main.get_weather = original_weather
         agent_main.get_soil_properties = original_soil
-        agent_main.get_crop_calendar = original_calendar
+        agent_main.get_icar_rag_rerank = original_calendar
         agent_main.llm_client.chat = original_chat
 
     if failures:

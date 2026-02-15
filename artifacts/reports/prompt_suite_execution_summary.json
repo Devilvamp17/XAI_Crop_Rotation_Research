@@ -1,0 +1,47 @@
+{
+  "ok": true,
+  "results": [
+    {
+      "name": "main",
+      "cmd": "uv run python scripts/run_prompt_suite.py --prompts prompts/llm_prompt_suite.json --out-json artifacts/llm_prompt_outputs_main.json --out-md artifacts/llm_prompt_outputs_main.md --agent-api http://127.0.0.1:8100",
+      "returncode": 0,
+      "timeout": false,
+      "stdout": "Prompt cases: 13 | Passed: 13 | Failed: 0\nJSON report: artifacts/llm_prompt_outputs_main.json\nMarkdown report: artifacts/llm_prompt_outputs_main.md\n",
+      "stderr": "",
+      "counts": {
+        "total": 13,
+        "passed": 13,
+        "failed": 0
+      },
+      "json_output_exists": true
+    },
+    {
+      "name": "rag_live",
+      "cmd": "uv run python scripts/run_prompt_suite.py --prompts prompts/llm_prompt_suite_rag_live.json --out-json artifacts/llm_prompt_outputs_rag_live.json --out-md artifacts/llm_prompt_outputs_rag_live.md --agent-api http://127.0.0.1:8100",
+      "returncode": 0,
+      "timeout": false,
+      "stdout": "Prompt cases: 12 | Passed: 12 | Failed: 0\nJSON report: artifacts/llm_prompt_outputs_rag_live.json\nMarkdown report: artifacts/llm_prompt_outputs_rag_live.md\n",
+      "stderr": "",
+      "counts": {
+        "total": 12,
+        "passed": 12,
+        "failed": 0
+      },
+      "json_output_exists": true
+    },
+    {
+      "name": "run2",
+      "cmd": "uv run python scripts/run_prompt_suite.py --prompts prompts/llm_prompt_suite_run2.json --out-json artifacts/llm_prompt_outputs_run2.json --out-md artifacts/llm_prompt_outputs_run2.md --agent-api http://127.0.0.1:8100",
+      "returncode": 0,
+      "timeout": false,
+      "stdout": "Prompt cases: 8 | Passed: 8 | Failed: 0\nJSON report: artifacts/llm_prompt_outputs_run2.json\nMarkdown report: artifacts/llm_prompt_outputs_run2.md\n",
+      "stderr": "",
+      "counts": {
+        "total": 8,
+        "passed": 8,
+        "failed": 0
+      },
+      "json_output_exists": true
+    }
+  ]
+}

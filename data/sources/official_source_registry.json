@@ -1,0 +1,34 @@
+[
+  {
+    "id": "icar_agro_ecological_catalog",
+    "url": "https://www.data.gov.in/backend/dms/v2/catalog/agro-ecological-zoning?_format=json",
+    "status": "200",
+    "saved_as": "data/sources/raw/icar_agro_ecological_catalog.json",
+    "fetched_at_utc": "2026-02-14T10:14:02.925467+00:00",
+    "notes": "OGD catalog metadata referencing ICAR-NBSS&LUP agro-ecological regions."
+  },
+  {
+    "id": "des_crop_production_catalog",
+    "url": "https://www.data.gov.in/backend/dms/v2/catalog/district-wise-season-wise-crop-production-statistics-0?_format=json",
+    "status": "200",
+    "saved_as": "data/sources/raw/des_crop_production_catalog.json",
+    "fetched_at_utc": "2026-02-14T10:14:03.329224+00:00",
+    "notes": "OGD catalog metadata for district/season/crop production statistics (DES, MoA&FW)."
+  },
+  {
+    "id": "des_crop_production_resource",
+    "url": "https://www.data.gov.in/resource/district-wise-season-wise-crop-production-statistics-1997",
+    "status": "200",
+    "saved_as": "data/sources/raw/des_crop_production_resource.html",
+    "fetched_at_utc": "2026-02-14T10:14:04.115122+00:00",
+    "notes": "Resource detail page containing external datafile pointer."
+  },
+  {
+    "id": "icar_agro_ecological_page",
+    "url": "https://www.data.gov.in/catalog/agro-ecological-zoning",
+    "status": "200",
+    "saved_as": "data/sources/raw/icar_agro_ecological_page.html",
+    "fetched_at_utc": "2026-02-14T10:14:04.475756+00:00",
+    "notes": "Public catalog page for ICAR agro-ecological zoning."
+  }
+]

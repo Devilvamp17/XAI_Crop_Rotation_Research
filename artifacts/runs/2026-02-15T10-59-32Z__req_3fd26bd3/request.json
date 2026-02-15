@@ -1,0 +1,23 @@
+{
+  "request_id": "req_3fd26bd3",
+  "timestamp": "2026-02-15T10-59-32Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Use location enrichment for Mumbai and explain uncertainty clearly.",
+  "recommendation_input": {
+    "location": "Mumbai, India",
+    "region": null,
+    "month": null,
+    "N": 95.0,
+    "P": 45.0,
+    "K": 40.0,
+    "temperature": null,
+    "humidity": null,
+    "ph": null,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

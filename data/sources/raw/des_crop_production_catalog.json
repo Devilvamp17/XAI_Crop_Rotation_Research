@@ -1,0 +1,267 @@
+{
+  "nid": [
+    {
+      "value": 87631
+    }
+  ],
+  "uuid": [
+    {
+      "value": "f4435c3b-96be-4002-9839-aa3897dc732b"
+    }
+  ],
+  "vid": [
+    {
+      "value": 7846185
+    }
+  ],
+  "langcode": [
+    {
+      "value": "en"
+    }
+  ],
+  "type": [
+    {
+      "target_id": "catalog",
+      "target_type": "node_type",
+      "target_uuid": "b258b2e8-3324-44d7-921e-29a47968a558"
+    }
+  ],
+  "revision_timestamp": [
+    {
+      "value": "2013-05-24T09:50:52+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "revision_uid": [
+    {
+      "target_id": 220,
+      "target_type": "user",
+      "target_uuid": "3af2d26f-1544-42b2-8123-c7fe20aaf676",
+      "url": "/user/220"
+    }
+  ],
+  "status": [
+    {
+      "value": true
+    }
+  ],
+  "uid": [
+    {
+      "target_id": 5144028,
+      "target_type": "user",
+      "target_uuid": "6d6c06ee-52fc-4490-88fa-f6c9c47a3845",
+      "url": "/user/5144028"
+    }
+  ],
+  "title": [
+    {
+      "value": "District-wise, season-wise crop production statistics"
+    }
+  ],
+  "created": [
+    {
+      "value": "2013-05-20T05:44:00+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "changed": [
+    {
+      "value": "2021-07-06T06:10:45+00:00",
+      "format": "Y-m-d\\TH:i:sP"
+    }
+  ],
+  "promote": [
+    {
+      "value": false
+    }
+  ],
+  "sticky": [
+    {
+      "value": false
+    }
+  ],
+  "default_langcode": [
+    {
+      "value": true
+    }
+  ],
+  "revision_translation_affected": [
+    {
+      "value": true
+    }
+  ],
+  "moderation_state": [
+    {
+      "value": "published"
+    }
+  ],
+  "path": [
+    {
+      "alias": "/catalog/district-wise-season-wise-crop-production-statistics-0",
+      "pid": 9764,
+      "langcode": "en"
+    }
+  ],
+  "body": [
+    {
+      "value": "The data refers to district wise, crop wise, season wise and year wise data on crop covered area (Hectare) and production (Tonnes). The data is being used to study and analyse crop production, production contribution to district/State/country, Agro-climatic zone wise performance, and high yield production order for crops, crop growing pattern and diversification. The system is also a vital source for formulating crop related schemes and assessing their impacts.",
+      "format": null,
+      "processed": "<p>The data refers to district wise, crop wise, season wise and year wise data on crop covered area (Hectare) and production (Tonnes). The data is being used to study and analyse crop production, production contribution to district/State/country, Agro-climatic zone wise performance, and high yield production order for crops, crop growing pattern and diversification. The system is also a vital source for formulating crop related schemes and assessing their impacts.</p>\n",
+      "summary": null
+    }
+  ],
+  "field_accept_web_services_policy": [],
+  "field_asset_jurisdiction": [
+    {
+      "target_id": 2866,
+      "target_type": "taxonomy_term",
+      "target_uuid": "669bcfad-eb44-4226-915e-c1a3f16b6796",
+      "url": "/taxonomy/term/2866"
+    }
+  ],
+  "field_catalog_ogimage": [],
+  "field_city": [],
+  "field_consent": [],
+  "field_custom_payload": [],
+  "field_data_source": [],
+  "field_disclaimer": [],
+  "field_domain": [
+    {
+      "target_id": "4",
+      "target_type": "ogdp_domain",
+      "target_uuid": null,
+      "url": "/ogdp-domain/4"
+    }
+  ],
+  "field_domain_visibility": [
+    {
+      "target_id": "4",
+      "target_type": "ogdp_domain",
+      "target_uuid": null,
+      "url": "/ogdp-domain/4"
+    }
+  ],
+  "field_frequency": [
+    {
+      "target_id": 4436,
+      "target_type": "taxonomy_term",
+      "target_uuid": "6141b0b1-7be0-4db7-9db6-0993450d9ba2",
+      "url": "/taxonomy/term/4436"
+    }
+  ],
+  "field_from_api": [
+    {
+      "value": "0"
+    }
+  ],
+  "field_govt_type": [
+    {
+      "value": "Central"
+    }
+  ],
+  "field_group_name": [
+    {
+      "target_id": 14172,
+      "target_type": "taxonomy_term",
+      "target_uuid": "f8cf4de3-e3bf-4526-b290-daad90aeda84",
+      "url": "/taxonomy/term/14172"
+    }
+  ],
+  "field_is_api_available": [],
+  "field_keywords": [
+    {
+      "target_id": 12398,
+      "target_type": "taxonomy_term",
+      "target_uuid": "ea378622-732b-4f0b-839f-0f6e4b895b06",
+      "url": "/taxonomy/term/12398"
+    },
+    {
+      "target_id": 17245,
+      "target_type": "taxonomy_term",
+      "target_uuid": "aca18a20-196f-4ca7-8779-3714619983cf",
+      "url": "/taxonomy/term/17245"
+    },
+    {
+      "target_id": 17369,
+      "target_type": "taxonomy_term",
+      "target_uuid": "90a80198-cf9d-4bbb-975c-f02dcffd5eec",
+      "url": "/taxonomy/term/17369"
+    },
+    {
+      "target_id": 17375,
+      "target_type": "taxonomy_term",
+      "target_uuid": "751bdd1c-2356-4bb7-a43b-c7f22e2058f3",
+      "url": "/taxonomy/term/17375"
+    },
+    {
+      "target_id": 129401,
+      "target_type": "taxonomy_term",
+      "target_uuid": "b22f6fc0-b78c-470c-97a1-afad362a159d",
+      "url": "/taxonomy/term/129401"
+    },
+    {
+      "target_id": 129421,
+      "target_type": "taxonomy_term",
+      "target_uuid": "8f287946-831c-4ca9-8188-8653d46e9de1",
+      "url": "/taxonomy/term/129421"
+    },
+    {
+      "target_id": 129441,
+      "target_type": "taxonomy_term",
+      "target_uuid": "11391c2f-1d87-42bf-a646-bb6c0c2aeb7c",
+      "url": "/taxonomy/term/129441"
+    },
+    {
+      "target_id": 129461,
+      "target_type": "taxonomy_term",
+      "target_uuid": "57003805-c975-4f09-9f1d-bb9a3656c94e",
+      "url": "/taxonomy/term/129461"
+    }
+  ],
+  "field_location": [],
+  "field_ministry_department": [
+    {
+      "target_id": 9419,
+      "target_type": "taxonomy_term",
+      "target_uuid": "9a096f13-64ab-4aea-aa5e-509a45774748",
+      "url": "/taxonomy/term/9419"
+    },
+    {
+      "target_id": 9429,
+      "target_type": "taxonomy_term",
+      "target_uuid": "942aec21-a41b-4bc1-9afd-4d8348dde9e3",
+      "url": "/taxonomy/term/9429"
+    },
+    {
+      "target_id": 9438,
+      "target_type": "taxonomy_term",
+      "target_uuid": "56701ff3-9017-4340-a3bf-b47e472a5227",
+      "url": "/taxonomy/term/9438"
+    }
+  ],
+  "field_other_org": [],
+  "field_reference_url": [],
+  "field_resource_template_enforce": [],
+  "field_resource_template_file": [],
+  "field_search_keywords": [],
+  "field_sector": [
+    {
+      "target_id": 9212,
+      "target_type": "taxonomy_term",
+      "target_uuid": "cf8b38b7-2f8c-4a8d-8096-0e6ddb7effc2",
+      "url": "/taxonomy/term/9212"
+    },
+    {
+      "target_id": 9215,
+      "target_type": "taxonomy_term",
+      "target_uuid": "88abd300-53d7-415a-92eb-7845cf84891a",
+      "url": "/taxonomy/term/9215"
+    }
+  ],
+  "field_state_department": [],
+  "field_view_count": [
+    {
+      "value": 284172
+    }
+  ]
+}

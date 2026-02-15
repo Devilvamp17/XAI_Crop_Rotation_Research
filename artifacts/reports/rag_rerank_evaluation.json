@@ -1,0 +1,34 @@
+{
+  "total": 3,
+  "passed": 3,
+  "pass_rate": 1.0,
+  "scenarios": [
+    {
+      "id": "punjab_rabi",
+      "expected_top": "wheat",
+      "final_top": "wheat",
+      "zone_resolution": "state",
+      "season": "rabi",
+      "passed": true,
+      "rerank_conflict": true
+    },
+    {
+      "id": "wb_kharif",
+      "expected_top": "rice",
+      "final_top": "rice",
+      "zone_resolution": "state",
+      "season": "kharif",
+      "passed": true,
+      "rerank_conflict": true
+    },
+    {
+      "id": "unknown_location",
+      "expected_top": null,
+      "final_top": "rice",
+      "zone_resolution": "unknown",
+      "season": "kharif",
+      "passed": true,
+      "rerank_conflict": true
+    }
+  ]
+}

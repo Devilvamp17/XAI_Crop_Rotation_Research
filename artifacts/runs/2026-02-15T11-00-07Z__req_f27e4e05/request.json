@@ -1,0 +1,23 @@
+{
+  "request_id": "req_f27e4e05",
+  "timestamp": "2026-02-15T11-00-07Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Explain for a small farmer with simple language and exactly 3 action bullets.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 70.0,
+    "P": 30.0,
+    "K": 20.0,
+    "temperature": 29.0,
+    "humidity": 62.0,
+    "ph": 6.1,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

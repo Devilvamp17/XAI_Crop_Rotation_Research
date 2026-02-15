@@ -1,0 +1,59 @@
+{
+  "ok": true,
+  "steps": [
+    {
+      "cmd": "uv run python scripts/validate_icar_dataset.py",
+      "returncode": 0,
+      "stdout": "[OK] base_rows=108 exploded_rows=19425\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python testing/test_icar_reranker.py",
+      "returncode": 0,
+      "stdout": "ICAR reranker tests passed.\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python testing/test_lime_wrapper_fidelity.py",
+      "returncode": 0,
+      "stdout": "LIME wrapper/fidelity tests passed.\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python scripts/run_prompt_suites_full.py",
+      "returncode": 0,
+      "stdout": "artifacts/reports/prompt_suite_execution_summary.json\nartifacts/reports/prompt_suite_execution_summary.md\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python scripts/audit_rag_artifacts.py",
+      "returncode": 0,
+      "stdout": "{\n  \"summary\": {\n    \"runs_total\": 41,\n    \"runs_with_required_files\": 41,\n    \"zone_resolution_distribution\": {\n      \"unknown\": 27,\n      \"state\": 7,\n      \"district\": 7\n    },\n    \"validation_valid_rate\": 0.0,\n    \"fallback_warning_rate\": 1.0,\n    \"geocode_unknown_zone_count\": 0,\n    \"compiled_notes_hit_runs\": 0,\n    \"missing_prompt_output_files\": [],\n    \"suite_dirs_total\": 0,\n    \"suite_dirs_with_compliance_summary\": 0\n  },\n  \"issues_count\": 1,\n  \"json\": \"artifacts/reports/rag_artifact_consistency_audit.json\",\n  \"csv\": \"artifacts/reports/rag_artifact_consistency_matrix.csv\",\n  \"md\": \"artifacts/reports/rag_artifact_consistency_audit.md\"\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python xai_eval/evaluate.py",
+      "returncode": 0,
+      "stdout": "{\n  \"shap\": {\n    \"deletion_auc\": 0.1233927789342124,\n    \"insertion_auc\": 0.6633253107538137\n  },\n  \"lime\": {\n    \"deletion_auc\": 0.13723559503113697,\n    \"insertion_auc\": 0.6375603082294886,\n    \"fidelity_r2\": 0.25305185027815585,\n    \"mean_fidelity_r2\": 0.25305185027815585,\n    \"median_fidelity_r2\": 0.2425625371922034,\n    \"fraction_r2_gt_0\": 1.0,\n    \"status\": \"reliable\"\n  },\n  \"agreement\": {\n    \"shap_lime_topk_jaccard\": 0.542,\n    \"enforce_shap_lime_agreement\": true\n  },\n  \"stability\": {\n    \"avg_overlap\": 0.98125,\n    \"avg_rank_corr\": 0.9917857142857143\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python scripts/evaluate_rag_pipeline.py",
+      "returncode": 0,
+      "stdout": "{\n  \"total\": 3,\n  \"passed\": 3,\n  \"pass_rate\": 1.0,\n  \"scenarios\": [\n    {\n      \"id\": \"punjab_rabi\",\n      \"expected_top\": \"wheat\",\n      \"final_top\": \"wheat\",\n      \"zone_resolution\": \"state\",\n      \"season\": \"rabi\",\n      \"passed\": true,\n      \"rerank_conflict\": true\n    },\n    {\n      \"id\": \"wb_kharif\",\n      \"expected_top\": \"rice\",\n      \"final_top\": \"rice\",\n      \"zone_resolution\": \"state\",\n      \"season\": \"kharif\",\n      \"passed\": true,\n      \"rerank_conflict\": true\n    },\n    {\n      \"id\": \"unknown_location\",\n      \"expected_top\": null,\n      \"final_top\": \"rice\",\n      \"zone_resolution\": \"unknown\",\n      \"season\": \"kharif\",\n      \"passed\": true,\n      \"rerank_conflict\": true\n    }\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python scripts/health_check_all.py",
+      "returncode": 0,
+      "stdout": "{\n  \"ok\": true,\n  \"checks\": {\n    \"model_health\": 200,\n    \"agent_health\": 200,\n    \"agent_tools\": 200,\n    \"agent_rag_health\": 200,\n    \"agent_metrics_xai\": 200,\n    \"agent_metrics_xai_curves\": 200\n  }\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "uv run python -m evaluation.run_all",
+      "returncode": 0,
+      "stdout": "/home/arnav/coding/research/xai/XAI_Crop_Rotation_Research/evaluation/out/2026-02-15T11-02-36Z\n",
+      "stderr": "/home/arnav/coding/research/xai/XAI_Crop_Rotation_Research/.venv/lib/python3.11/site-packages/sklearn/linear_model/_logistic.py:465: ConvergenceWarning: lbfgs failed to converge (status=1):\nSTOP: TOTAL NO. OF ITERATIONS REACHED LIMIT.\n\nIncrease the number of iterations (max_iter) or scale the data as shown in:\n    https://scikit-learn.org/stable/modules/preprocessing.html\nPlease also refer to the documentation for alternative solver options:\n    https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression\n  n_iter_i = _check_optimize_result(\n"
+    }
+  ]
+}

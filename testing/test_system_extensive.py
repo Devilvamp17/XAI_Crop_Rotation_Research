@@ -216,7 +216,7 @@ def run_agent_api_tests(results: list[CheckResult]) -> None:
             "Maize is selected after season-aware re-ranking.\n\n"
             "2) Confidence interpretation\n"
             "Raw model confidence (from ML): 0.8000\n"
-            "Season-adjusted confidence: 0.1425 (after crop calendar). Threshold reference: 0.60\n\n"
+            "Season-adjusted confidence: 0.1425 (after ICAR RAG rerank). Threshold reference: 0.60\n\n"
             "3) Top-3 tradeoff note (if available)\n"
             "maize (raw=0.1500, suit=0.90, adj=0.1425); rice (raw=0.8000, suit=0.10, adj=0.1200); wheat (raw=0.0500, suit=0.80, adj=0.0425)\n\n"
             "4) Action checklist\n"
@@ -230,7 +230,7 @@ def run_agent_api_tests(results: list[CheckResult]) -> None:
     patches.set(agent_main, "geocode_location", geocode_spy)
     patches.set(agent_main, "get_weather", weather_spy)
     patches.set(agent_main, "get_soil_properties", soil_spy)
-    patches.set(agent_main, "get_crop_calendar", calendar_spy)
+    patches.set(agent_main, "get_icar_rag_rerank", calendar_spy)
     patches.set(agent_main.model_client, "predict", fake_model_predict)
     patches.set(agent_main.llm_client, "chat", llm_chat_spy)
     patches.set(agent_main.llm_client, "healthcheck", fake_llm_healthcheck)
@@ -255,7 +255,7 @@ def run_agent_api_tests(results: list[CheckResult]) -> None:
                 "geocode_location",
                 "get_weather",
                 "get_soil_properties",
-                "get_crop_calendar",
+                "get_icar_rag_rerank",
             }
             _assert(expected.issubset(set(tools)), f"missing tools: {expected.difference(set(tools))}")
 

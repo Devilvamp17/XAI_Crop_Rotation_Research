@@ -1,0 +1,28 @@
+{
+  "zone_resolution": "state",
+  "zone_id": "AGROCLIM_TAMIL_NADU_KHARIF",
+  "zone_state": "Tamil Nadu",
+  "zone_district": "Ariyalur",
+  "zone_match": {
+    "zone_id": "AGROCLIM_TAMIL_NADU_KHARIF",
+    "zone_name": "Tamil Nadu kharif memory zone",
+    "zone_type": "AGROCLIM_CURATED",
+    "state": "Tamil Nadu",
+    "district": "Ariyalur",
+    "season": "kharif",
+    "crop": "bajra",
+    "suitability": "MED",
+    "crop_family": "cereal",
+    "key_risks": "drought",
+    "soil_notes": "district-level soil detail unavailable in source snapshot",
+    "climate_notes": "seasonal crop guidance extracted from cited official sources",
+    "evidence_text": "Pearl millet package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.",
+    "source_name": "Vikaspedia (MeitY/C-DAC Government Knowledge Portal)",
+    "source_ref": "https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/bajra",
+    "data_quality": "incomplete",
+    "_state_norm": "tamil nadu",
+    "_district_norm": "ariyalur",
+    "_season_norm": "kharif",
+    "_crop_norm": "bajra"
+  }
+}

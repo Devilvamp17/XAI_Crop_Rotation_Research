@@ -1,0 +1,23 @@
+{
+  "request_id": "req_207f8285",
+  "timestamp": "2026-02-15T11-00-38Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Do not use any external tools. Give concise recommendation.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 84.0,
+    "P": 38.0,
+    "K": 36.0,
+    "temperature": 27.8,
+    "humidity": 68.5,
+    "ph": 6.4,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

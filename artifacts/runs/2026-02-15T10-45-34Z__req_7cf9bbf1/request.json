@@ -1,0 +1,23 @@
+{
+  "request_id": "req_7cf9bbf1",
+  "timestamp": "2026-02-15T10-45-34Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Compare top 3 crops and mention strongest SHAP signal briefly.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 101.0,
+    "P": 52.0,
+    "K": 47.0,
+    "temperature": 27.9,
+    "humidity": 76.1,
+    "ph": 6.9,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

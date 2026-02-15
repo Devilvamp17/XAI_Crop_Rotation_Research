@@ -1,0 +1,6995 @@
+[
+    {
+        "SNo": 1,
+        "StateCode": 35,
+        "StateName": "Andaman And Nicobar Islands",
+        "DistrictLGDCode": 603,
+        "DistrictName(InEnglish)": "Nicobars",
+        "Hierarchy": "Andaman And Nicobar Islands",
+        "ShortNameOfDistrict": "NIC"
+    },
+    {
+        "SNo": 2,
+        "StateCode": 35,
+        "StateName": "Andaman And Nicobar Islands",
+        "DistrictLGDCode": 632,
+        "DistrictName(InEnglish)": "North And Middle Andaman",
+        "Hierarchy": "Andaman And Nicobar Islands",
+        "ShortNameOfDistrict": "NMA"
+    },
+    {
+        "SNo": 3,
+        "StateCode": 35,
+        "StateName": "Andaman And Nicobar Islands",
+        "DistrictLGDCode": 602,
+        "DistrictName(InEnglish)": "South Andamans",
+        "Hierarchy": "Andaman And Nicobar Islands",
+        "ShortNameOfDistrict": "SAS"
+    },
+    {
+        "SNo": 4,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 745,
+        "DistrictName(InEnglish)": "Alluri Sitharama Raju",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "LLR"
+    },
+    {
+        "SNo": 5,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 744,
+        "DistrictName(InEnglish)": "Anakapalli",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "NKP"
+    },
+    {
+        "SNo": 6,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 502,
+        "DistrictName(InEnglish)": "Ananthapuramu",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "ANT"
+    },
+    {
+        "SNo": 7,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 753,
+        "DistrictName(InEnglish)": "Annamayya",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "NNM"
+    },
+    {
+        "SNo": 8,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 750,
+        "DistrictName(InEnglish)": "Bapatla",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "BPT"
+    },
+    {
+        "SNo": 9,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 503,
+        "DistrictName(InEnglish)": "Chittoor",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "CHI"
+    },
+    {
+        "SNo": 10,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 747,
+        "DistrictName(InEnglish)": "Dr. B.R. Ambedkar Konaseema",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "KNS"
+    },
+    {
+        "SNo": 11,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 505,
+        "DistrictName(InEnglish)": "East Godavari",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "EGI"
+    },
+    {
+        "SNo": 12,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 748,
+        "DistrictName(InEnglish)": "Eluru",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "LR"
+    },
+    {
+        "SNo": 13,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 506,
+        "DistrictName(InEnglish)": "Guntur",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "GNT"
+    },
+    {
+        "SNo": 14,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 746,
+        "DistrictName(InEnglish)": "Kakinada",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "KKN"
+    },
+    {
+        "SNo": 15,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 510,
+        "DistrictName(InEnglish)": "Krishna",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "KRS"
+    },
+    {
+        "SNo": 16,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 511,
+        "DistrictName(InEnglish)": "Kurnool",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "KUR"
+    },
+    {
+        "SNo": 17,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 755,
+        "DistrictName(InEnglish)": "Nandyal",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "NND"
+    },
+    {
+        "SNo": 18,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 749,
+        "DistrictName(InEnglish)": "Ntr",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "TNR"
+    },
+    {
+        "SNo": 19,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 751,
+        "DistrictName(InEnglish)": "Palnadu",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "PLN"
+    },
+    {
+        "SNo": 20,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 743,
+        "DistrictName(InEnglish)": "Parvathipuram Manyam",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "PRV"
+    },
+    {
+        "SNo": 21,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 517,
+        "DistrictName(InEnglish)": "Prakasam",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "PRA"
+    },
+    {
+        "SNo": 22,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 519,
+        "DistrictName(InEnglish)": "Srikakulam",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "SRK"
+    },
+    {
+        "SNo": 23,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 515,
+        "DistrictName(InEnglish)": "Sri Potti Sriramulu Nellore",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "NEL"
+    },
+    {
+        "SNo": 24,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 754,
+        "DistrictName(InEnglish)": "Sri Sathya Sai",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "SSS"
+    },
+    {
+        "SNo": 25,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 752,
+        "DistrictName(InEnglish)": "Tirupati",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "TPT"
+    },
+    {
+        "SNo": 26,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 520,
+        "DistrictName(InEnglish)": "Visakhapatnam",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "VSK"
+    },
+    {
+        "SNo": 27,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 521,
+        "DistrictName(InEnglish)": "Vizianagaram",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "VNG"
+    },
+    {
+        "SNo": 28,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 523,
+        "DistrictName(InEnglish)": "West Godavari",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "WGI"
+    },
+    {
+        "SNo": 29,
+        "StateCode": 28,
+        "StateName": "Andhra Pradesh",
+        "DistrictLGDCode": 504,
+        "DistrictName(InEnglish)": "Y.S.R. Kadapa",
+        "Hierarchy": "Andhra Pradesh",
+        "ShortNameOfDistrict": "CUD"
+    },
+    {
+        "SNo": 30,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 628,
+        "DistrictName(InEnglish)": "Anjaw",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "ANJ"
+    },
+    {
+        "SNo": 31,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 787,
+        "DistrictName(InEnglish)": "Bichom",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": ""
+    },
+    {
+        "SNo": 32,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 229,
+        "DistrictName(InEnglish)": "Changlang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "CHG"
+    },
+    {
+        "SNo": 33,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 230,
+        "DistrictName(InEnglish)": "Dibang Valley",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "DBN"
+    },
+    {
+        "SNo": 34,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 231,
+        "DistrictName(InEnglish)": "East Kameng",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "EKG"
+    },
+    {
+        "SNo": 35,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 232,
+        "DistrictName(InEnglish)": "East Siang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "ESG"
+    },
+    {
+        "SNo": 36,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 718,
+        "DistrictName(InEnglish)": "Kamle",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "KML"
+    },
+    {
+        "SNo": 37,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 786,
+        "DistrictName(InEnglish)": "Keyi Panyor",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": ""
+    },
+    {
+        "SNo": 38,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 677,
+        "DistrictName(InEnglish)": "Kra Daadi",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "KRD"
+    },
+    {
+        "SNo": 39,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 233,
+        "DistrictName(InEnglish)": "Kurung Kumey",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "KKY"
+    },
+    {
+        "SNo": 40,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 724,
+        "DistrictName(InEnglish)": "Leparada",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LPR"
+    },
+    {
+        "SNo": 41,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 234,
+        "DistrictName(InEnglish)": "Lohit",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LHT"
+    },
+    {
+        "SNo": 42,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 666,
+        "DistrictName(InEnglish)": "Longding",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LDG"
+    },
+    {
+        "SNo": 43,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 235,
+        "DistrictName(InEnglish)": "Lower Dibang Valley",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LDV"
+    },
+    {
+        "SNo": 44,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 719,
+        "DistrictName(InEnglish)": "Lower Siang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LWR"
+    },
+    {
+        "SNo": 45,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 236,
+        "DistrictName(InEnglish)": "Lower Subansiri",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "LSI"
+    },
+    {
+        "SNo": 46,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 678,
+        "DistrictName(InEnglish)": "Namsai",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "NMS"
+    },
+    {
+        "SNo": 47,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 723,
+        "DistrictName(InEnglish)": "Pakke Kessang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "PKK"
+    },
+    {
+        "SNo": 48,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 237,
+        "DistrictName(InEnglish)": "Papum Pare",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "PPM"
+    },
+    {
+        "SNo": 49,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 725,
+        "DistrictName(InEnglish)": "Shi Yomi",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "SHY"
+    },
+    {
+        "SNo": 50,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 679,
+        "DistrictName(InEnglish)": "Siang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "SAN"
+    },
+    {
+        "SNo": 51,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 238,
+        "DistrictName(InEnglish)": "Tawang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "TWN"
+    },
+    {
+        "SNo": 52,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 239,
+        "DistrictName(InEnglish)": "Tirap",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "TRP"
+    },
+    {
+        "SNo": 53,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 240,
+        "DistrictName(InEnglish)": "Upper Siang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "USG"
+    },
+    {
+        "SNo": 54,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 241,
+        "DistrictName(InEnglish)": "Upper Subansiri",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "USI"
+    },
+    {
+        "SNo": 55,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 242,
+        "DistrictName(InEnglish)": "West Kameng",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "WKG"
+    },
+    {
+        "SNo": 56,
+        "StateCode": 12,
+        "StateName": "Arunachal Pradesh",
+        "DistrictLGDCode": 243,
+        "DistrictName(InEnglish)": "West Siang",
+        "Hierarchy": "Arunachal Pradesh",
+        "ShortNameOfDistrict": "WSG"
+    },
+    {
+        "SNo": 57,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 739,
+        "DistrictName(InEnglish)": "Bajali",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "BJL"
+    },
+    {
+        "SNo": 58,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 616,
+        "DistrictName(InEnglish)": "Baksa",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "BAK"
+    },
+    {
+        "SNo": 59,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 280,
+        "DistrictName(InEnglish)": "Barpeta",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "BAR"
+    },
+    {
+        "SNo": 60,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 705,
+        "DistrictName(InEnglish)": "Biswanath",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "BSW"
+    },
+    {
+        "SNo": 61,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 281,
+        "DistrictName(InEnglish)": "Bongaigaon",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "BNG"
+    },
+    {
+        "SNo": 62,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 282,
+        "DistrictName(InEnglish)": "Cachar",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "CCH"
+    },
+    {
+        "SNo": 63,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 708,
+        "DistrictName(InEnglish)": "Charaideo",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "CID"
+    },
+    {
+        "SNo": 64,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 612,
+        "DistrictName(InEnglish)": "Chirang",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "CRG"
+    },
+    {
+        "SNo": 65,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 283,
+        "DistrictName(InEnglish)": "Darrang",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "DRR"
+    },
+    {
+        "SNo": 66,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 284,
+        "DistrictName(InEnglish)": "Dhemaji",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "DHM"
+    },
+    {
+        "SNo": 67,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 285,
+        "DistrictName(InEnglish)": "Dhubri",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "DHB"
+    },
+    {
+        "SNo": 68,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 286,
+        "DistrictName(InEnglish)": "Dibrugarh",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "DBR"
+    },
+    {
+        "SNo": 69,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 299,
+        "DistrictName(InEnglish)": "Dima Hasao",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "DHO"
+    },
+    {
+        "SNo": 70,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 287,
+        "DistrictName(InEnglish)": "Goalpara",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "GLP"
+    },
+    {
+        "SNo": 71,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 288,
+        "DistrictName(InEnglish)": "Golaghat",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "GLG"
+    },
+    {
+        "SNo": 72,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 289,
+        "DistrictName(InEnglish)": "Hailakandi",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "HLK"
+    },
+    {
+        "SNo": 73,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 709,
+        "DistrictName(InEnglish)": "Hojai",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "HJ"
+    },
+    {
+        "SNo": 74,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 290,
+        "DistrictName(InEnglish)": "Jorhat",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "JRH"
+    },
+    {
+        "SNo": 75,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 291,
+        "DistrictName(InEnglish)": "Kamrup",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "KMP"
+    },
+    {
+        "SNo": 76,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 618,
+        "DistrictName(InEnglish)": "Kamrup Metro",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "KMT"
+    },
+    {
+        "SNo": 77,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 292,
+        "DistrictName(InEnglish)": "Karbi Anglong",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "KAG"
+    },
+    {
+        "SNo": 78,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 294,
+        "DistrictName(InEnglish)": "Kokrajhar",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "KKR"
+    },
+    {
+        "SNo": 79,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 295,
+        "DistrictName(InEnglish)": "Lakhimpur",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "LKP"
+    },
+    {
+        "SNo": 80,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 706,
+        "DistrictName(InEnglish)": "Majuli",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "MJL"
+    },
+    {
+        "SNo": 81,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 296,
+        "DistrictName(InEnglish)": "Marigaon",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "MGN"
+    },
+    {
+        "SNo": 82,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 297,
+        "DistrictName(InEnglish)": "Nagaon",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "NGN"
+    },
+    {
+        "SNo": 83,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 298,
+        "DistrictName(InEnglish)": "Nalbari",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "NLB"
+    },
+    {
+        "SNo": 84,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 300,
+        "DistrictName(InEnglish)": "Sivasagar",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "SVS"
+    },
+    {
+        "SNo": 85,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 385,
+        "DistrictName(InEnglish)": "Mahasamund",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "MHS"
+    },
+    {
+        "SNo": 86,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 301,
+        "DistrictName(InEnglish)": "Sonitpur",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "SON"
+    },
+    {
+        "SNo": 87,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 707,
+        "DistrictName(InEnglish)": "South Salmara Mancachar",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "STH"
+    },
+    {
+        "SNo": 88,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 293,
+        "DistrictName(InEnglish)": "Sribhumi",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "KGJ"
+    },
+    {
+        "SNo": 89,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 756,
+        "DistrictName(InEnglish)": "Tamulpur",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "TML"
+    },
+    {
+        "SNo": 90,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 302,
+        "DistrictName(InEnglish)": "Tinsukia",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "TIN"
+    },
+    {
+        "SNo": 91,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 617,
+        "DistrictName(InEnglish)": "Udalguri",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "UDA"
+    },
+    {
+        "SNo": 92,
+        "StateCode": 18,
+        "StateName": "Assam",
+        "DistrictLGDCode": 710,
+        "DistrictName(InEnglish)": "West Karbi Anglong",
+        "Hierarchy": "Assam",
+        "ShortNameOfDistrict": "WST"
+    },
+    {
+        "SNo": 93,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 188,
+        "DistrictName(InEnglish)": "Araria",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "ARA"
+    },
+    {
+        "SNo": 94,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 611,
+        "DistrictName(InEnglish)": "Arwal",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "ARW"
+    },
+    {
+        "SNo": 95,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 189,
+        "DistrictName(InEnglish)": "Aurangabad",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "AGB"
+    },
+    {
+        "SNo": 96,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 190,
+        "DistrictName(InEnglish)": "Banka",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "BNK"
+    },
+    {
+        "SNo": 97,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 191,
+        "DistrictName(InEnglish)": "Begusarai",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "BSR"
+    },
+    {
+        "SNo": 98,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 192,
+        "DistrictName(InEnglish)": "Bhagalpur",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "BGO"
+    },
+    {
+        "SNo": 99,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 193,
+        "DistrictName(InEnglish)": "Bhojpur",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "BJP"
+    },
+    {
+        "SNo": 100,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 194,
+        "DistrictName(InEnglish)": "Buxar",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "BUX"
+    },
+    {
+        "SNo": 101,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 195,
+        "DistrictName(InEnglish)": "Darbhanga",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "DBG"
+    },
+    {
+        "SNo": 102,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 196,
+        "DistrictName(InEnglish)": "Gaya",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "GAY"
+    },
+    {
+        "SNo": 103,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 197,
+        "DistrictName(InEnglish)": "Gopalganj",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "GPG"
+    },
+    {
+        "SNo": 104,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 198,
+        "DistrictName(InEnglish)": "Jamui",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "JAM"
+    },
+    {
+        "SNo": 105,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 199,
+        "DistrictName(InEnglish)": "Jehanabad",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "JHB"
+    },
+    {
+        "SNo": 106,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 200,
+        "DistrictName(InEnglish)": "Kaimur (Bhabua)",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "KMR"
+    },
+    {
+        "SNo": 107,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 201,
+        "DistrictName(InEnglish)": "Katihar",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "KTR"
+    },
+    {
+        "SNo": 108,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 202,
+        "DistrictName(InEnglish)": "Khagaria",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "KGR"
+    },
+    {
+        "SNo": 109,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 203,
+        "DistrictName(InEnglish)": "Kishanganj",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "KSG"
+    },
+    {
+        "SNo": 110,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 204,
+        "DistrictName(InEnglish)": "Lakhisarai",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "LSR"
+    },
+    {
+        "SNo": 111,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 205,
+        "DistrictName(InEnglish)": "Madhepura",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "MDP"
+    },
+    {
+        "SNo": 112,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 206,
+        "DistrictName(InEnglish)": "Madhubani",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "MDB"
+    },
+    {
+        "SNo": 113,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 207,
+        "DistrictName(InEnglish)": "Munger",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "MNG"
+    },
+    {
+        "SNo": 114,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 208,
+        "DistrictName(InEnglish)": "Muzaffarpur",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "MUZ"
+    },
+    {
+        "SNo": 115,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 209,
+        "DistrictName(InEnglish)": "Nalanda",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "NLD"
+    },
+    {
+        "SNo": 116,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 210,
+        "DistrictName(InEnglish)": "Nawada",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "NAW"
+    },
+    {
+        "SNo": 117,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 211,
+        "DistrictName(InEnglish)": "Pashchim Champaran",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "PSC"
+    },
+    {
+        "SNo": 118,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 212,
+        "DistrictName(InEnglish)": "Patna",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "PTN"
+    },
+    {
+        "SNo": 119,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 213,
+        "DistrictName(InEnglish)": "Purbi Champaran",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "PRC"
+    },
+    {
+        "SNo": 120,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 214,
+        "DistrictName(InEnglish)": "Purnia",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "PRN"
+    },
+    {
+        "SNo": 121,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 215,
+        "DistrictName(InEnglish)": "Rohtas",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "RTS"
+    },
+    {
+        "SNo": 122,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 216,
+        "DistrictName(InEnglish)": "Saharsa",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SHS"
+    },
+    {
+        "SNo": 123,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 217,
+        "DistrictName(InEnglish)": "Samastipur",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SMS"
+    },
+    {
+        "SNo": 124,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 218,
+        "DistrictName(InEnglish)": "Saran",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SAR"
+    },
+    {
+        "SNo": 125,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 219,
+        "DistrictName(InEnglish)": "Sheikhpura",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SHK"
+    },
+    {
+        "SNo": 126,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 220,
+        "DistrictName(InEnglish)": "Sheohar",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SHH"
+    },
+    {
+        "SNo": 127,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 221,
+        "DistrictName(InEnglish)": "Sitamarhi",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "STM"
+    },
+    {
+        "SNo": 128,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 222,
+        "DistrictName(InEnglish)": "Siwan",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SWN"
+    },
+    {
+        "SNo": 129,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 223,
+        "DistrictName(InEnglish)": "Supaul",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "SPL"
+    },
+    {
+        "SNo": 130,
+        "StateCode": 10,
+        "StateName": "Bihar",
+        "DistrictLGDCode": 224,
+        "DistrictName(InEnglish)": "Vaishali",
+        "Hierarchy": "Bihar",
+        "ShortNameOfDistrict": "VSH"
+    },
+    {
+        "SNo": 131,
+        "StateCode": 4,
+        "StateName": "Chandigarh",
+        "DistrictLGDCode": 44,
+        "DistrictName(InEnglish)": "Chandigarh",
+        "Hierarchy": "Chandigarh",
+        "ShortNameOfDistrict": "CHD"
+    },
+    {
+        "SNo": 132,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 646,
+        "DistrictName(InEnglish)": "Balod",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BLD"
+    },
+    {
+        "SNo": 133,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 644,
+        "DistrictName(InEnglish)": "Balodabazar-Bhatapara",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BLB"
+    },
+    {
+        "SNo": 134,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 649,
+        "DistrictName(InEnglish)": "Balrampur-Ramanujganj",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BLM"
+    },
+    {
+        "SNo": 135,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 374,
+        "DistrictName(InEnglish)": "Bastar",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BAS"
+    },
+    {
+        "SNo": 136,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 650,
+        "DistrictName(InEnglish)": "Bemetara",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BEM"
+    },
+    {
+        "SNo": 137,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 636,
+        "DistrictName(InEnglish)": "Bijapur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BIJ"
+    },
+    {
+        "SNo": 138,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 375,
+        "DistrictName(InEnglish)": "Bilaspur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "BLP"
+    },
+    {
+        "SNo": 139,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 376,
+        "DistrictName(InEnglish)": "Dakshin Bastar Dantewada",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "DNT"
+    },
+    {
+        "SNo": 140,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 377,
+        "DistrictName(InEnglish)": "Dhamtari",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "DMT"
+    },
+    {
+        "SNo": 141,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 378,
+        "DistrictName(InEnglish)": "Durg",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "DRG"
+    },
+    {
+        "SNo": 142,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 645,
+        "DistrictName(InEnglish)": "Gariyaband",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "GRY"
+    },
+    {
+        "SNo": 143,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 734,
+        "DistrictName(InEnglish)": "Gaurela-Pendra-Marwahi",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "GRL"
+    },
+    {
+        "SNo": 144,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 379,
+        "DistrictName(InEnglish)": "Janjgir-Champa",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "JCH"
+    },
+    {
+        "SNo": 145,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 380,
+        "DistrictName(InEnglish)": "Jashpur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "JSH"
+    },
+    {
+        "SNo": 146,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 382,
+        "DistrictName(InEnglish)": "Kabeerdham",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KDM"
+    },
+    {
+        "SNo": 147,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 759,
+        "DistrictName(InEnglish)": "Khairagarh-Chhuikhadan-Gandai",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KCG"
+    },
+    {
+        "SNo": 148,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 643,
+        "DistrictName(InEnglish)": "Kondagaon",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KON"
+    },
+    {
+        "SNo": 149,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 383,
+        "DistrictName(InEnglish)": "Korba",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KRB"
+    },
+    {
+        "SNo": 150,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 384,
+        "DistrictName(InEnglish)": "Korea",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KOR"
+    },
+    {
+        "SNo": 151,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 760,
+        "DistrictName(InEnglish)": "Manendragarh-Chirmiri-Bharatpur(M C B)",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "MNN"
+    },
+    {
+        "SNo": 152,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 761,
+        "DistrictName(InEnglish)": "Mohla-Manpur-Ambagarh Chouki",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "MHL"
+    },
+    {
+        "SNo": 153,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 647,
+        "DistrictName(InEnglish)": "Mungeli",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "MUN"
+    },
+    {
+        "SNo": 154,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 637,
+        "DistrictName(InEnglish)": "Narayanpur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "NRY"
+    },
+    {
+        "SNo": 155,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 386,
+        "DistrictName(InEnglish)": "Raigarh",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "RGR"
+    },
+    {
+        "SNo": 156,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 387,
+        "DistrictName(InEnglish)": "Raipur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "RPR"
+    },
+    {
+        "SNo": 157,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 388,
+        "DistrictName(InEnglish)": "Rajnandgaon",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "RJN"
+    },
+    {
+        "SNo": 158,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 762,
+        "DistrictName(InEnglish)": "Sakti",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "SKT"
+    },
+    {
+        "SNo": 159,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 763,
+        "DistrictName(InEnglish)": "Sarangarh-Bilaigarh",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "SRB"
+    },
+    {
+        "SNo": 160,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 642,
+        "DistrictName(InEnglish)": "Sukma",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "SKM"
+    },
+    {
+        "SNo": 161,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 648,
+        "DistrictName(InEnglish)": "Surajpur",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "SRJ"
+    },
+    {
+        "SNo": 162,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 389,
+        "DistrictName(InEnglish)": "Surguja",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "SRG"
+    },
+    {
+        "SNo": 163,
+        "StateCode": 22,
+        "StateName": "Chhattisgarh",
+        "DistrictLGDCode": 381,
+        "DistrictName(InEnglish)": "Uttar Bastar Kanker",
+        "Hierarchy": "Chhattisgarh",
+        "ShortNameOfDistrict": "KNK"
+    },
+    {
+        "SNo": 164,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 77,
+        "DistrictName(InEnglish)": "Central",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "CNT"
+    },
+    {
+        "SNo": 165,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 78,
+        "DistrictName(InEnglish)": "East",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "EST"
+    },
+    {
+        "SNo": 166,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 79,
+        "DistrictName(InEnglish)": "New Delhi",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "NDL"
+    },
+    {
+        "SNo": 167,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 80,
+        "DistrictName(InEnglish)": "North",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "NRD"
+    },
+    {
+        "SNo": 168,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 81,
+        "DistrictName(InEnglish)": "North East",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "NED"
+    },
+    {
+        "SNo": 169,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 82,
+        "DistrictName(InEnglish)": "North West",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "NWD"
+    },
+    {
+        "SNo": 170,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 671,
+        "DistrictName(InEnglish)": "Shahdara",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "HHD"
+    },
+    {
+        "SNo": 171,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 83,
+        "DistrictName(InEnglish)": "South",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "SDL"
+    },
+    {
+        "SNo": 172,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 670,
+        "DistrictName(InEnglish)": "South East",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "STS"
+    },
+    {
+        "SNo": 173,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 84,
+        "DistrictName(InEnglish)": "South West",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "SWD"
+    },
+    {
+        "SNo": 174,
+        "StateCode": 7,
+        "StateName": "Delhi",
+        "DistrictLGDCode": 85,
+        "DistrictName(InEnglish)": "West",
+        "Hierarchy": "Delhi",
+        "ShortNameOfDistrict": "WSD"
+    },
+    {
+        "SNo": 175,
+        "StateCode": 30,
+        "StateName": "Goa",
+        "DistrictLGDCode": 551,
+        "DistrictName(InEnglish)": "North Goa",
+        "Hierarchy": "Goa",
+        "ShortNameOfDistrict": "NGO"
+    },
+    {
+        "SNo": 176,
+        "StateCode": 30,
+        "StateName": "Goa",
+        "DistrictLGDCode": 552,
+        "DistrictName(InEnglish)": "South Goa",
+        "Hierarchy": "Goa",
+        "ShortNameOfDistrict": "SGO"
+    },
+    {
+        "SNo": 177,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 438,
+        "DistrictName(InEnglish)": "Ahmedabad",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "AHM"
+    },
+    {
+        "SNo": 178,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 439,
+        "DistrictName(InEnglish)": "Amreli",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "ARL"
+    },
+    {
+        "SNo": 179,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 440,
+        "DistrictName(InEnglish)": "Anand",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "ANA"
+    },
+    {
+        "SNo": 180,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 672,
+        "DistrictName(InEnglish)": "Arvalli",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "RVL"
+    },
+    {
+        "SNo": 181,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 441,
+        "DistrictName(InEnglish)": "Banas Kantha",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "BKT"
+    },
+    {
+        "SNo": 182,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 442,
+        "DistrictName(InEnglish)": "Bharuch",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "BRC"
+    },
+    {
+        "SNo": 183,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 443,
+        "DistrictName(InEnglish)": "Bhavnagar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "BHV"
+    },
+    {
+        "SNo": 184,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 676,
+        "DistrictName(InEnglish)": "Botad",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "BTD"
+    },
+    {
+        "SNo": 185,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 668,
+        "DistrictName(InEnglish)": "Chhotaudepur",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "CUP"
+    },
+    {
+        "SNo": 186,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 445,
+        "DistrictName(InEnglish)": "Dahod",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "DHD"
+    },
+    {
+        "SNo": 187,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 444,
+        "DistrictName(InEnglish)": "Dangs",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "DAN"
+    },
+    {
+        "SNo": 188,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 674,
+        "DistrictName(InEnglish)": "Devbhumi Dwarka",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "DVB"
+    },
+    {
+        "SNo": 189,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 446,
+        "DistrictName(InEnglish)": "Gandhinagar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "GNR"
+    },
+    {
+        "SNo": 190,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 675,
+        "DistrictName(InEnglish)": "Gir Somnath",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "GRS"
+    },
+    {
+        "SNo": 191,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 447,
+        "DistrictName(InEnglish)": "Jamnagar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "JMN"
+    },
+    {
+        "SNo": 192,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 448,
+        "DistrictName(InEnglish)": "Junagadh",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "JNG"
+    },
+    {
+        "SNo": 193,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 449,
+        "DistrictName(InEnglish)": "Kachchh",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "KCH"
+    },
+    {
+        "SNo": 194,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 450,
+        "DistrictName(InEnglish)": "Kheda",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "KHE"
+    },
+    {
+        "SNo": 195,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 451,
+        "DistrictName(InEnglish)": "Mahesana",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "MHN"
+    },
+    {
+        "SNo": 196,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 669,
+        "DistrictName(InEnglish)": "Mahisagar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "MSG"
+    },
+    {
+        "SNo": 197,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 673,
+        "DistrictName(InEnglish)": "Morbi",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "MRI"
+    },
+    {
+        "SNo": 198,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 452,
+        "DistrictName(InEnglish)": "Narmada",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "NRM"
+    },
+    {
+        "SNo": 199,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 453,
+        "DistrictName(InEnglish)": "Navsari",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "NVS"
+    },
+    {
+        "SNo": 200,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 454,
+        "DistrictName(InEnglish)": "Panch Mahals",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "PMS"
+    },
+    {
+        "SNo": 201,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 455,
+        "DistrictName(InEnglish)": "Patan",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "PAT"
+    },
+    {
+        "SNo": 202,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 456,
+        "DistrictName(InEnglish)": "Porbandar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "PRB"
+    },
+    {
+        "SNo": 203,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 457,
+        "DistrictName(InEnglish)": "Rajkot",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "RJK"
+    },
+    {
+        "SNo": 204,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 559,
+        "DistrictName(InEnglish)": "Kollam",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "KLM"
+    },
+    {
+        "SNo": 205,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 458,
+        "DistrictName(InEnglish)": "Sabar Kantha",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "SKA"
+    },
+    {
+        "SNo": 206,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 459,
+        "DistrictName(InEnglish)": "Surat",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "SRT"
+    },
+    {
+        "SNo": 207,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 460,
+        "DistrictName(InEnglish)": "Surendranagar",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "SUR"
+    },
+    {
+        "SNo": 208,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 641,
+        "DistrictName(InEnglish)": "Tapi",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "TAP"
+    },
+    {
+        "SNo": 209,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 461,
+        "DistrictName(InEnglish)": "Vadodara",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "VDR"
+    },
+    {
+        "SNo": 210,
+        "StateCode": 24,
+        "StateName": "Gujarat",
+        "DistrictLGDCode": 462,
+        "DistrictName(InEnglish)": "Valsad",
+        "Hierarchy": "Gujarat",
+        "ShortNameOfDistrict": "VLS"
+    },
+    {
+        "SNo": 211,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 58,
+        "DistrictName(InEnglish)": "Ambala",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "AMB"
+    },
+    {
+        "SNo": 212,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 59,
+        "DistrictName(InEnglish)": "Bhiwani",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "BHW"
+    },
+    {
+        "SNo": 213,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 701,
+        "DistrictName(InEnglish)": "Charkhi Dadri",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "HRK"
+    },
+    {
+        "SNo": 214,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 60,
+        "DistrictName(InEnglish)": "Faridabad",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "FRB"
+    },
+    {
+        "SNo": 215,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 61,
+        "DistrictName(InEnglish)": "Fatehabad",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "FTB"
+    },
+    {
+        "SNo": 216,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 62,
+        "DistrictName(InEnglish)": "Gurugram",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "GRG"
+    },
+    {
+        "SNo": 217,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 63,
+        "DistrictName(InEnglish)": "Hisar",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "HSR"
+    },
+    {
+        "SNo": 218,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 64,
+        "DistrictName(InEnglish)": "Jhajjar",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "JHJ"
+    },
+    {
+        "SNo": 219,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 65,
+        "DistrictName(InEnglish)": "Jind",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "JND"
+    },
+    {
+        "SNo": 220,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 66,
+        "DistrictName(InEnglish)": "Kaithal",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "KTL"
+    },
+    {
+        "SNo": 221,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 67,
+        "DistrictName(InEnglish)": "Karnal",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "KRL"
+    },
+    {
+        "SNo": 222,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 68,
+        "DistrictName(InEnglish)": "Kurukshetra",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "KRK"
+    },
+    {
+        "SNo": 223,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 69,
+        "DistrictName(InEnglish)": "Mahendragarh",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "MGH"
+    },
+    {
+        "SNo": 224,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 604,
+        "DistrictName(InEnglish)": "Nuh",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "MWT"
+    },
+    {
+        "SNo": 225,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 619,
+        "DistrictName(InEnglish)": "Palwal",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "PWL"
+    },
+    {
+        "SNo": 226,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 70,
+        "DistrictName(InEnglish)": "Panchkula",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "PNK"
+    },
+    {
+        "SNo": 227,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 71,
+        "DistrictName(InEnglish)": "Panipat",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "PNP"
+    },
+    {
+        "SNo": 228,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 72,
+        "DistrictName(InEnglish)": "Rewari",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "RWR"
+    },
+    {
+        "SNo": 229,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 73,
+        "DistrictName(InEnglish)": "Rohtak",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "RHT"
+    },
+    {
+        "SNo": 230,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 74,
+        "DistrictName(InEnglish)": "Sirsa",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "SRS"
+    },
+    {
+        "SNo": 231,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 75,
+        "DistrictName(InEnglish)": "Sonipat",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "SNP"
+    },
+    {
+        "SNo": 232,
+        "StateCode": 6,
+        "StateName": "Haryana",
+        "DistrictLGDCode": 76,
+        "DistrictName(InEnglish)": "Yamunanagar",
+        "Hierarchy": "Haryana",
+        "ShortNameOfDistrict": "YMN"
+    },
+    {
+        "SNo": 233,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 15,
+        "DistrictName(InEnglish)": "Bilaspur",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "BLS"
+    },
+    {
+        "SNo": 234,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 16,
+        "DistrictName(InEnglish)": "Chamba",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "CHM"
+    },
+    {
+        "SNo": 235,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 17,
+        "DistrictName(InEnglish)": "Hamirpur",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "HMP"
+    },
+    {
+        "SNo": 236,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 18,
+        "DistrictName(InEnglish)": "Kangra",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "KNG"
+    },
+    {
+        "SNo": 237,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 19,
+        "DistrictName(InEnglish)": "Kinnaur",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "KIN"
+    },
+    {
+        "SNo": 238,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 20,
+        "DistrictName(InEnglish)": "Kullu",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "KUL"
+    },
+    {
+        "SNo": 239,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 21,
+        "DistrictName(InEnglish)": "Lahaul And Spiti",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "LAS"
+    },
+    {
+        "SNo": 240,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 22,
+        "DistrictName(InEnglish)": "Mandi",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "MND"
+    },
+    {
+        "SNo": 241,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 23,
+        "DistrictName(InEnglish)": "Shimla",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "SHM"
+    },
+    {
+        "SNo": 242,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 24,
+        "DistrictName(InEnglish)": "Sirmaur",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "SRM"
+    },
+    {
+        "SNo": 243,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 25,
+        "DistrictName(InEnglish)": "Solan",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "SLN"
+    },
+    {
+        "SNo": 244,
+        "StateCode": 2,
+        "StateName": "Himachal Pradesh",
+        "DistrictLGDCode": 26,
+        "DistrictName(InEnglish)": "Una",
+        "Hierarchy": "Himachal Pradesh",
+        "ShortNameOfDistrict": "UNA"
+    },
+    {
+        "SNo": 245,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 1,
+        "DistrictName(InEnglish)": "Anantnag",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "ATG"
+    },
+    {
+        "SNo": 246,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 623,
+        "DistrictName(InEnglish)": "Bandipora",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "BDP"
+    },
+    {
+        "SNo": 247,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 3,
+        "DistrictName(InEnglish)": "Baramulla",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "BRM"
+    },
+    {
+        "SNo": 248,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 2,
+        "DistrictName(InEnglish)": "Budgam",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "BDG"
+    },
+    {
+        "SNo": 249,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 4,
+        "DistrictName(InEnglish)": "Doda",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "DOD"
+    },
+    {
+        "SNo": 250,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 626,
+        "DistrictName(InEnglish)": "Ganderbal",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "GDR"
+    },
+    {
+        "SNo": 251,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 5,
+        "DistrictName(InEnglish)": "Jammu",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "JMU"
+    },
+    {
+        "SNo": 252,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 7,
+        "DistrictName(InEnglish)": "Kathua",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "KTH"
+    },
+    {
+        "SNo": 253,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 620,
+        "DistrictName(InEnglish)": "Kishtwar",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "KHT"
+    },
+    {
+        "SNo": 254,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 622,
+        "DistrictName(InEnglish)": "Kulgam",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "KLG"
+    },
+    {
+        "SNo": 255,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 8,
+        "DistrictName(InEnglish)": "Kupwara",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "KPW"
+    },
+    {
+        "SNo": 256,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 10,
+        "DistrictName(InEnglish)": "Poonch",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "PNC"
+    },
+    {
+        "SNo": 257,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 11,
+        "DistrictName(InEnglish)": "Pulwama",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "PLW"
+    },
+    {
+        "SNo": 258,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 12,
+        "DistrictName(InEnglish)": "Rajouri",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "RJR"
+    },
+    {
+        "SNo": 259,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 621,
+        "DistrictName(InEnglish)": "Ramban",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "RMB"
+    },
+    {
+        "SNo": 260,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 627,
+        "DistrictName(InEnglish)": "Reasi",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "REA"
+    },
+    {
+        "SNo": 261,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 624,
+        "DistrictName(InEnglish)": "Samba",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "SAM"
+    },
+    {
+        "SNo": 262,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 625,
+        "DistrictName(InEnglish)": "Shopian",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "SPN"
+    },
+    {
+        "SNo": 263,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 560,
+        "DistrictName(InEnglish)": "Kottayam",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "KTM"
+    },
+    {
+        "SNo": 264,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 13,
+        "DistrictName(InEnglish)": "Srinagar",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "SRN"
+    },
+    {
+        "SNo": 265,
+        "StateCode": 1,
+        "StateName": "Jammu And Kashmir",
+        "DistrictLGDCode": 14,
+        "DistrictName(InEnglish)": "Udhampur",
+        "Hierarchy": "Jammu And Kashmir",
+        "ShortNameOfDistrict": "UDM"
+    },
+    {
+        "SNo": 266,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 322,
+        "DistrictName(InEnglish)": "Bokaro",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "BKR"
+    },
+    {
+        "SNo": 267,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 323,
+        "DistrictName(InEnglish)": "Chatra",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "CHT"
+    },
+    {
+        "SNo": 268,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 324,
+        "DistrictName(InEnglish)": "Deoghar",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "DGH"
+    },
+    {
+        "SNo": 269,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 325,
+        "DistrictName(InEnglish)": "Dhanbad",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "DHN"
+    },
+    {
+        "SNo": 270,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 326,
+        "DistrictName(InEnglish)": "Dumka",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "DMK"
+    },
+    {
+        "SNo": 271,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 327,
+        "DistrictName(InEnglish)": "East Singhbum",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "ESM"
+    },
+    {
+        "SNo": 272,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 328,
+        "DistrictName(InEnglish)": "Garhwa",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "GRH"
+    },
+    {
+        "SNo": 273,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 329,
+        "DistrictName(InEnglish)": "Giridih",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "GIR"
+    },
+    {
+        "SNo": 274,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 330,
+        "DistrictName(InEnglish)": "Godda",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "GDD"
+    },
+    {
+        "SNo": 275,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 331,
+        "DistrictName(InEnglish)": "Gumla",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "GML"
+    },
+    {
+        "SNo": 276,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 332,
+        "DistrictName(InEnglish)": "Hazaribagh",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "HZR"
+    },
+    {
+        "SNo": 277,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 333,
+        "DistrictName(InEnglish)": "Jamtara",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "JMT"
+    },
+    {
+        "SNo": 278,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 606,
+        "DistrictName(InEnglish)": "Khunti",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "KNT"
+    },
+    {
+        "SNo": 279,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 334,
+        "DistrictName(InEnglish)": "Koderma",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "KDR"
+    },
+    {
+        "SNo": 280,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 335,
+        "DistrictName(InEnglish)": "Latehar",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "LTH"
+    },
+    {
+        "SNo": 281,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 336,
+        "DistrictName(InEnglish)": "Lohardaga",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "LHR"
+    },
+    {
+        "SNo": 282,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 337,
+        "DistrictName(InEnglish)": "Pakur",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "PKR"
+    },
+    {
+        "SNo": 283,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 338,
+        "DistrictName(InEnglish)": "Palamu",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "PLM"
+    },
+    {
+        "SNo": 284,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 607,
+        "DistrictName(InEnglish)": "Ramgarh",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "RMG"
+    },
+    {
+        "SNo": 285,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 339,
+        "DistrictName(InEnglish)": "Ranchi",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "RNC"
+    },
+    {
+        "SNo": 286,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 340,
+        "DistrictName(InEnglish)": "Sahebganj",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "SGJ"
+    },
+    {
+        "SNo": 287,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 341,
+        "DistrictName(InEnglish)": "Saraikela Kharsawan",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "SKH"
+    },
+    {
+        "SNo": 288,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 342,
+        "DistrictName(InEnglish)": "Simdega",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "SMG"
+    },
+    {
+        "SNo": 289,
+        "StateCode": 20,
+        "StateName": "Jharkhand",
+        "DistrictLGDCode": 343,
+        "DistrictName(InEnglish)": "West Singhbhum",
+        "Hierarchy": "Jharkhand",
+        "ShortNameOfDistrict": "WSM"
+    },
+    {
+        "SNo": 290,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 524,
+        "DistrictName(InEnglish)": "Bagalkote",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BAG"
+    },
+    {
+        "SNo": 291,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 528,
+        "DistrictName(InEnglish)": "Ballari",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BLL"
+    },
+    {
+        "SNo": 292,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 527,
+        "DistrictName(InEnglish)": "Belagavi",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BLG"
+    },
+    {
+        "SNo": 293,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 526,
+        "DistrictName(InEnglish)": "Bengaluru Rural",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BRR"
+    },
+    {
+        "SNo": 294,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 631,
+        "DistrictName(InEnglish)": "Bengaluru South",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "RAM"
+    },
+    {
+        "SNo": 295,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 525,
+        "DistrictName(InEnglish)": "Bengaluru Urban",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BUR"
+    },
+    {
+        "SNo": 296,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 529,
+        "DistrictName(InEnglish)": "Bidar",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "BDR"
+    },
+    {
+        "SNo": 297,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 531,
+        "DistrictName(InEnglish)": "Chamarajanagar",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "CHJ"
+    },
+    {
+        "SNo": 298,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 630,
+        "DistrictName(InEnglish)": "Chikkaballapura",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "CHB"
+    },
+    {
+        "SNo": 299,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 532,
+        "DistrictName(InEnglish)": "Chikkamagaluru",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "CKM"
+    },
+    {
+        "SNo": 300,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 533,
+        "DistrictName(InEnglish)": "Chitradurga",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "CTR"
+    },
+    {
+        "SNo": 301,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 534,
+        "DistrictName(InEnglish)": "Dakshina Kannada",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "DKD"
+    },
+    {
+        "SNo": 302,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 535,
+        "DistrictName(InEnglish)": "Davanagere",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "DAV"
+    },
+    {
+        "SNo": 303,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 536,
+        "DistrictName(InEnglish)": "Dharwad",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "DRW"
+    },
+    {
+        "SNo": 304,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 537,
+        "DistrictName(InEnglish)": "Gadag",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "GDG"
+    },
+    {
+        "SNo": 305,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 539,
+        "DistrictName(InEnglish)": "Hassan",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "HAS"
+    },
+    {
+        "SNo": 306,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 540,
+        "DistrictName(InEnglish)": "Haveri",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "HAV"
+    },
+    {
+        "SNo": 307,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 538,
+        "DistrictName(InEnglish)": "Kalaburagi",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "KLB"
+    },
+    {
+        "SNo": 308,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 541,
+        "DistrictName(InEnglish)": "Kodagu",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "KDG"
+    },
+    {
+        "SNo": 309,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 542,
+        "DistrictName(InEnglish)": "Kolar",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "KLR"
+    },
+    {
+        "SNo": 310,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 543,
+        "DistrictName(InEnglish)": "Koppal",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "KPL"
+    },
+    {
+        "SNo": 311,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 544,
+        "DistrictName(InEnglish)": "Mandya",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "MDY"
+    },
+    {
+        "SNo": 312,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 545,
+        "DistrictName(InEnglish)": "Mysuru",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "MYS"
+    },
+    {
+        "SNo": 313,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 546,
+        "DistrictName(InEnglish)": "Raichur",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "RCH"
+    },
+    {
+        "SNo": 314,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 547,
+        "DistrictName(InEnglish)": "Shivamogga",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "SVM"
+    },
+    {
+        "SNo": 315,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 548,
+        "DistrictName(InEnglish)": "Tumakuru",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "TMK"
+    },
+    {
+        "SNo": 316,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 549,
+        "DistrictName(InEnglish)": "Udupi",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "UDU"
+    },
+    {
+        "SNo": 317,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 550,
+        "DistrictName(InEnglish)": "Uttara Kannada",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "UKD"
+    },
+    {
+        "SNo": 318,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 738,
+        "DistrictName(InEnglish)": "Vijayanagara",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "VJY"
+    },
+    {
+        "SNo": 319,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 530,
+        "DistrictName(InEnglish)": "Vijayapura",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "VJP"
+    },
+    {
+        "SNo": 320,
+        "StateCode": 29,
+        "StateName": "Karnataka",
+        "DistrictLGDCode": 635,
+        "DistrictName(InEnglish)": "Yadgir",
+        "Hierarchy": "Karnataka",
+        "ShortNameOfDistrict": "YDG"
+    },
+    {
+        "SNo": 321,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 554,
+        "DistrictName(InEnglish)": "Alappuzha",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "ALZ"
+    },
+    {
+        "SNo": 322,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 555,
+        "DistrictName(InEnglish)": "Ernakulam",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "ERN"
+    },
+    {
+        "SNo": 323,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 556,
+        "DistrictName(InEnglish)": "Idukki",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "IDK"
+    },
+    {
+        "SNo": 324,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 557,
+        "DistrictName(InEnglish)": "Kannur",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "KNU"
+    },
+    {
+        "SNo": 325,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 558,
+        "DistrictName(InEnglish)": "Kasaragod",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "KSR"
+    },
+    {
+        "SNo": 326,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 561,
+        "DistrictName(InEnglish)": "Kozhikode",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "KOZ"
+    },
+    {
+        "SNo": 327,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 562,
+        "DistrictName(InEnglish)": "Malappuram",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "MLP"
+    },
+    {
+        "SNo": 328,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 563,
+        "DistrictName(InEnglish)": "Palakkad",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "PLK"
+    },
+    {
+        "SNo": 329,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 564,
+        "DistrictName(InEnglish)": "Pathanamthitta",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "PTT"
+    },
+    {
+        "SNo": 330,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 565,
+        "DistrictName(InEnglish)": "Thiruvananthapuram",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "TVP"
+    },
+    {
+        "SNo": 331,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 566,
+        "DistrictName(InEnglish)": "Thrissur",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "TSR"
+    },
+    {
+        "SNo": 332,
+        "StateCode": 32,
+        "StateName": "Kerala",
+        "DistrictLGDCode": 567,
+        "DistrictName(InEnglish)": "Wayanad",
+        "Hierarchy": "Kerala",
+        "ShortNameOfDistrict": "WAY"
+    },
+    {
+        "SNo": 333,
+        "StateCode": 37,
+        "StateName": "Ladakh",
+        "DistrictLGDCode": 6,
+        "DistrictName(InEnglish)": "Kargil",
+        "Hierarchy": "Ladakh",
+        "ShortNameOfDistrict": "KRG"
+    },
+    {
+        "SNo": 334,
+        "StateCode": 37,
+        "StateName": "Ladakh",
+        "DistrictLGDCode": 9,
+        "DistrictName(InEnglish)": "Leh Ladakh",
+        "Hierarchy": "Ladakh",
+        "ShortNameOfDistrict": "LLD"
+    },
+    {
+        "SNo": 335,
+        "StateCode": 31,
+        "StateName": "Lakshadweep",
+        "DistrictLGDCode": 553,
+        "DistrictName(InEnglish)": "Lakshadweep District",
+        "Hierarchy": "Lakshadweep",
+        "ShortNameOfDistrict": "LKS"
+    },
+    {
+        "SNo": 336,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 667,
+        "DistrictName(InEnglish)": "Agar-Malwa",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "AGM"
+    },
+    {
+        "SNo": 337,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 639,
+        "DistrictName(InEnglish)": "Alirajpur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "ALI"
+    },
+    {
+        "SNo": 338,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 390,
+        "DistrictName(InEnglish)": "Anuppur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "ANP"
+    },
+    {
+        "SNo": 339,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 391,
+        "DistrictName(InEnglish)": "Ashoknagar",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "ANR"
+    },
+    {
+        "SNo": 340,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 392,
+        "DistrictName(InEnglish)": "Balaghat",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BGT"
+    },
+    {
+        "SNo": 341,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 393,
+        "DistrictName(InEnglish)": "Barwani",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BRW"
+    },
+    {
+        "SNo": 342,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 394,
+        "DistrictName(InEnglish)": "Betul",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BTL"
+    },
+    {
+        "SNo": 343,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 395,
+        "DistrictName(InEnglish)": "Bhind",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BHN"
+    },
+    {
+        "SNo": 344,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 396,
+        "DistrictName(InEnglish)": "Bhopal",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BHP"
+    },
+    {
+        "SNo": 345,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 397,
+        "DistrictName(InEnglish)": "Burhanpur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "BRH"
+    },
+    {
+        "SNo": 346,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 398,
+        "DistrictName(InEnglish)": "Chhatarpur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "CRP"
+    },
+    {
+        "SNo": 347,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 399,
+        "DistrictName(InEnglish)": "Chhindwara",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "CDW"
+    },
+    {
+        "SNo": 348,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 400,
+        "DistrictName(InEnglish)": "Damoh",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "DMH"
+    },
+    {
+        "SNo": 349,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 401,
+        "DistrictName(InEnglish)": "Datia",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "DAT"
+    },
+    {
+        "SNo": 350,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 402,
+        "DistrictName(InEnglish)": "Dewas",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "DWS"
+    },
+    {
+        "SNo": 351,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 403,
+        "DistrictName(InEnglish)": "Dhar",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "DHA"
+    },
+    {
+        "SNo": 352,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 404,
+        "DistrictName(InEnglish)": "Dindori",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "DND"
+    },
+    {
+        "SNo": 353,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 406,
+        "DistrictName(InEnglish)": "Guna",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "GUN"
+    },
+    {
+        "SNo": 354,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 407,
+        "DistrictName(InEnglish)": "Gwalior",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "GWL"
+    },
+    {
+        "SNo": 355,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 408,
+        "DistrictName(InEnglish)": "Harda",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "HDA"
+    },
+    {
+        "SNo": 356,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 410,
+        "DistrictName(InEnglish)": "Indore",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "IND"
+    },
+    {
+        "SNo": 357,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 411,
+        "DistrictName(InEnglish)": "Jabalpur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "JBL"
+    },
+    {
+        "SNo": 358,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 412,
+        "DistrictName(InEnglish)": "Jhabua",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "JHA"
+    },
+    {
+        "SNo": 359,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 413,
+        "DistrictName(InEnglish)": "Katni",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "KTN"
+    },
+    {
+        "SNo": 360,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 405,
+        "DistrictName(InEnglish)": "Khandwa (East Nimar)",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "ENR"
+    },
+    {
+        "SNo": 361,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 414,
+        "DistrictName(InEnglish)": "Khargone (West Nimar)",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "KHA"
+    },
+    {
+        "SNo": 362,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 784,
+        "DistrictName(InEnglish)": "Maihar",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "MHR"
+    },
+    {
+        "SNo": 363,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 415,
+        "DistrictName(InEnglish)": "Mandla",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "MDL"
+    },
+    {
+        "SNo": 364,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 416,
+        "DistrictName(InEnglish)": "Mandsaur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "MAN"
+    },
+    {
+        "SNo": 365,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 766,
+        "DistrictName(InEnglish)": "MAUGANJ",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "MGJ"
+    },
+    {
+        "SNo": 366,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 417,
+        "DistrictName(InEnglish)": "Morena",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "MRN"
+    },
+    {
+        "SNo": 367,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 409,
+        "DistrictName(InEnglish)": "Narmadapuram",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "HSH"
+    },
+    {
+        "SNo": 368,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 418,
+        "DistrictName(InEnglish)": "Narsimhapur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "NRS"
+    },
+    {
+        "SNo": 369,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 419,
+        "DistrictName(InEnglish)": "Neemuch",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "NMC"
+    },
+    {
+        "SNo": 370,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 722,
+        "DistrictName(InEnglish)": "Niwari",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "NWR"
+    },
+    {
+        "SNo": 371,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 785,
+        "DistrictName(InEnglish)": "Pandhurna",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "PND"
+    },
+    {
+        "SNo": 372,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 420,
+        "DistrictName(InEnglish)": "Panna",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "PNN"
+    },
+    {
+        "SNo": 373,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 421,
+        "DistrictName(InEnglish)": "Raisen",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "RSN"
+    },
+    {
+        "SNo": 374,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 422,
+        "DistrictName(InEnglish)": "Rajgarh",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "RJG"
+    },
+    {
+        "SNo": 375,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 423,
+        "DistrictName(InEnglish)": "Ratlam",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "RTL"
+    },
+    {
+        "SNo": 376,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 424,
+        "DistrictName(InEnglish)": "Rewa",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "REW"
+    },
+    {
+        "SNo": 377,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 425,
+        "DistrictName(InEnglish)": "Sagar",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SGR"
+    },
+    {
+        "SNo": 378,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 426,
+        "DistrictName(InEnglish)": "Satna",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "STN"
+    },
+    {
+        "SNo": 379,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 427,
+        "DistrictName(InEnglish)": "Sehore",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SEH"
+    },
+    {
+        "SNo": 380,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 428,
+        "DistrictName(InEnglish)": "Seoni",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SEO"
+    },
+    {
+        "SNo": 381,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 429,
+        "DistrictName(InEnglish)": "Shahdol",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SHD"
+    },
+    {
+        "SNo": 382,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 430,
+        "DistrictName(InEnglish)": "Shajapur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SJR"
+    },
+    {
+        "SNo": 383,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 431,
+        "DistrictName(InEnglish)": "Sheopur",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SHP"
+    },
+    {
+        "SNo": 384,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 432,
+        "DistrictName(InEnglish)": "Shivpuri",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SVP"
+    },
+    {
+        "SNo": 385,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 433,
+        "DistrictName(InEnglish)": "Sidhi",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SDH"
+    },
+    {
+        "SNo": 386,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 638,
+        "DistrictName(InEnglish)": "Singrauli",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "SGL"
+    },
+    {
+        "SNo": 387,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 434,
+        "DistrictName(InEnglish)": "Tikamgarh",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "TKM"
+    },
+    {
+        "SNo": 388,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 435,
+        "DistrictName(InEnglish)": "Ujjain",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "UJJ"
+    },
+    {
+        "SNo": 389,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 436,
+        "DistrictName(InEnglish)": "Umaria",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "UMA"
+    },
+    {
+        "SNo": 390,
+        "StateCode": 23,
+        "StateName": "Madhya Pradesh",
+        "DistrictLGDCode": 437,
+        "DistrictName(InEnglish)": "Vidisha",
+        "Hierarchy": "Madhya Pradesh",
+        "ShortNameOfDistrict": "VID"
+    },
+    {
+        "SNo": 391,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 466,
+        "DistrictName(InEnglish)": "Ahilyanagar",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "AHN"
+    },
+    {
+        "SNo": 392,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 467,
+        "DistrictName(InEnglish)": "Akola",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "AKO"
+    },
+    {
+        "SNo": 393,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 468,
+        "DistrictName(InEnglish)": "Amravati",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "AMV"
+    },
+    {
+        "SNo": 394,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 470,
+        "DistrictName(InEnglish)": "Beed",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "BEE"
+    },
+    {
+        "SNo": 395,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 471,
+        "DistrictName(InEnglish)": "Bhandara",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "BHA"
+    },
+    {
+        "SNo": 396,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 472,
+        "DistrictName(InEnglish)": "Buldhana",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "BUL"
+    },
+    {
+        "SNo": 397,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 473,
+        "DistrictName(InEnglish)": "Chandrapur",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "CPR"
+    },
+    {
+        "SNo": 398,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 469,
+        "DistrictName(InEnglish)": "Chhatrapati Sambhajinagar",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "AUR"
+    },
+    {
+        "SNo": 399,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 488,
+        "DistrictName(InEnglish)": "Dharashiv",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "OSM"
+    },
+    {
+        "SNo": 400,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 474,
+        "DistrictName(InEnglish)": "Dhule",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "DHU"
+    },
+    {
+        "SNo": 401,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 475,
+        "DistrictName(InEnglish)": "Gadchiroli",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "GDC"
+    },
+    {
+        "SNo": 402,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 476,
+        "DistrictName(InEnglish)": "Gondia",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "GON"
+    },
+    {
+        "SNo": 403,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 477,
+        "DistrictName(InEnglish)": "Hingoli",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "HIN"
+    },
+    {
+        "SNo": 404,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 478,
+        "DistrictName(InEnglish)": "Jalgaon",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "JLG"
+    },
+    {
+        "SNo": 405,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 479,
+        "DistrictName(InEnglish)": "Jalna",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "JAL"
+    },
+    {
+        "SNo": 406,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 480,
+        "DistrictName(InEnglish)": "Kolhapur",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "KLP"
+    },
+    {
+        "SNo": 407,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 481,
+        "DistrictName(InEnglish)": "Latur",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "LTR"
+    },
+    {
+        "SNo": 408,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 482,
+        "DistrictName(InEnglish)": "Mumbai",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "MMB"
+    },
+    {
+        "SNo": 409,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 483,
+        "DistrictName(InEnglish)": "Mumbai Suburban",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "MMS"
+    },
+    {
+        "SNo": 410,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 484,
+        "DistrictName(InEnglish)": "Nagpur",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "NGP"
+    },
+    {
+        "SNo": 411,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 485,
+        "DistrictName(InEnglish)": "Nanded",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "NAN"
+    },
+    {
+        "SNo": 412,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 486,
+        "DistrictName(InEnglish)": "Nandurbar",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "NNR"
+    },
+    {
+        "SNo": 413,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 487,
+        "DistrictName(InEnglish)": "Nashik",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "NSH"
+    },
+    {
+        "SNo": 414,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 665,
+        "DistrictName(InEnglish)": "Palghar",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "PLG"
+    },
+    {
+        "SNo": 415,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 489,
+        "DistrictName(InEnglish)": "Parbhani",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "PBN"
+    },
+    {
+        "SNo": 416,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 490,
+        "DistrictName(InEnglish)": "Pune",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "PUN"
+    },
+    {
+        "SNo": 417,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 491,
+        "DistrictName(InEnglish)": "Raigad",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "RGD"
+    },
+    {
+        "SNo": 418,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 492,
+        "DistrictName(InEnglish)": "Ratnagiri",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "RTN"
+    },
+    {
+        "SNo": 419,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 493,
+        "DistrictName(InEnglish)": "Sangli",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "SNG"
+    },
+    {
+        "SNo": 420,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 494,
+        "DistrictName(InEnglish)": "Satara",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "SAT"
+    },
+    {
+        "SNo": 421,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 495,
+        "DistrictName(InEnglish)": "Sindhudurg",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "SIN"
+    },
+    {
+        "SNo": 422,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 496,
+        "DistrictName(InEnglish)": "Solapur",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "SOL"
+    },
+    {
+        "SNo": 423,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 497,
+        "DistrictName(InEnglish)": "Thane",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "THN"
+    },
+    {
+        "SNo": 424,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 498,
+        "DistrictName(InEnglish)": "Wardha",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "WRD"
+    },
+    {
+        "SNo": 425,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 499,
+        "DistrictName(InEnglish)": "Washim",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "WSH"
+    },
+    {
+        "SNo": 426,
+        "StateCode": 27,
+        "StateName": "Maharashtra",
+        "DistrictLGDCode": 500,
+        "DistrictName(InEnglish)": "Yavatmal",
+        "Hierarchy": "Maharashtra",
+        "ShortNameOfDistrict": "YVT"
+    },
+    {
+        "SNo": 427,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 252,
+        "DistrictName(InEnglish)": "Bishnupur",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "BSH"
+    },
+    {
+        "SNo": 428,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 253,
+        "DistrictName(InEnglish)": "Chandel",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "CHA"
+    },
+    {
+        "SNo": 429,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 254,
+        "DistrictName(InEnglish)": "Churachandpur",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "CHC"
+    },
+    {
+        "SNo": 430,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 255,
+        "DistrictName(InEnglish)": "Imphal East",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "IME"
+    },
+    {
+        "SNo": 431,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 256,
+        "DistrictName(InEnglish)": "Imphal West",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "IMW"
+    },
+    {
+        "SNo": 432,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 713,
+        "DistrictName(InEnglish)": "Jiribam",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "JRB"
+    },
+    {
+        "SNo": 433,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 711,
+        "DistrictName(InEnglish)": "Kakching",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "KKC"
+    },
+    {
+        "SNo": 434,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 717,
+        "DistrictName(InEnglish)": "Kamjong",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "KMJ"
+    },
+    {
+        "SNo": 435,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 712,
+        "DistrictName(InEnglish)": "Kangpokpi",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "KNP"
+    },
+    {
+        "SNo": 436,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 714,
+        "DistrictName(InEnglish)": "Noney",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "NNY"
+    },
+    {
+        "SNo": 437,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 715,
+        "DistrictName(InEnglish)": "Pherzawl",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "PHR"
+    },
+    {
+        "SNo": 438,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 257,
+        "DistrictName(InEnglish)": "Senapati",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "SNT"
+    },
+    {
+        "SNo": 439,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 258,
+        "DistrictName(InEnglish)": "Tamenglong",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "TMN"
+    },
+    {
+        "SNo": 440,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 716,
+        "DistrictName(InEnglish)": "Tengnoupal",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "TNG"
+    },
+    {
+        "SNo": 441,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 259,
+        "DistrictName(InEnglish)": "Thoubal",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "THB"
+    },
+    {
+        "SNo": 442,
+        "StateCode": 14,
+        "StateName": "Manipur",
+        "DistrictLGDCode": 260,
+        "DistrictName(InEnglish)": "Ukhrul",
+        "Hierarchy": "Manipur",
+        "ShortNameOfDistrict": "UKH"
+    },
+    {
+        "SNo": 443,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 740,
+        "DistrictName(InEnglish)": "Eastern West Khasi Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "EWK"
+    },
+    {
+        "SNo": 444,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 273,
+        "DistrictName(InEnglish)": "East Garo Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "EGH"
+    },
+    {
+        "SNo": 445,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 657,
+        "DistrictName(InEnglish)": "East Jaintia Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "EJH"
+    },
+    {
+        "SNo": 446,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 274,
+        "DistrictName(InEnglish)": "East Khasi Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "EKH"
+    },
+    {
+        "SNo": 447,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 656,
+        "DistrictName(InEnglish)": "North Garo Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "NGH"
+    },
+    {
+        "SNo": 448,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 276,
+        "DistrictName(InEnglish)": "Ri Bhoi",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "RGH"
+    },
+    {
+        "SNo": 449,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 277,
+        "DistrictName(InEnglish)": "South Garo Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "SGH"
+    },
+    {
+        "SNo": 450,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 663,
+        "DistrictName(InEnglish)": "South West Garo Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "SWG"
+    },
+    {
+        "SNo": 451,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 658,
+        "DistrictName(InEnglish)": "South West Khasi Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "SWK"
+    },
+    {
+        "SNo": 452,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 278,
+        "DistrictName(InEnglish)": "West Garo Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "WGH"
+    },
+    {
+        "SNo": 453,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 275,
+        "DistrictName(InEnglish)": "West Jaintia Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "WJH"
+    },
+    {
+        "SNo": 454,
+        "StateCode": 17,
+        "StateName": "Meghalaya",
+        "DistrictLGDCode": 279,
+        "DistrictName(InEnglish)": "West Khasi Hills",
+        "Hierarchy": "Meghalaya",
+        "ShortNameOfDistrict": "WKA"
+    },
+    {
+        "SNo": 455,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 261,
+        "DistrictName(InEnglish)": "Aizawl",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "AIZ"
+    },
+    {
+        "SNo": 456,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 262,
+        "DistrictName(InEnglish)": "Champhai",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "CPH"
+    },
+    {
+        "SNo": 457,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 726,
+        "DistrictName(InEnglish)": "Hnahthial",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "HNH"
+    },
+    {
+        "SNo": 458,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 728,
+        "DistrictName(InEnglish)": "Khawzawl",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "KHW"
+    },
+    {
+        "SNo": 459,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 263,
+        "DistrictName(InEnglish)": "Kolasib",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "KLS"
+    },
+    {
+        "SNo": 460,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 264,
+        "DistrictName(InEnglish)": "Lawngtlai",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "LWN"
+    },
+    {
+        "SNo": 461,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 265,
+        "DistrictName(InEnglish)": "Lunglei",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "LNG"
+    },
+    {
+        "SNo": 462,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 266,
+        "DistrictName(InEnglish)": "Mamit",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "MMT"
+    },
+    {
+        "SNo": 463,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 727,
+        "DistrictName(InEnglish)": "Saitual",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "STL"
+    },
+    {
+        "SNo": 464,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 268,
+        "DistrictName(InEnglish)": "Serchhip",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "SER"
+    },
+    {
+        "SNo": 465,
+        "StateCode": 15,
+        "StateName": "Mizoram",
+        "DistrictLGDCode": 267,
+        "DistrictName(InEnglish)": "Siaha",
+        "Hierarchy": "Mizoram",
+        "ShortNameOfDistrict": "SAI"
+    },
+    {
+        "SNo": 466,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 758,
+        "DistrictName(InEnglish)": "Chumoukedima",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "CKD"
+    },
+    {
+        "SNo": 467,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 244,
+        "DistrictName(InEnglish)": "Dimapur",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "DMP"
+    },
+    {
+        "SNo": 468,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 614,
+        "DistrictName(InEnglish)": "Kiphire",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "KIP"
+    },
+    {
+        "SNo": 469,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 245,
+        "DistrictName(InEnglish)": "Kohima",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "KHM"
+    },
+    {
+        "SNo": 470,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 615,
+        "DistrictName(InEnglish)": "Longleng",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "LLG"
+    },
+    {
+        "SNo": 471,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 788,
+        "DistrictName(InEnglish)": "Meluri",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": ""
+    },
+    {
+        "SNo": 472,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 246,
+        "DistrictName(InEnglish)": "Mokokchung",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "MKK"
+    },
+    {
+        "SNo": 473,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 247,
+        "DistrictName(InEnglish)": "Mon",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "MON"
+    },
+    {
+        "SNo": 474,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 764,
+        "DistrictName(InEnglish)": "Niuland",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "NLN"
+    },
+    {
+        "SNo": 475,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 736,
+        "DistrictName(InEnglish)": "Noklak",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "NKL"
+    },
+    {
+        "SNo": 476,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 613,
+        "DistrictName(InEnglish)": "Peren",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "PER"
+    },
+    {
+        "SNo": 477,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 248,
+        "DistrictName(InEnglish)": "Phek",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "PHK"
+    },
+    {
+        "SNo": 478,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 765,
+        "DistrictName(InEnglish)": "Shamator",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "SMR"
+    },
+    {
+        "SNo": 479,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 757,
+        "DistrictName(InEnglish)": "Tseminyu",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "TSM"
+    },
+    {
+        "SNo": 480,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 249,
+        "DistrictName(InEnglish)": "Tuensang",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "TNS"
+    },
+    {
+        "SNo": 481,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 250,
+        "DistrictName(InEnglish)": "Wokha",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "WKH"
+    },
+    {
+        "SNo": 482,
+        "StateCode": 13,
+        "StateName": "Nagaland",
+        "DistrictLGDCode": 251,
+        "DistrictName(InEnglish)": "Zunheboto",
+        "Hierarchy": "Nagaland",
+        "ShortNameOfDistrict": "ZNH"
+    },
+    {
+        "SNo": 483,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 344,
+        "DistrictName(InEnglish)": "Anugul",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "ANU"
+    },
+    {
+        "SNo": 484,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 345,
+        "DistrictName(InEnglish)": "Balangir",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "BLN"
+    },
+    {
+        "SNo": 485,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 346,
+        "DistrictName(InEnglish)": "Baleshwar",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "BLW"
+    },
+    {
+        "SNo": 486,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 347,
+        "DistrictName(InEnglish)": "Bargarh",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "BRG"
+    },
+    {
+        "SNo": 487,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 348,
+        "DistrictName(InEnglish)": "Bhadrak",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "BDK"
+    },
+    {
+        "SNo": 488,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 349,
+        "DistrictName(InEnglish)": "Boudh",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "BDH"
+    },
+    {
+        "SNo": 489,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 350,
+        "DistrictName(InEnglish)": "Cuttack",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "CTT"
+    },
+    {
+        "SNo": 490,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 351,
+        "DistrictName(InEnglish)": "Deogarh",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "DGR"
+    },
+    {
+        "SNo": 491,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 352,
+        "DistrictName(InEnglish)": "Dhenkanal",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "DHK"
+    },
+    {
+        "SNo": 492,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 353,
+        "DistrictName(InEnglish)": "Gajapati",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "GJP"
+    },
+    {
+        "SNo": 493,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 354,
+        "DistrictName(InEnglish)": "Ganjam",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "GNJ"
+    },
+    {
+        "SNo": 494,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 355,
+        "DistrictName(InEnglish)": "Jagatsinghapur",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "JGT"
+    },
+    {
+        "SNo": 495,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 356,
+        "DistrictName(InEnglish)": "Jajapur",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "JJP"
+    },
+    {
+        "SNo": 496,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 357,
+        "DistrictName(InEnglish)": "Jharsuguda",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "JHR"
+    },
+    {
+        "SNo": 497,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 358,
+        "DistrictName(InEnglish)": "Kalahandi",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KLH"
+    },
+    {
+        "SNo": 498,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 359,
+        "DistrictName(InEnglish)": "Kandhamal",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KNM"
+    },
+    {
+        "SNo": 499,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 360,
+        "DistrictName(InEnglish)": "Kendrapara",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KND"
+    },
+    {
+        "SNo": 500,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 361,
+        "DistrictName(InEnglish)": "Kendujhar",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KNH"
+    },
+    {
+        "SNo": 501,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 362,
+        "DistrictName(InEnglish)": "Khordha",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KHD"
+    },
+    {
+        "SNo": 502,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 363,
+        "DistrictName(InEnglish)": "Koraput",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "KRP"
+    },
+    {
+        "SNo": 503,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 364,
+        "DistrictName(InEnglish)": "Malkangiri",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "MLK"
+    },
+    {
+        "SNo": 504,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 365,
+        "DistrictName(InEnglish)": "Mayurbhanj",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "MYR"
+    },
+    {
+        "SNo": 505,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 366,
+        "DistrictName(InEnglish)": "Nabarangpur",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "NBR"
+    },
+    {
+        "SNo": 506,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 367,
+        "DistrictName(InEnglish)": "Nayagarh",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "NYG"
+    },
+    {
+        "SNo": 507,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 368,
+        "DistrictName(InEnglish)": "Nuapada",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "NPD"
+    },
+    {
+        "SNo": 508,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 369,
+        "DistrictName(InEnglish)": "Puri",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "PUR"
+    },
+    {
+        "SNo": 509,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 370,
+        "DistrictName(InEnglish)": "Rayagada",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "RYG"
+    },
+    {
+        "SNo": 510,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 371,
+        "DistrictName(InEnglish)": "Sambalpur",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "SMB"
+    },
+    {
+        "SNo": 511,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 372,
+        "DistrictName(InEnglish)": "Sonepur",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "SNE"
+    },
+    {
+        "SNo": 512,
+        "StateCode": 21,
+        "StateName": "Odisha",
+        "DistrictLGDCode": 373,
+        "DistrictName(InEnglish)": "Sundargarh",
+        "Hierarchy": "Odisha",
+        "ShortNameOfDistrict": "SDG"
+    },
+    {
+        "SNo": 513,
+        "StateCode": 34,
+        "StateName": "Puducherry",
+        "DistrictLGDCode": 598,
+        "DistrictName(InEnglish)": "Karaikal",
+        "Hierarchy": "Puducherry",
+        "ShortNameOfDistrict": "KKL"
+    },
+    {
+        "SNo": 514,
+        "StateCode": 34,
+        "StateName": "Puducherry",
+        "DistrictLGDCode": 600,
+        "DistrictName(InEnglish)": "Puducherry",
+        "Hierarchy": "Puducherry",
+        "ShortNameOfDistrict": "PON"
+    },
+    {
+        "SNo": 515,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 27,
+        "DistrictName(InEnglish)": "Amritsar",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "AMT"
+    },
+    {
+        "SNo": 516,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 605,
+        "DistrictName(InEnglish)": "Barnala",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "BNL"
+    },
+    {
+        "SNo": 517,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 28,
+        "DistrictName(InEnglish)": "Bathinda",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "BTH"
+    },
+    {
+        "SNo": 518,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 29,
+        "DistrictName(InEnglish)": "Faridkot",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "FRD"
+    },
+    {
+        "SNo": 519,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 30,
+        "DistrictName(InEnglish)": "Fatehgarh Sahib",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "FTG"
+    },
+    {
+        "SNo": 520,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 651,
+        "DistrictName(InEnglish)": "Fazilka",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "FAZ"
+    },
+    {
+        "SNo": 521,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 31,
+        "DistrictName(InEnglish)": "Ferozepur",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "FRZ"
+    },
+    {
+        "SNo": 522,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 32,
+        "DistrictName(InEnglish)": "Gurdaspur",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "GRD"
+    },
+    {
+        "SNo": 523,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 33,
+        "DistrictName(InEnglish)": "Hoshiarpur",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "HSP"
+    },
+    {
+        "SNo": 524,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 34,
+        "DistrictName(InEnglish)": "Jalandhar",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "JLN"
+    },
+    {
+        "SNo": 525,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 35,
+        "DistrictName(InEnglish)": "Kapurthala",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "KPR"
+    },
+    {
+        "SNo": 526,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 36,
+        "DistrictName(InEnglish)": "Ludhiana",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "LDH"
+    },
+    {
+        "SNo": 527,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 737,
+        "DistrictName(InEnglish)": "Malerkotla",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "MLR"
+    },
+    {
+        "SNo": 528,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 37,
+        "DistrictName(InEnglish)": "Mansa",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "MNS"
+    },
+    {
+        "SNo": 529,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 38,
+        "DistrictName(InEnglish)": "Moga",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "MOG"
+    },
+    {
+        "SNo": 530,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 662,
+        "DistrictName(InEnglish)": "Pathankot",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "PTK"
+    },
+    {
+        "SNo": 531,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 41,
+        "DistrictName(InEnglish)": "Patiala",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "PTL"
+    },
+    {
+        "SNo": 532,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 42,
+        "DistrictName(InEnglish)": "Rupnagar",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "RPN"
+    },
+    {
+        "SNo": 533,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 43,
+        "DistrictName(InEnglish)": "Sangrur",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "SNR"
+    },
+    {
+        "SNo": 534,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 608,
+        "DistrictName(InEnglish)": "S.A.S Nagar",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "SSR"
+    },
+    {
+        "SNo": 535,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 40,
+        "DistrictName(InEnglish)": "Shahid Bhagat Singh Nagar",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "NWN"
+    },
+    {
+        "SNo": 536,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 39,
+        "DistrictName(InEnglish)": "Sri Muktsar Sahib",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "SMT"
+    },
+    {
+        "SNo": 537,
+        "StateCode": 3,
+        "StateName": "Punjab",
+        "DistrictLGDCode": 609,
+        "DistrictName(InEnglish)": "Tarn Taran",
+        "Hierarchy": "Punjab",
+        "ShortNameOfDistrict": "TAR"
+    },
+    {
+        "SNo": 538,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 86,
+        "DistrictName(InEnglish)": "Ajmer",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "AJM"
+    },
+    {
+        "SNo": 539,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 87,
+        "DistrictName(InEnglish)": "Alwar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "ALW"
+    },
+    {
+        "SNo": 540,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 775,
+        "DistrictName(InEnglish)": "Balotra",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BLT"
+    },
+    {
+        "SNo": 541,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 88,
+        "DistrictName(InEnglish)": "Banswara",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BNS"
+    },
+    {
+        "SNo": 542,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 89,
+        "DistrictName(InEnglish)": "Baran",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BRN"
+    },
+    {
+        "SNo": 543,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 90,
+        "DistrictName(InEnglish)": "Barmer",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BMR"
+    },
+    {
+        "SNo": 544,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 774,
+        "DistrictName(InEnglish)": "Beawar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BWR"
+    },
+    {
+        "SNo": 545,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 91,
+        "DistrictName(InEnglish)": "Bharatpur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BTR"
+    },
+    {
+        "SNo": 546,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 92,
+        "DistrictName(InEnglish)": "Bhilwara",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BHL"
+    },
+    {
+        "SNo": 547,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 93,
+        "DistrictName(InEnglish)": "Bikaner",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BIK"
+    },
+    {
+        "SNo": 548,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 94,
+        "DistrictName(InEnglish)": "Bundi",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "BND"
+    },
+    {
+        "SNo": 549,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 95,
+        "DistrictName(InEnglish)": "Chittorgarh",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "CGH"
+    },
+    {
+        "SNo": 550,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 96,
+        "DistrictName(InEnglish)": "Churu",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "CHR"
+    },
+    {
+        "SNo": 551,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 97,
+        "DistrictName(InEnglish)": "Dausa",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "DAS"
+    },
+    {
+        "SNo": 552,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 767,
+        "DistrictName(InEnglish)": "Deeg",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "DEE"
+    },
+    {
+        "SNo": 553,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 98,
+        "DistrictName(InEnglish)": "Dholpur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "DLP"
+    },
+    {
+        "SNo": 554,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 768,
+        "DistrictName(InEnglish)": "Didwana-Kuchaman",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "DDW"
+    },
+    {
+        "SNo": 555,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 99,
+        "DistrictName(InEnglish)": "Dungarpur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "DNG"
+    },
+    {
+        "SNo": 556,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 100,
+        "DistrictName(InEnglish)": "Ganganagar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "GNG"
+    },
+    {
+        "SNo": 557,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 101,
+        "DistrictName(InEnglish)": "Hanumangarh",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "HGH"
+    },
+    {
+        "SNo": 558,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 102,
+        "DistrictName(InEnglish)": "Jaipur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JPR"
+    },
+    {
+        "SNo": 559,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 103,
+        "DistrictName(InEnglish)": "Jaisalmer",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JSL"
+    },
+    {
+        "SNo": 560,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 104,
+        "DistrictName(InEnglish)": "Jalore",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JLR"
+    },
+    {
+        "SNo": 561,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 105,
+        "DistrictName(InEnglish)": "Jhalawar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JHL"
+    },
+    {
+        "SNo": 562,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 106,
+        "DistrictName(InEnglish)": "Jhunjhunu",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JHN"
+    },
+    {
+        "SNo": 563,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 107,
+        "DistrictName(InEnglish)": "Jodhpur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "JDH"
+    },
+    {
+        "SNo": 564,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 108,
+        "DistrictName(InEnglish)": "Karauli",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "KAR"
+    },
+    {
+        "SNo": 565,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 770,
+        "DistrictName(InEnglish)": "Khairthal-Tijara",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "KTJ"
+    },
+    {
+        "SNo": 566,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 109,
+        "DistrictName(InEnglish)": "Kota",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "KOT"
+    },
+    {
+        "SNo": 567,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 782,
+        "DistrictName(InEnglish)": "Kotputli-Behror",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "KTP"
+    },
+    {
+        "SNo": 568,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 110,
+        "DistrictName(InEnglish)": "Nagaur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "NGR"
+    },
+    {
+        "SNo": 569,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 111,
+        "DistrictName(InEnglish)": "Pali",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "PAL"
+    },
+    {
+        "SNo": 570,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 772,
+        "DistrictName(InEnglish)": "Phalodi",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "PHL"
+    },
+    {
+        "SNo": 571,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 629,
+        "DistrictName(InEnglish)": "Pratapgarh",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "PPG"
+    },
+    {
+        "SNo": 572,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 112,
+        "DistrictName(InEnglish)": "Rajsamand",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "RJS"
+    },
+    {
+        "SNo": 573,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 777,
+        "DistrictName(InEnglish)": "Salumbar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "SLR"
+    },
+    {
+        "SNo": 574,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 113,
+        "DistrictName(InEnglish)": "Sawai Madhopur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "SMP"
+    },
+    {
+        "SNo": 575,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 114,
+        "DistrictName(InEnglish)": "Sikar",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "SKR"
+    },
+    {
+        "SNo": 576,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 115,
+        "DistrictName(InEnglish)": "Sirohi",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "SRH"
+    },
+    {
+        "SNo": 577,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 116,
+        "DistrictName(InEnglish)": "Tonk",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "TNK"
+    },
+    {
+        "SNo": 578,
+        "StateCode": 8,
+        "StateName": "Rajasthan",
+        "DistrictLGDCode": 117,
+        "DistrictName(InEnglish)": "Udaipur",
+        "Hierarchy": "Rajasthan",
+        "ShortNameOfDistrict": "UDP"
+    },
+    {
+        "SNo": 579,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 225,
+        "DistrictName(InEnglish)": "Gangtok",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "EDT"
+    },
+    {
+        "SNo": 580,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 228,
+        "DistrictName(InEnglish)": "Gyalshing",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "WDT"
+    },
+    {
+        "SNo": 581,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 226,
+        "DistrictName(InEnglish)": "Mangan",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "NDT"
+    },
+    {
+        "SNo": 582,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 227,
+        "DistrictName(InEnglish)": "Namchi",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "SDT"
+    },
+    {
+        "SNo": 583,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 741,
+        "DistrictName(InEnglish)": "Pakyong",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "PKY"
+    },
+    {
+        "SNo": 584,
+        "StateCode": 11,
+        "StateName": "Sikkim",
+        "DistrictLGDCode": 742,
+        "DistrictName(InEnglish)": "Soreng",
+        "Hierarchy": "Sikkim",
+        "ShortNameOfDistrict": "GNS"
+    },
+    {
+        "SNo": 585,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 610,
+        "DistrictName(InEnglish)": "Ariyalur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "ARI"
+    },
+    {
+        "SNo": 586,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 730,
+        "DistrictName(InEnglish)": "Chengalpattu",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "CGL"
+    },
+    {
+        "SNo": 587,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 568,
+        "DistrictName(InEnglish)": "Chennai",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "CHE"
+    },
+    {
+        "SNo": 588,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 569,
+        "DistrictName(InEnglish)": "Coimbatore",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "CMT"
+    },
+    {
+        "SNo": 589,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 570,
+        "DistrictName(InEnglish)": "Cuddalore",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "CDL"
+    },
+    {
+        "SNo": 590,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 571,
+        "DistrictName(InEnglish)": "Dharmapuri",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "DRM"
+    },
+    {
+        "SNo": 591,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 572,
+        "DistrictName(InEnglish)": "Dindigul",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "DIN"
+    },
+    {
+        "SNo": 592,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 573,
+        "DistrictName(InEnglish)": "Erode",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "ERO"
+    },
+    {
+        "SNo": 593,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 729,
+        "DistrictName(InEnglish)": "Kallakurichi",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "KLL"
+    },
+    {
+        "SNo": 594,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 574,
+        "DistrictName(InEnglish)": "Kancheepuram",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "KCP"
+    },
+    {
+        "SNo": 595,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 575,
+        "DistrictName(InEnglish)": "Kanniyakumari",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "KNY"
+    },
+    {
+        "SNo": 596,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 576,
+        "DistrictName(InEnglish)": "Karur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "KRR"
+    },
+    {
+        "SNo": 597,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 577,
+        "DistrictName(InEnglish)": "Krishnagiri",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "KHN"
+    },
+    {
+        "SNo": 598,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 578,
+        "DistrictName(InEnglish)": "Madurai",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "MDR"
+    },
+    {
+        "SNo": 599,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 735,
+        "DistrictName(InEnglish)": "Mayiladuthurai",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "MYL"
+    },
+    {
+        "SNo": 600,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 579,
+        "DistrictName(InEnglish)": "Nagapattinam",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "NPM"
+    },
+    {
+        "SNo": 601,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 580,
+        "DistrictName(InEnglish)": "Namakkal",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "NMK"
+    },
+    {
+        "SNo": 602,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 581,
+        "DistrictName(InEnglish)": "Perambalur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "PRM"
+    },
+    {
+        "SNo": 603,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 582,
+        "DistrictName(InEnglish)": "Pudukkottai",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "PDK"
+    },
+    {
+        "SNo": 604,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 583,
+        "DistrictName(InEnglish)": "Ramanathapuram",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "RMN"
+    },
+    {
+        "SNo": 605,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 731,
+        "DistrictName(InEnglish)": "Ranipet",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "RNP"
+    },
+    {
+        "SNo": 606,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 584,
+        "DistrictName(InEnglish)": "Salem",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "SLM"
+    },
+    {
+        "SNo": 607,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 585,
+        "DistrictName(InEnglish)": "Sivaganga",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "SGG"
+    },
+    {
+        "SNo": 608,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 733,
+        "DistrictName(InEnglish)": "Tenkasi",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TKS"
+    },
+    {
+        "SNo": 609,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 586,
+        "DistrictName(InEnglish)": "Thanjavur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TJV"
+    },
+    {
+        "SNo": 610,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 588,
+        "DistrictName(InEnglish)": "Theni",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "THE"
+    },
+    {
+        "SNo": 611,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 587,
+        "DistrictName(InEnglish)": "The Nilgiris",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "NIL"
+    },
+    {
+        "SNo": 612,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 589,
+        "DistrictName(InEnglish)": "Thiruvallur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TRV"
+    },
+    {
+        "SNo": 613,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 590,
+        "DistrictName(InEnglish)": "Thiruvarur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TVV"
+    },
+    {
+        "SNo": 614,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 594,
+        "DistrictName(InEnglish)": "Thoothukkudi",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TUT"
+    },
+    {
+        "SNo": 615,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 591,
+        "DistrictName(InEnglish)": "Tiruchirappalli",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TRC"
+    },
+    {
+        "SNo": 616,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 592,
+        "DistrictName(InEnglish)": "Tirunelveli",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TRN"
+    },
+    {
+        "SNo": 617,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 732,
+        "DistrictName(InEnglish)": "Tirupathur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TPR"
+    },
+    {
+        "SNo": 618,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 634,
+        "DistrictName(InEnglish)": "Tiruppur",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TRR"
+    },
+    {
+        "SNo": 619,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 593,
+        "DistrictName(InEnglish)": "Tiruvannamalai",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "TVN"
+    },
+    {
+        "SNo": 620,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 595,
+        "DistrictName(InEnglish)": "Vellore",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "VEL"
+    },
+    {
+        "SNo": 621,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 596,
+        "DistrictName(InEnglish)": "Viluppuram",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "VIL"
+    },
+    {
+        "SNo": 622,
+        "StateCode": 33,
+        "StateName": "Tamil Nadu",
+        "DistrictLGDCode": 597,
+        "DistrictName(InEnglish)": "Virudhunagar",
+        "Hierarchy": "Tamil Nadu",
+        "ShortNameOfDistrict": "VIR"
+    },
+    {
+        "SNo": 623,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 501,
+        "DistrictName(InEnglish)": "Adilabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "ADI"
+    },
+    {
+        "SNo": 624,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 690,
+        "DistrictName(InEnglish)": "Bhadradri Kothagudem",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "BHD"
+    },
+    {
+        "SNo": 625,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 686,
+        "DistrictName(InEnglish)": "Hanumakonda",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "WRN"
+    },
+    {
+        "SNo": 626,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 507,
+        "DistrictName(InEnglish)": "Hyderabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "HYD"
+    },
+    {
+        "SNo": 627,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 681,
+        "DistrictName(InEnglish)": "Jagitial",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "JGI"
+    },
+    {
+        "SNo": 628,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 689,
+        "DistrictName(InEnglish)": "Jangoan",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "JNN"
+    },
+    {
+        "SNo": 629,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 687,
+        "DistrictName(InEnglish)": "Jayashankar Bhupalapally",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "JYS"
+    },
+    {
+        "SNo": 630,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 695,
+        "DistrictName(InEnglish)": "Jogulamba Gadwal",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "JGL"
+    },
+    {
+        "SNo": 631,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 685,
+        "DistrictName(InEnglish)": "Kamareddy",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "KMD"
+    },
+    {
+        "SNo": 632,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 508,
+        "DistrictName(InEnglish)": "Karimnagar",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "KRM"
+    },
+    {
+        "SNo": 633,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 509,
+        "DistrictName(InEnglish)": "Khammam",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "KMM"
+    },
+    {
+        "SNo": 634,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 699,
+        "DistrictName(InEnglish)": "Kumuram Bheem Asifabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "KMB"
+    },
+    {
+        "SNo": 635,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 688,
+        "DistrictName(InEnglish)": "Mahabubabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MHD"
+    },
+    {
+        "SNo": 636,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 512,
+        "DistrictName(InEnglish)": "Mahabubnagar",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MAH"
+    },
+    {
+        "SNo": 637,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 684,
+        "DistrictName(InEnglish)": "Mancherial",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MNC"
+    },
+    {
+        "SNo": 638,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 513,
+        "DistrictName(InEnglish)": "Medak",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MDK"
+    },
+    {
+        "SNo": 639,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 700,
+        "DistrictName(InEnglish)": "Medchal Malkajgiri",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MDC"
+    },
+    {
+        "SNo": 640,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 720,
+        "DistrictName(InEnglish)": "Mulugu",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "MLG"
+    },
+    {
+        "SNo": 641,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 124,
+        "DistrictName(InEnglish)": "Baghpat",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BGP"
+    },
+    {
+        "SNo": 642,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 125,
+        "DistrictName(InEnglish)": "Bahraich",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BHR"
+    },
+    {
+        "SNo": 643,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 694,
+        "DistrictName(InEnglish)": "Nagarkurnool",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "NGK"
+    },
+    {
+        "SNo": 644,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 514,
+        "DistrictName(InEnglish)": "Nalgonda",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "NLG"
+    },
+    {
+        "SNo": 645,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 721,
+        "DistrictName(InEnglish)": "Narayanpet",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "NRN"
+    },
+    {
+        "SNo": 646,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 680,
+        "DistrictName(InEnglish)": "Nirmal",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "NRL"
+    },
+    {
+        "SNo": 647,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 516,
+        "DistrictName(InEnglish)": "Nizamabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "NIZ"
+    },
+    {
+        "SNo": 648,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 682,
+        "DistrictName(InEnglish)": "Peddapalli",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "PDD"
+    },
+    {
+        "SNo": 649,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 683,
+        "DistrictName(InEnglish)": "Rajanna Sircilla",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "RJC"
+    },
+    {
+        "SNo": 650,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 518,
+        "DistrictName(InEnglish)": "Ranga Reddy",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "RNG"
+    },
+    {
+        "SNo": 651,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 691,
+        "DistrictName(InEnglish)": "Sangareddy",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "SND"
+    },
+    {
+        "SNo": 652,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 692,
+        "DistrictName(InEnglish)": "Siddipet",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "SDD"
+    },
+    {
+        "SNo": 653,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 696,
+        "DistrictName(InEnglish)": "Suryapet",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "SRY"
+    },
+    {
+        "SNo": 654,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 698,
+        "DistrictName(InEnglish)": "Vikarabad",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "VKR"
+    },
+    {
+        "SNo": 655,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 693,
+        "DistrictName(InEnglish)": "Wanaparthy",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "WNP"
+    },
+    {
+        "SNo": 656,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 522,
+        "DistrictName(InEnglish)": "Warangal",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "WAR"
+    },
+    {
+        "SNo": 657,
+        "StateCode": 36,
+        "StateName": "Telangana",
+        "DistrictLGDCode": 697,
+        "DistrictName(InEnglish)": "Yadadri Bhuvanagiri",
+        "Hierarchy": "Telangana",
+        "ShortNameOfDistrict": "YDD"
+    },
+    {
+        "SNo": 658,
+        "StateCode": 38,
+        "StateName": "The Dadra And Nagar Haveli And Daman And Diu",
+        "DistrictLGDCode": 465,
+        "DistrictName(InEnglish)": "Dadra And Nagar Haveli",
+        "Hierarchy": "The Dadra And Nagar Haveli And Daman And Diu",
+        "ShortNameOfDistrict": "DNH"
+    },
+    {
+        "SNo": 659,
+        "StateCode": 38,
+        "StateName": "The Dadra And Nagar Haveli And Daman And Diu",
+        "DistrictLGDCode": 463,
+        "DistrictName(InEnglish)": "Daman",
+        "Hierarchy": "The Dadra And Nagar Haveli And Daman And Diu",
+        "ShortNameOfDistrict": "DMN"
+    },
+    {
+        "SNo": 660,
+        "StateCode": 38,
+        "StateName": "The Dadra And Nagar Haveli And Daman And Diu",
+        "DistrictLGDCode": 464,
+        "DistrictName(InEnglish)": "Diu",
+        "Hierarchy": "The Dadra And Nagar Haveli And Daman And Diu",
+        "ShortNameOfDistrict": "DIU"
+    },
+    {
+        "SNo": 661,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 269,
+        "DistrictName(InEnglish)": "Dhalai",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "DHL"
+    },
+    {
+        "SNo": 662,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 654,
+        "DistrictName(InEnglish)": "Gomati",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "GOM"
+    },
+    {
+        "SNo": 663,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 652,
+        "DistrictName(InEnglish)": "Khowai",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "KHO"
+    },
+    {
+        "SNo": 664,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 270,
+        "DistrictName(InEnglish)": "North Tripura",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "NTR"
+    },
+    {
+        "SNo": 665,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 653,
+        "DistrictName(InEnglish)": "Sepahijala",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "SEP"
+    },
+    {
+        "SNo": 666,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 271,
+        "DistrictName(InEnglish)": "South Tripura",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "STR"
+    },
+    {
+        "SNo": 667,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 655,
+        "DistrictName(InEnglish)": "Unakoti",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "UNK"
+    },
+    {
+        "SNo": 668,
+        "StateCode": 16,
+        "StateName": "Tripura",
+        "DistrictLGDCode": 272,
+        "DistrictName(InEnglish)": "West Tripura",
+        "Hierarchy": "Tripura",
+        "ShortNameOfDistrict": "WTR"
+    },
+    {
+        "SNo": 669,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 45,
+        "DistrictName(InEnglish)": "Almora",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "ALM"
+    },
+    {
+        "SNo": 670,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 46,
+        "DistrictName(InEnglish)": "Bageshwar",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "BGS"
+    },
+    {
+        "SNo": 671,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 47,
+        "DistrictName(InEnglish)": "Chamoli",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "CHL"
+    },
+    {
+        "SNo": 672,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 48,
+        "DistrictName(InEnglish)": "Champawat",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "CHP"
+    },
+    {
+        "SNo": 673,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 49,
+        "DistrictName(InEnglish)": "Dehradun",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "DHR"
+    },
+    {
+        "SNo": 674,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 50,
+        "DistrictName(InEnglish)": "Haridwar",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "HRD"
+    },
+    {
+        "SNo": 675,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 51,
+        "DistrictName(InEnglish)": "Nainital",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "NNT"
+    },
+    {
+        "SNo": 676,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 52,
+        "DistrictName(InEnglish)": "Pauri Garhwal",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "PGR"
+    },
+    {
+        "SNo": 677,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 53,
+        "DistrictName(InEnglish)": "Pithoragarh",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "PTH"
+    },
+    {
+        "SNo": 678,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 54,
+        "DistrictName(InEnglish)": "Rudraprayag",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "RPY"
+    },
+    {
+        "SNo": 679,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 55,
+        "DistrictName(InEnglish)": "Tehri Garhwal",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "TGR"
+    },
+    {
+        "SNo": 680,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 56,
+        "DistrictName(InEnglish)": "Udham Singh Nagar",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "USN"
+    },
+    {
+        "SNo": 681,
+        "StateCode": 5,
+        "StateName": "Uttarakhand",
+        "DistrictLGDCode": 57,
+        "DistrictName(InEnglish)": "Uttarkashi",
+        "Hierarchy": "Uttarakhand",
+        "ShortNameOfDistrict": "UKS"
+    },
+    {
+        "SNo": 682,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 118,
+        "DistrictName(InEnglish)": "Agra",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "AGR"
+    },
+    {
+        "SNo": 683,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 119,
+        "DistrictName(InEnglish)": "Aligarh",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "ALG"
+    },
+    {
+        "SNo": 684,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 121,
+        "DistrictName(InEnglish)": "Ambedkar Nagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "AMN"
+    },
+    {
+        "SNo": 685,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 640,
+        "DistrictName(InEnglish)": "Amethi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "AME"
+    },
+    {
+        "SNo": 686,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 154,
+        "DistrictName(InEnglish)": "Amroha",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "AMR"
+    },
+    {
+        "SNo": 687,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 122,
+        "DistrictName(InEnglish)": "Auraiya",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "ARY"
+    },
+    {
+        "SNo": 688,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 140,
+        "DistrictName(InEnglish)": "Ayodhya",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "FZB"
+    },
+    {
+        "SNo": 689,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 123,
+        "DistrictName(InEnglish)": "Azamgarh",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "AZM"
+    },
+    {
+        "SNo": 690,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 126,
+        "DistrictName(InEnglish)": "Ballia",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BAL"
+    },
+    {
+        "SNo": 691,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 127,
+        "DistrictName(InEnglish)": "Balrampur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BRP"
+    },
+    {
+        "SNo": 692,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 128,
+        "DistrictName(InEnglish)": "Banda",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BAN"
+    },
+    {
+        "SNo": 693,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 129,
+        "DistrictName(InEnglish)": "Bara Banki",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BRB"
+    },
+    {
+        "SNo": 694,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 130,
+        "DistrictName(InEnglish)": "Bareilly",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BRL"
+    },
+    {
+        "SNo": 695,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 131,
+        "DistrictName(InEnglish)": "Basti",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BST"
+    },
+    {
+        "SNo": 696,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 179,
+        "DistrictName(InEnglish)": "Bhadohi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SRD"
+    },
+    {
+        "SNo": 697,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 132,
+        "DistrictName(InEnglish)": "Bijnor",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BJN"
+    },
+    {
+        "SNo": 698,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 133,
+        "DistrictName(InEnglish)": "Budaun",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BDN"
+    },
+    {
+        "SNo": 699,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 134,
+        "DistrictName(InEnglish)": "Bulandshahr",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "BLR"
+    },
+    {
+        "SNo": 700,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 135,
+        "DistrictName(InEnglish)": "Chandauli",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "CHN"
+    },
+    {
+        "SNo": 701,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 136,
+        "DistrictName(InEnglish)": "Chitrakoot",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "CHK"
+    },
+    {
+        "SNo": 702,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 137,
+        "DistrictName(InEnglish)": "Deoria",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "DER"
+    },
+    {
+        "SNo": 703,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 138,
+        "DistrictName(InEnglish)": "Etah",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "ETA"
+    },
+    {
+        "SNo": 704,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 139,
+        "DistrictName(InEnglish)": "Etawah",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "ETW"
+    },
+    {
+        "SNo": 705,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 141,
+        "DistrictName(InEnglish)": "Farrukhabad",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "FKB"
+    },
+    {
+        "SNo": 706,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 142,
+        "DistrictName(InEnglish)": "Fatehpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "FTP"
+    },
+    {
+        "SNo": 707,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 143,
+        "DistrictName(InEnglish)": "Firozabad",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "FIR"
+    },
+    {
+        "SNo": 708,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 144,
+        "DistrictName(InEnglish)": "Gautam Buddha Nagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "GBN"
+    },
+    {
+        "SNo": 709,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 145,
+        "DistrictName(InEnglish)": "Ghaziabad",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "GZB"
+    },
+    {
+        "SNo": 710,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 146,
+        "DistrictName(InEnglish)": "Ghazipur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "GZP"
+    },
+    {
+        "SNo": 711,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 147,
+        "DistrictName(InEnglish)": "Gonda",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "GND"
+    },
+    {
+        "SNo": 712,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 148,
+        "DistrictName(InEnglish)": "Gorakhpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "GKP"
+    },
+    {
+        "SNo": 713,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 149,
+        "DistrictName(InEnglish)": "Hamirpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "HRP"
+    },
+    {
+        "SNo": 714,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 661,
+        "DistrictName(InEnglish)": "Hapur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "HAP"
+    },
+    {
+        "SNo": 715,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 150,
+        "DistrictName(InEnglish)": "Hardoi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "HAR"
+    },
+    {
+        "SNo": 716,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 163,
+        "DistrictName(InEnglish)": "Hathras",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "HTR"
+    },
+    {
+        "SNo": 717,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 151,
+        "DistrictName(InEnglish)": "Jalaun",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "JLU"
+    },
+    {
+        "SNo": 718,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 152,
+        "DistrictName(InEnglish)": "Jaunpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "JNP"
+    },
+    {
+        "SNo": 719,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 153,
+        "DistrictName(InEnglish)": "Jhansi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "JHS"
+    },
+    {
+        "SNo": 720,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 155,
+        "DistrictName(InEnglish)": "Kannauj",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KNJ"
+    },
+    {
+        "SNo": 721,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 156,
+        "DistrictName(InEnglish)": "Kanpur Dehat",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KPD"
+    },
+    {
+        "SNo": 722,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 157,
+        "DistrictName(InEnglish)": "Kanpur Nagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KPN"
+    },
+    {
+        "SNo": 723,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 633,
+        "DistrictName(InEnglish)": "Kasganj",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KAS"
+    },
+    {
+        "SNo": 724,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 158,
+        "DistrictName(InEnglish)": "Kaushambi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KSB"
+    },
+    {
+        "SNo": 725,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 159,
+        "DistrictName(InEnglish)": "Kheri",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KHR"
+    },
+    {
+        "SNo": 726,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 160,
+        "DistrictName(InEnglish)": "Kushinagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "KSN"
+    },
+    {
+        "SNo": 727,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 161,
+        "DistrictName(InEnglish)": "Lalitpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "LLP"
+    },
+    {
+        "SNo": 728,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 162,
+        "DistrictName(InEnglish)": "Lucknow",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "LCK"
+    },
+    {
+        "SNo": 729,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 165,
+        "DistrictName(InEnglish)": "Mahoba",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MHB"
+    },
+    {
+        "SNo": 730,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 164,
+        "DistrictName(InEnglish)": "Mahrajganj",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MRG"
+    },
+    {
+        "SNo": 731,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 166,
+        "DistrictName(InEnglish)": "Mainpuri",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MPR"
+    },
+    {
+        "SNo": 732,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 167,
+        "DistrictName(InEnglish)": "Mathura",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MTH"
+    },
+    {
+        "SNo": 733,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 168,
+        "DistrictName(InEnglish)": "Mau",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MAU"
+    },
+    {
+        "SNo": 734,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 169,
+        "DistrictName(InEnglish)": "Meerut",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MRT"
+    },
+    {
+        "SNo": 735,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 170,
+        "DistrictName(InEnglish)": "Mirzapur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MZP"
+    },
+    {
+        "SNo": 736,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 171,
+        "DistrictName(InEnglish)": "Moradabad",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MRB"
+    },
+    {
+        "SNo": 737,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 172,
+        "DistrictName(InEnglish)": "Muzaffarnagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "MZN"
+    },
+    {
+        "SNo": 738,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 173,
+        "DistrictName(InEnglish)": "Pilibhit",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "PLB"
+    },
+    {
+        "SNo": 739,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 174,
+        "DistrictName(InEnglish)": "Pratapgarh",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "PRG"
+    },
+    {
+        "SNo": 740,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 120,
+        "DistrictName(InEnglish)": "Prayagraj",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "ALB"
+    },
+    {
+        "SNo": 741,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 175,
+        "DistrictName(InEnglish)": "Rae Bareli",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "RBL"
+    },
+    {
+        "SNo": 742,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 176,
+        "DistrictName(InEnglish)": "Rampur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "RMP"
+    },
+    {
+        "SNo": 743,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 177,
+        "DistrictName(InEnglish)": "Saharanpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SHR"
+    },
+    {
+        "SNo": 744,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 659,
+        "DistrictName(InEnglish)": "Sambhal",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SBL"
+    },
+    {
+        "SNo": 745,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 178,
+        "DistrictName(InEnglish)": "Sant Kabir Nagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SKN"
+    },
+    {
+        "SNo": 746,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 180,
+        "DistrictName(InEnglish)": "Shahjahanpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SJN"
+    },
+    {
+        "SNo": 747,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 660,
+        "DistrictName(InEnglish)": "Shamli",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SML"
+    },
+    {
+        "SNo": 748,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 181,
+        "DistrictName(InEnglish)": "Shrawasti",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SHV"
+    },
+    {
+        "SNo": 749,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 182,
+        "DistrictName(InEnglish)": "Siddharthnagar",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SDN"
+    },
+    {
+        "SNo": 750,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 183,
+        "DistrictName(InEnglish)": "Sitapur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "STP"
+    },
+    {
+        "SNo": 751,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 184,
+        "DistrictName(InEnglish)": "Sonbhadra",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SBD"
+    },
+    {
+        "SNo": 752,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 185,
+        "DistrictName(InEnglish)": "Sultanpur",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "SLP"
+    },
+    {
+        "SNo": 753,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 186,
+        "DistrictName(InEnglish)": "Unnao",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "UNO"
+    },
+    {
+        "SNo": 754,
+        "StateCode": 9,
+        "StateName": "Uttar Pradesh",
+        "DistrictLGDCode": 187,
+        "DistrictName(InEnglish)": "Varanasi",
+        "Hierarchy": "Uttar Pradesh",
+        "ShortNameOfDistrict": "VRN"
+    },
+    {
+        "SNo": 755,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 664,
+        "DistrictName(InEnglish)": "Alipurduar",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "APD"
+    },
+    {
+        "SNo": 756,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 305,
+        "DistrictName(InEnglish)": "Bankura",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "BNR"
+    },
+    {
+        "SNo": 757,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 307,
+        "DistrictName(InEnglish)": "Birbhum",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "BIR"
+    },
+    {
+        "SNo": 758,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 308,
+        "DistrictName(InEnglish)": "Cooch Behar",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "CBH"
+    },
+    {
+        "SNo": 759,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 310,
+        "DistrictName(InEnglish)": "Dakshin Dinajpur",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "DPD"
+    },
+    {
+        "SNo": 760,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 309,
+        "DistrictName(InEnglish)": "Darjeeling",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "DRJ"
+    },
+    {
+        "SNo": 761,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 312,
+        "DistrictName(InEnglish)": "Hooghly",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "HOO"
+    },
+    {
+        "SNo": 762,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 313,
+        "DistrictName(InEnglish)": "Howrah",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "HWR"
+    },
+    {
+        "SNo": 763,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 314,
+        "DistrictName(InEnglish)": "Jalpaiguri",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "JLP"
+    },
+    {
+        "SNo": 764,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 703,
+        "DistrictName(InEnglish)": "Jhargram",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "GRM"
+    },
+    {
+        "SNo": 765,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 702,
+        "DistrictName(InEnglish)": "Kalimpong",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MPN"
+    },
+    {
+        "SNo": 766,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 315,
+        "DistrictName(InEnglish)": "Kolkata",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "KLK"
+    },
+    {
+        "SNo": 767,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 316,
+        "DistrictName(InEnglish)": "Malda",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MLD"
+    },
+    {
+        "SNo": 768,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 319,
+        "DistrictName(InEnglish)": "Murshidabad",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MRS"
+    },
+    {
+        "SNo": 769,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 320,
+        "DistrictName(InEnglish)": "Nadia",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "NAD"
+    },
+    {
+        "SNo": 770,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 303,
+        "DistrictName(InEnglish)": "North 24 Parganas",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "S24"
+    },
+    {
+        "SNo": 771,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 704,
+        "DistrictName(InEnglish)": "Paschim Bardhaman",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MBR"
+    },
+    {
+        "SNo": 772,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 318,
+        "DistrictName(InEnglish)": "Paschim Medinipur",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MPW"
+    },
+    {
+        "SNo": 773,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 306,
+        "DistrictName(InEnglish)": "Purba Bardhaman",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "BRD"
+    },
+    {
+        "SNo": 774,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 317,
+        "DistrictName(InEnglish)": "Purba Medinipur",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "MPE"
+    },
+    {
+        "SNo": 775,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 321,
+        "DistrictName(InEnglish)": "Purulia",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "PRL"
+    },
+    {
+        "SNo": 776,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 304,
+        "DistrictName(InEnglish)": "South 24 Parganas",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "N24"
+    },
+    {
+        "SNo": 777,
+        "StateCode": 19,
+        "StateName": "West Bengal",
+        "DistrictLGDCode": 311,
+        "DistrictName(InEnglish)": "Uttar Dinajpur",
+        "Hierarchy": "West Bengal",
+        "ShortNameOfDistrict": "DPU"
+    }
+]

@@ -1,0 +1,23 @@
+{
+  "request_id": "req_71128b28",
+  "timestamp": "2026-02-15T10-57-27Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Recommend for this direct input and include raw vs adjusted confidence.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 99.0,
+    "P": 50.0,
+    "K": 45.0,
+    "temperature": 28.2,
+    "humidity": 80.0,
+    "ph": 6.7,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

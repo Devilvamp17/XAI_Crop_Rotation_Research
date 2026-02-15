@@ -1,0 +1,646 @@
+{
+  "final_crop": "maize",
+  "confidence": 0.3482826334238052,
+  "raw_model_confidence": 0.964104175567627,
+  "rag_suitability": 0.375,
+  "adjusted_confidence": 0.3482826334238052,
+  "eps": 0.05,
+  "calendar_suitability": 0.375,
+  "top3": [
+    {
+      "crop": "maize",
+      "raw_model_confidence": 0.964104175567627,
+      "rag_suitability": 0.375,
+      "adjusted_confidence": 0.3482826334238052,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "mothbeans",
+      "raw_model_confidence": 0.00930827111005783,
+      "rag_suitability": 0.375,
+      "adjusted_confidence": 0.0033626129385083913,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "blackgram",
+      "raw_model_confidence": 0.002302276436239481,
+      "rag_suitability": 0.375,
+      "adjusted_confidence": 0.0008316973625915124,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    }
+  ],
+  "shap": {
+    "base_value": 0.5159661173820496,
+    "values": {
+      "N": 2.6084988117218018,
+      "P": -0.1769799441099167,
+      "K": 1.7777268886566162,
+      "temperature": -0.1089894101023674,
+      "humidity": 0.33452683687210083,
+      "ph": 0.03152352198958397
+    },
+    "sorted_by_abs": [
+      {
+        "feature": "N",
+        "value": 2.6084988117218018,
+        "abs_value": 2.6084988117218018
+      },
+      {
+        "feature": "K",
+        "value": 1.7777268886566162,
+        "abs_value": 1.7777268886566162
+      },
+      {
+        "feature": "humidity",
+        "value": 0.33452683687210083,
+        "abs_value": 0.33452683687210083
+      },
+      {
+        "feature": "P",
+        "value": -0.1769799441099167,
+        "abs_value": 0.1769799441099167
+      },
+      {
+        "feature": "temperature",
+        "value": -0.1089894101023674,
+        "abs_value": 0.1089894101023674
+      },
+      {
+        "feature": "ph",
+        "value": 0.03152352198958397,
+        "abs_value": 0.03152352198958397
+      }
+    ]
+  },
+  "lime": {
+    "class_index": 11,
+    "explanations": [
+      {
+        "feature": "K",
+        "weight": -0.06679585584314761
+      },
+      {
+        "feature": "N",
+        "weight": 0.043946387570204394
+      },
+      {
+        "feature": "humidity",
+        "weight": -0.03080714125470716
+      },
+      {
+        "feature": "ph",
+        "weight": -0.006743454708719822
+      },
+      {
+        "feature": "P",
+        "weight": 0.0005524652184783383
+      },
+      {
+        "feature": "temperature",
+        "weight": 0.0001070384434033941
+      }
+    ]
+  },
+  "curves": {
+    "topk_confidence": {
+      "x": [
+        "maize",
+        "mothbeans",
+        "blackgram"
+      ],
+      "y": [
+        0.964104175567627,
+        0.00930827111005783,
+        0.002302276436239481
+      ]
+    }
+  },
+  "llm_curves": {
+    "decision_stages": {
+      "x": [
+        "raw_model",
+        "rag_rerank",
+        "final"
+      ],
+      "y": [
+        0.964104175567627,
+        0.964104175567627,
+        0.3482826334238052
+      ]
+    },
+    "topk_confidence": {
+      "x": [
+        "maize",
+        "mothbeans",
+        "blackgram"
+      ],
+      "y": [
+        0.964104175567627,
+        0.00930827111005783,
+        0.002302276436239481
+      ]
+    },
+    "shap_cumulative": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "y": [
+        0.5177395298682691,
+        0.8705859561082433,
+        0.9369834436103202,
+        0.9721107408311682,
+        0.993743154728943,
+        1.0
+      ],
+      "feature_order": [
+        "N",
+        "K",
+        "humidity",
+        "P",
+        "temperature",
+        "ph"
+      ]
+    }
+  },
+  "xai_eval": {
+    "report": {
+      "shap": {
+        "deletion_auc": 0.1233927789342124,
+        "insertion_auc": 0.6633253107538137
+      },
+      "lime": {
+        "deletion_auc": 0.1380345608711165,
+        "insertion_auc": 0.6387381419516169,
+        "fidelity_r2": 0.2501815785093481,
+        "mean_fidelity_r2": 0.2501815785093481,
+        "median_fidelity_r2": 0.24456816332629205,
+        "fraction_r2_gt_0": 0.9666666666666667,
+        "status": "reliable"
+      },
+      "agreement": {
+        "shap_lime_topk_jaccard": 0.57,
+        "enforce_shap_lime_agreement": true
+      },
+      "stability": {
+        "avg_overlap": 0.978125,
+        "avg_rank_corr": 0.9864285714285714
+      }
+    },
+    "calibration": {
+      "bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "accuracy": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.5,
+        0.8,
+        0.5625,
+        0.7333333333333333,
+        1.0,
+        0.9973333333333333
+      ],
+      "avg_confidence": [
+        0.0,
+        0.0,
+        0.22681665420532227,
+        0.0,
+        0.48267388343811035,
+        0.5475311875343323,
+        0.6496337652206421,
+        0.7525336742401123,
+        0.8534603118896484,
+        0.9719057679176331
+      ],
+      "bucket_sizes": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        16,
+        15,
+        26,
+        375
+      ],
+      "ece": 0.038858395273035196,
+      "per_model": {
+        "logistic_regression": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.75,
+            0.7272727272727273,
+            0.5454545454545454,
+            0.7407407407407407,
+            0.8928571428571429,
+            0.9942528735632183
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.43493545673324085,
+            0.5472614900029297,
+            0.6459563377853166,
+            0.7530185581940445,
+            0.8536346449300598,
+            0.992057530572844
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            22,
+            27,
+            28,
+            348
+          ],
+          "ece": 0.01737529906399907
+        },
+        "random_forest": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.5714285714285714,
+            0.5,
+            0.8823529411764706,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.36999999999999994,
+            0.4385714285714286,
+            0.556875,
+            0.6399999999999999,
+            0.7491666666666666,
+            0.865,
+            0.9790030211480362
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            3,
+            7,
+            16,
+            17,
+            24,
+            42,
+            331
+          ],
+          "ece": 0.05793181818181825
+        },
+        "xgboost": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.5,
+            0.8,
+            0.5625,
+            0.7333333333333333,
+            1.0,
+            0.9973333333333333
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.22681665420532227,
+            0.0,
+            0.48267388343811035,
+            0.5475311875343323,
+            0.6496337652206421,
+            0.7525336742401123,
+            0.8534603118896484,
+            0.9719057679176331
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            5,
+            16,
+            15,
+            26,
+            375
+          ],
+          "ece": 0.038858395273035196
+        }
+      }
+    }
+  },
+  "rag_rerank": {
+    "season": "rabi",
+    "zone_resolution": "unknown",
+    "zone_id": null,
+    "zone_state": null,
+    "zone_district": null,
+    "queries": [
+      "global rabi suitability maize",
+      "maize constraints risks global rabi",
+      "global dominant crops rabi",
+      "global rabi suitability mothbeans",
+      "mothbeans constraints risks global rabi",
+      "global dominant crops rabi",
+      "global rabi suitability blackgram",
+      "blackgram constraints risks global rabi",
+      "global dominant crops rabi"
+    ],
+    "per_crop_suitability": {
+      "maize": 0.375,
+      "mothbeans": 0.375,
+      "blackgram": 0.375
+    },
+    "retrieval_hits": [
+      {
+        "id": "chunk_014257",
+        "title": "ICAR Zone Memory Row 14256",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014256_rajasthan_pratapgarh_kharif_maize.md"
+      },
+      {
+        "id": "chunk_018132",
+        "title": "ICAR Zone Memory Row 18131",
+        "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Pratapgarh, lgd=174.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/018131_uttar_pradesh_pratapgarh_kharif_maize.md"
+      },
+      {
+        "id": "chunk_017482",
+        "title": "ICAR Zone Memory Row 17481",
+        "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Hamirpur\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Hamirpur, lgd=149.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/017481_uttar_pradesh_hamirpur_kharif_maize.md"
+      },
+      {
+        "id": "chunk_013607",
+        "title": "ICAR Zone Memory Row 13606",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Bharatpur\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Bharatpur, lgd=91.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/013606_rajasthan_bharatpur_kharif_maize.md"
+      },
+      {
+        "id": "chunk_014270",
+        "title": "ICAR Zone Memory Row 14269",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_RABI\nZONE_NAME:Rajasthan rabi memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014269_rajasthan_pratapgarh_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_014263",
+        "title": "ICAR Zone Memory Row 14262",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_RABI\nZONE_NAME:Rajasthan rabi memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014262_rajasthan_pratapgarh_rabi_barley.md"
+      },
+      {
+        "id": "chunk_014268",
+        "title": "ICAR Zone Memory Row 14267",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_RABI\nZONE_NAME:Rajasthan rabi memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014267_rajasthan_pratapgarh_rabi_oat.md"
+      },
+      {
+        "id": "chunk_014267",
+        "title": "ICAR Zone Memory Row 14266",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_RABI\nZONE_NAME:Rajasthan rabi memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014266_rajasthan_pratapgarh_rabi_mustard.md"
+      },
+      {
+        "id": "chunk_014252",
+        "title": "ICAR Zone Memory Row 14251",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:blackgram\nSUITABILITY:MED\nFAMILY:pulse\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/blackgram\nDATA_QUALITY:incomplete\n\nEVIDENCE:Blackgram package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014251_rajasthan_pratapgarh_kharif_blackgram.md"
+      },
+      {
+        "id": "chunk_017477",
+        "title": "ICAR Zone Memory Row 17476",
+        "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Hamirpur\nSEASON:kharif\nCROP:blackgram\nSUITABILITY:MED\nFAMILY:pulse\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/blackgram\nDATA_QUALITY:incomplete\n\nEVIDENCE:Blackgram package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Hamirpur, lgd=149.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/017476_uttar_pradesh_hamirpur_kharif_blackgram.md"
+      },
+      {
+        "id": "chunk_018127",
+        "title": "ICAR Zone Memory Row 18126",
+        "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:blackgram\nSUITABILITY:MED\nFAMILY:pulse\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/blackgram\nDATA_QUALITY:incomplete\n\nEVIDENCE:Blackgram package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Pratapgarh, lgd=174.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/018126_uttar_pradesh_pratapgarh_kharif_blackgram.md"
+      },
+      {
+        "id": "chunk_013602",
+        "title": "ICAR Zone Memory Row 13601",
+        "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Bharatpur\nSEASON:kharif\nCROP:blackgram\nSUITABILITY:MED\nFAMILY:pulse\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/blackgram\nDATA_QUALITY:incomplete\n\nEVIDENCE:Blackgram package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Bharatpur, lgd=91.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/013601_rajasthan_bharatpur_kharif_blackgram.md"
+      }
+    ],
+    "zone_match": null
+  },
+  "calendar_adjustment": {
+    "region": "global",
+    "month": 2,
+    "suitability": {
+      "maize": 0.375,
+      "mothbeans": 0.375,
+      "blackgram": 0.375
+    },
+    "details": {
+      "raw_topk": [
+        {
+          "rank": 1,
+          "crop": "maize",
+          "confidence": 0.964104175567627
+        },
+        {
+          "rank": 2,
+          "crop": "mothbeans",
+          "confidence": 0.00930827111005783
+        },
+        {
+          "rank": 3,
+          "crop": "blackgram",
+          "confidence": 0.002302276436239481
+        }
+      ],
+      "adjusted_topk": [
+        {
+          "crop": "maize",
+          "raw_model_confidence": 0.964104175567627,
+          "rag_suitability": 0.375,
+          "adjusted_confidence": 0.3482826334238052,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "mothbeans",
+          "raw_model_confidence": 0.00930827111005783,
+          "rag_suitability": 0.375,
+          "adjusted_confidence": 0.0033626129385083913,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "blackgram",
+          "raw_model_confidence": 0.002302276436239481,
+          "rag_suitability": 0.375,
+          "adjusted_confidence": 0.0008316973625915124,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        }
+      ]
+    },
+    "base_model": "xgboost",
+    "conflict": false
+  },
+  "rerank_conflict": null,
+  "zone_resolution": "unknown",
+  "zone_id": null,
+  "calendar_conflict": null,
+  "deprecation": {
+    "calendar_suitability": "Deprecated alias. Use rag_suitability.",
+    "calendar_conflict": "Deprecated alias. Use rerank_conflict."
+  },
+  "agreement_metrics": {
+    "all_three_agree": false,
+    "pairwise_agreement": {
+      "xgboost==random_forest": false,
+      "xgboost==logistic_regression": false,
+      "random_forest==logistic_regression": true
+    },
+    "prob_std": 0.24264281175842134,
+    "disagreement_detected": true
+  },
+  "confidence_components": {
+    "raw_model_confidence": 0.964104175567627,
+    "rag_suitability": 0.375,
+    "eps": 0.05,
+    "data_quality_factor": 1.0,
+    "disagreement_multiplier": 0.85,
+    "final_confidence": 0.3482826334238052,
+    "calendar_term": 0.425
+  },
+  "provenance": {
+    "N": {
+      "value": 70.0,
+      "source": "user"
+    },
+    "P": {
+      "value": 30.0,
+      "source": "user"
+    },
+    "K": {
+      "value": 20.0,
+      "source": "user"
+    },
+    "temperature": {
+      "value": 29.0,
+      "source": "user"
+    },
+    "humidity": {
+      "value": 62.0,
+      "source": "user"
+    },
+    "ph": {
+      "value": 6.1,
+      "source": "user"
+    }
+  },
+  "tool_calls": [],
+  "warnings": [
+    "Localization strength is limited; rerank based on coarse zone match.",
+    "Model disagreement detected.",
+    "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+    "LLM fallback applied: Client error '402 Payment Required' for url 'https://openrouter.ai/api/v1/chat/completions'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/402"
+  ]
+}

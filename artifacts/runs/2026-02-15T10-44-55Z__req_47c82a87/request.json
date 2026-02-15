@@ -1,0 +1,23 @@
+{
+  "request_id": "req_47c82a87",
+  "timestamp": "2026-02-15T10-44-55Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Use location enrichment for Lucknow and explain confidence limits.",
+  "recommendation_input": {
+    "location": "Lucknow, India",
+    "region": null,
+    "month": null,
+    "N": 88.0,
+    "P": 41.0,
+    "K": 36.0,
+    "temperature": null,
+    "humidity": null,
+    "ph": null,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

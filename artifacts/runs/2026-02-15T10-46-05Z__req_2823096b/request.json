@@ -1,0 +1,23 @@
+{
+  "request_id": "req_2823096b",
+  "timestamp": "2026-02-15T10-46-05Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Do not call any external tools. Provide recommendation only from given features.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 90.0,
+    "P": 39.0,
+    "K": 35.0,
+    "temperature": 27.0,
+    "humidity": 67.0,
+    "ph": 6.3,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

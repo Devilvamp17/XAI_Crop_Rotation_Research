@@ -1,179 +1,157 @@
-# LLM-Integrated Crop Recommendation + XAI
+# LLM-Integrated Crop Recommendation + ICAR RAG Reranker
 
-Production-style crop recommendation stack with:
-- ML inference (`xgboost`, `random_forest`, `logistic_regression`)
-- Per-instance SHAP + LIME explanations
-- Season-aware calendar re-ranking
-- LLM advisory layer with strict output contract and fallback
-- Offline XAI evaluation (faithfulness, fidelity, stability, calibration)
+Two-API crop recommendation stack with deterministic reranking and explainability:
+- Model API (`main.py`, port `8000`): ML + SHAP + LIME
+- Agent API (`api/main.py`, port `8100`): feature enrichment + ICAR RAG rerank + LLM advisory + archiving
+
+## What Changed
+The previous crop-calendar reranking logic has been replaced by an **ICAR/NBSS&LUP-inspired RAG-memory reranker** backed by local CSV + local TF-IDF corpus.
 
 ## Repository Structure
 ```text
 .
-├── api/                    # Agent/orchestration API (port 8100)
-├── core/                   # Configuration loader (.env)
-├── model_service/          # Client for model API (port 8000)
-├── services/               # External service adapters (geocode/weather/soil/calendar/LLM)
-├── scripts/                # Prompt suite + setup scripts
-├── prompts/                # Prompt and routing test suites
-├── testing/                # Automated tests
-├── xai_eval/               # Evaluation pipeline + generated reports
-├── models/                 # Trained model artifacts
-├── xai/                    # Precomputed explainers
-├── results/                # Visual outputs
-├── main.py                 # Model API
-├── stream.py               # Streamlit app
-└── system_architecture.md  # Detailed architecture documentation
+├── api/
+├── core/
+├── services/
+├── data/
+│   ├── sources/
+│   ├── icar_agro_zones_india.csv
+│   └── icar_agro_zones_india_exploded.csv
+├── rag_corpus/
+│   └── icar_zones/
+├── scripts/
+├── testing/
+├── xai_eval/
+├── artifacts/
+├── docs/
+│   └── icar_zone_dataset.md
+├── main.py
+└── system_architecture.md
 ```
 
-## Core Capabilities
-- Predict top-k crops from: `N, P, K, temperature, humidity, ph`
-- Return explanation artifacts:
-  - `shap` contributions
-  - `lime` local explanation
-  - `curves.topk_confidence`
-- Enrich missing environmental data from free APIs when location is provided
-- Re-rank model outputs with crop calendar suitability:
-  - `adjusted_confidence = raw_model_confidence * (calendar_suitability + eps)`
-- Return provenance for each feature (`user`, `weather_api`, `soil_api`, fallback)
-- Provide LLM-generated advisory in strict 5-section format
-- Fallback to deterministic template response when LLM fails or violates output rules
+## ICAR RAG Reranker
+Reranker inputs:
+- model top-k (`crop`, `raw_model_confidence`)
+- resolved location context (district/state/lat-lon/unknown)
+- season derived from month
+
+Scoring:
+- `rag_suitability` from retrieved tokenized docs (`SUITABILITY:HIGH|MED|LOW`)
+- deterministic penalties for explicit risks
+- match-quality factor by localization strength
+
+Final confidence:
+```text
+adjusted_confidence = raw_model_confidence * (rag_suitability + eps) * data_quality_factor * disagreement_multiplier
+```
+
+Backward-compatible aliases (deprecated):
+- `calendar_suitability` -> `rag_suitability`
+- `calendar_conflict` -> `rerank_conflict`
+
+## Build Dataset + Corpus
+```bash
+uv run python scripts/build_icar_dataset.py
+uv run python scripts/validate_icar_dataset.py
+uv run python scripts/build_icar_rag_corpus.py
+```
 
 ## APIs
-
-### 1) Model API (`main.py`, port `8000`)
-Run:
+Run Model API:
 ```bash
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
 
-Endpoints:
-- `GET /health`
-- `POST /predict`
-
-Example:
-```bash
-curl --json '{
-  "N": 90,
-  "P": 42,
-  "K": 43,
-  "temperature": 25.6,
-  "humidity": 71.4,
-  "ph": 6.4
-}' http://127.0.0.1:8000/predict
-```
-
-### 2) Agent API (`api/main.py`, port `8100`)
-Run:
+Run Agent API:
 ```bash
 uvicorn api.main:app --host 0.0.0.0 --port 8100
 ```
 
-Endpoints:
+Agent endpoints:
 - `GET /health`
 - `GET /tools`
 - `GET /llm/health`
+- `GET /rag/health`
+- `POST /rag/search`
 - `GET /metrics/xai`
+- `GET /metrics/xai_curves`
 - `POST /recommend`
 - `POST /recommend_with_llm`
 
-Example (`/recommend_with_llm`):
+## Prompt Suites
+Run standard suites:
 ```bash
-curl --json '{
-  "query": "Which crop should I plant and why?",
-  "recommendation_input": {
-    "location": "Delhi, India",
-    "N": 90,
-    "P": 42,
-    "K": 43,
-    "top_k": 3
-  }
-}' http://127.0.0.1:8100/recommend_with_llm
+uv run python scripts/run_prompt_suites_full.py
 ```
 
-## Tool Routing Rules Implemented
-- If prompt says no tools (`do not call/use tools`, etc.) -> no external tools are called
-- If all required features are provided -> no geocode/weather/soil calls
-- If `N/P/K` missing -> returns `400` (never fabricated)
-- If location is provided and `temperature/humidity` missing -> weather API call
-- If location is provided and `ph` missing -> soil API call
+Run refreshed prompts (new cases):
+```bash
+uv run python scripts/run_prompt_suite.py \
+  --prompts prompts/llm_prompt_suite_refresh.json \
+  --out-json artifacts/llm_prompt_outputs_refresh.json \
+  --out-md artifacts/llm_prompt_outputs_refresh.md
+```
 
-## Response Additions (Agent)
-`POST /recommend` and `/recommend_with_llm` include:
-- `raw_model_confidence`
-- `calendar_suitability`
-- `adjusted_confidence`
-- `eps`
-- `llm_curves`:
-  - `decision_stages`
-  - `topk_confidence`
-  - `shap_cumulative`
-- `provenance`
-- `tool_calls`
-- `warnings`
-
-## LLM Providers and Fallback
-Configurable provider via `.env`:
-- `LLM_PROVIDER=local|openrouter|openai`
-
-Behavior:
-- Calls provider for advisory text
-- Validates output contract (no CoT leaks, strict 5 sections, confidence terms, checklist bullets)
-- If provider fails (e.g. 402/429/timeout) or output is invalid -> template fallback response is returned
-
-## Environment Variables
-Copy `.env.example` to `.env` and set values.
-
-Important keys:
-- `MODEL_API_BASE_URL`
-- `NOMINATIM_URL`, `NOMINATIM_USER_AGENT`
-- `OPEN_METEO_URL`
-- `SOILGRIDS_URL`
-- `LLM_PROVIDER`
-- `LOCAL_LLM_BASE_URL`, `LOCAL_LLM_MODEL`
-- `OPENROUTER_API_KEY`, `OPENROUTER_MODEL`
-- `OPENAI_API_KEY`, `OPENAI_MODEL`
+## Archiving
+Per `/recommend_with_llm` run:
+```text
+artifacts/runs/<timestamp>__<request_id>/
+  request.json
+  prompts.json
+  tool_calls.json
+  recommendation.json
+  validation.json
+  llm_rounds.json
+  llm_response.txt
+  rag_hits.json
+  icar_zone_match.json
+  rag_rerank.json
+```
 
 ## Testing
-Run core tests:
 ```bash
+uv run python testing/test_icar_reranker.py
 uv run python testing/test_system_extensive.py
-uv run python testing/test_tool_routing_suite.py
-uv run python testing/test_agent_pipeline.py
-```
-
-Prompt suite:
-```bash
-uv run python scripts/run_prompt_suite.py
-```
-Outputs:
-- `artifacts/llm_prompt_outputs.json`
-- `artifacts/llm_prompt_outputs.md`
-
-## XAI Evaluation Pipeline
-Run:
-```bash
-uv run python xai_eval/evaluate.py
-```
-Generated:
-- `xai_eval/report.json`
-- `xai_eval/evaluation_report.json` (legacy compatibility)
-- `xai_eval/calibration_report.json`
-
-Metrics include:
-- SHAP faithfulness (`deletion_auc`)
-- LIME faithfulness (`deletion_auc`)
-- LIME local fidelity (`fidelity_r2`)
-- Stability (`avg_overlap`, `avg_rank_corr`)
-
-## Streamlit
-Run:
-```bash
-streamlit run stream.py
+uv run python testing/test_pipeline_improvements.py
 ```
 
 ## Notes
-- Do not commit real API keys.
-- Keep `.env` local.
-- Free API services can rate-limit; caching is enabled for geocode/soil flows.
-- For full architecture details, see `system_architecture.md`.
+- Runtime reranking is fully local/offline.
+- Source/provenance fields are mandatory in dataset rows.
+- See `docs/icar_zone_dataset.md` for schema, sources, and limitations.
+
+
+## Evaluation + Health
+
+Run combined offline evaluation, RAG rerank checks, unit checks, and API health checks:
+
+```bash
+uv run python scripts/run_system_evaluation.py
+```
+
+Outputs are written to `artifacts/reports/`:
+- `combined_pipeline_evaluation.json`
+- `combined_pipeline_evaluation.md`
+- `rag_rerank_evaluation.json`
+- `rag_rerank_evaluation.md`
+- `health_check.json`
+- `prompt_suite_execution_summary.json`
+- `prompt_suite_execution_summary.md`
+- `prompt_suite_refresh_summary.json`
+- `prompt_suite_refresh_summary.md`
+- `rag_artifact_consistency_audit.json`
+- `rag_artifact_consistency_audit.md`
+
+Evaluation outputs are written under:
+- `evaluation/out/<run_id>/`
+
+
+## Official Source Refresh
+To refresh official source snapshots and rebuild the ICAR RAG dataset/corpus:
+```bash
+uv run python scripts/download_official_sources.py
+uv run python scripts/build_icar_dataset.py
+uv run python scripts/validate_icar_dataset.py
+uv run python scripts/build_icar_rag_corpus.py
+```
+See `docs/icar_zone_dataset.md` for source list, schema, and limitations.

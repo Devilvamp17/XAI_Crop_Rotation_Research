@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 from functools import lru_cache
+import math
+import os
 from pathlib import Path
 from typing import Any
 
@@ -15,6 +17,10 @@ from pydantic import BaseModel, Field, model_validator
 PROJECT_ROOT = Path(__file__).resolve().parent
 FEATURE_COLUMNS = ["N", "P", "K", "temperature", "humidity", "ph"]
 DEFAULT_MODELS = ["logistic_regression", "random_forest", "xgboost"]
+LIME_KERNEL_WIDTH_MULTIPLIER = 0.75
+LIME_KERNEL_WIDTH = LIME_KERNEL_WIDTH_MULTIPLIER * math.sqrt(len(FEATURE_COLUMNS))
+LIME_NUM_SAMPLES = max(5000, int(os.getenv("LIME_NUM_SAMPLES", "5000")))
+LIME_DISCRETIZE_CONTINUOUS = False
 
 
 class CropFeatures(BaseModel):
@@ -55,11 +61,14 @@ def load_resources() -> dict[str, Any]:
     shap_rf = shap.TreeExplainer(rf_model)
     shap_xgb = shap.TreeExplainer(xgb_model)
 
+    class_names = label_encoder.inverse_transform(np.asarray(xgb_model.classes_, dtype=int)).tolist()
     lime_explainer = lime.lime_tabular.LimeTabularExplainer(
         training_data=x_train.values,
         feature_names=FEATURE_COLUMNS,
-        class_names=label_encoder.classes_.tolist(),
+        class_names=class_names,
         mode="classification",
+        discretize_continuous=LIME_DISCRETIZE_CONTINUOUS,
+        kernel_width=LIME_KERNEL_WIDTH,
     )
 
     return {
@@ -97,6 +106,40 @@ def _extract_shap_for_class(
         raise ValueError(f"Unsupported SHAP output type: {type(shap_values)}")
 
     return values, float(base)
+
+
+def _preprocess_features_df(model: Any, features_df: pd.DataFrame) -> pd.DataFrame:
+    _ = model
+    return features_df[FEATURE_COLUMNS].copy()
+
+
+def _predict_proba_from_original_space(model: Any, arr: np.ndarray) -> np.ndarray:
+    arr_2d = np.asarray(arr, dtype=float)
+    if arr_2d.ndim == 1:
+        arr_2d = arr_2d.reshape(1, -1)
+    if arr_2d.ndim != 2:
+        raise ValueError(f"LIME predict_fn expects 2D array, got shape={arr_2d.shape}")
+    if arr_2d.shape[1] != len(FEATURE_COLUMNS):
+        raise ValueError(
+            f"LIME predict_fn expects {len(FEATURE_COLUMNS)} features, got {arr_2d.shape[1]}"
+        )
+    arr_df = pd.DataFrame(arr_2d, columns=FEATURE_COLUMNS)
+    arr_df = _preprocess_features_df(model, arr_df)
+    probs = np.asarray(model.predict_proba(arr_df), dtype=float)
+    if probs.ndim != 2:
+        raise ValueError(f"predict_proba must return 2D array, got shape={probs.shape}")
+    if probs.shape[0] != arr_2d.shape[0]:
+        raise ValueError(
+            f"predict_proba row mismatch: input={arr_2d.shape[0]} output={probs.shape[0]}"
+        )
+    return probs
+
+
+def build_lime_predict_fn(model: Any):
+    def _predict_fn(arr: np.ndarray) -> np.ndarray:
+        return _predict_proba_from_original_space(model, arr)
+
+    return _predict_fn
 
 
 def _predict_one_model(
@@ -142,15 +185,11 @@ def _predict_one_model(
         reverse=True,
     )
 
-    def predict_proba_from_array(arr: np.ndarray) -> np.ndarray:
-        arr_df = pd.DataFrame(arr, columns=FEATURE_COLUMNS)
-        return model.predict_proba(arr_df)
-
     lime_exp = lime_explainer.explain_instance(
         data_row=input_df.iloc[0].values,
-        predict_fn=predict_proba_from_array,
+        predict_fn=build_lime_predict_fn(model),
         num_features=len(FEATURE_COLUMNS),
-        num_samples=5000,
+        num_samples=LIME_NUM_SAMPLES,
         labels=(predicted_class_index,),
     )
     lime_items = [

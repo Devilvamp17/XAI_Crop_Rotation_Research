@@ -1,0 +1,5 @@
+[
+  "geocode_location",
+  "get_weather",
+  "get_soil_properties"
+]

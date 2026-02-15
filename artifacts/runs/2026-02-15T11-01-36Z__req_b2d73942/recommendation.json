@@ -1,0 +1,674 @@
+{
+  "final_crop": "maize",
+  "confidence": 0.297815336085856,
+  "raw_model_confidence": 0.9160025715827942,
+  "rag_suitability": 0.46,
+  "adjusted_confidence": 0.297815336085856,
+  "eps": 0.05,
+  "calendar_suitability": 0.46,
+  "top3": [
+    {
+      "crop": "maize",
+      "raw_model_confidence": 0.9160025715827942,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.297815336085856,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "mango",
+      "raw_model_confidence": 0.04274411499500275,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.01389718038775027,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "mothbeans",
+      "raw_model_confidence": 0.016105756163597107,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.005236383972689509,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    }
+  ],
+  "shap": {
+    "base_value": 0.5159661173820496,
+    "values": {
+      "N": 2.6084988117218018,
+      "P": -0.1769799441099167,
+      "K": 1.7777268886566162,
+      "temperature": -0.1089894101023674,
+      "humidity": 0.33452683687210083,
+      "ph": 0.03152352198958397
+    },
+    "sorted_by_abs": [
+      {
+        "feature": "N",
+        "value": 2.6084988117218018,
+        "abs_value": 2.6084988117218018
+      },
+      {
+        "feature": "K",
+        "value": 1.7777268886566162,
+        "abs_value": 1.7777268886566162
+      },
+      {
+        "feature": "humidity",
+        "value": 0.33452683687210083,
+        "abs_value": 0.33452683687210083
+      },
+      {
+        "feature": "P",
+        "value": -0.1769799441099167,
+        "abs_value": 0.1769799441099167
+      },
+      {
+        "feature": "temperature",
+        "value": -0.1089894101023674,
+        "abs_value": 0.1089894101023674
+      },
+      {
+        "feature": "ph",
+        "value": 0.03152352198958397,
+        "abs_value": 0.03152352198958397
+      }
+    ]
+  },
+  "lime": {
+    "class_index": 11,
+    "explanations": [
+      {
+        "feature": "K",
+        "weight": -0.062338781812159884
+      },
+      {
+        "feature": "N",
+        "weight": 0.04912577610588144
+      },
+      {
+        "feature": "humidity",
+        "weight": -0.030762597022568845
+      },
+      {
+        "feature": "temperature",
+        "weight": -0.005890869927049954
+      },
+      {
+        "feature": "P",
+        "weight": -0.0025130928151931536
+      },
+      {
+        "feature": "ph",
+        "weight": -0.0021659415943157826
+      }
+    ]
+  },
+  "curves": {
+    "topk_confidence": {
+      "x": [
+        "maize",
+        "mango",
+        "mothbeans"
+      ],
+      "y": [
+        0.9160025715827942,
+        0.04274411499500275,
+        0.016105756163597107
+      ]
+    }
+  },
+  "llm_curves": {
+    "decision_stages": {
+      "x": [
+        "raw_model",
+        "rag_rerank",
+        "final"
+      ],
+      "y": [
+        0.9160025715827942,
+        0.9160025715827942,
+        0.297815336085856
+      ]
+    },
+    "topk_confidence": {
+      "x": [
+        "maize",
+        "mango",
+        "mothbeans"
+      ],
+      "y": [
+        0.9160025715827942,
+        0.04274411499500275,
+        0.016105756163597107
+      ]
+    },
+    "shap_cumulative": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "y": [
+        0.5177395298682691,
+        0.8705859561082433,
+        0.9369834436103202,
+        0.9721107408311682,
+        0.993743154728943,
+        1.0
+      ],
+      "feature_order": [
+        "N",
+        "K",
+        "humidity",
+        "P",
+        "temperature",
+        "ph"
+      ]
+    }
+  },
+  "xai_eval": {
+    "report": {
+      "shap": {
+        "deletion_auc": 0.1233927789342124,
+        "insertion_auc": 0.6633253107538137
+      },
+      "lime": {
+        "deletion_auc": 0.1380345608711165,
+        "insertion_auc": 0.6387381419516169,
+        "fidelity_r2": 0.2501815785093481,
+        "mean_fidelity_r2": 0.2501815785093481,
+        "median_fidelity_r2": 0.24456816332629205,
+        "fraction_r2_gt_0": 0.9666666666666667,
+        "status": "reliable"
+      },
+      "agreement": {
+        "shap_lime_topk_jaccard": 0.57,
+        "enforce_shap_lime_agreement": true
+      },
+      "stability": {
+        "avg_overlap": 0.978125,
+        "avg_rank_corr": 0.9864285714285714
+      }
+    },
+    "calibration": {
+      "bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "accuracy": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.5,
+        0.8,
+        0.5625,
+        0.7333333333333333,
+        1.0,
+        0.9973333333333333
+      ],
+      "avg_confidence": [
+        0.0,
+        0.0,
+        0.22681665420532227,
+        0.0,
+        0.48267388343811035,
+        0.5475311875343323,
+        0.6496337652206421,
+        0.7525336742401123,
+        0.8534603118896484,
+        0.9719057679176331
+      ],
+      "bucket_sizes": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        16,
+        15,
+        26,
+        375
+      ],
+      "ece": 0.038858395273035196,
+      "per_model": {
+        "logistic_regression": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.75,
+            0.7272727272727273,
+            0.5454545454545454,
+            0.7407407407407407,
+            0.8928571428571429,
+            0.9942528735632183
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.43493545673324085,
+            0.5472614900029297,
+            0.6459563377853166,
+            0.7530185581940445,
+            0.8536346449300598,
+            0.992057530572844
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            22,
+            27,
+            28,
+            348
+          ],
+          "ece": 0.01737529906399907
+        },
+        "random_forest": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.5714285714285714,
+            0.5,
+            0.8823529411764706,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.36999999999999994,
+            0.4385714285714286,
+            0.556875,
+            0.6399999999999999,
+            0.7491666666666666,
+            0.865,
+            0.9790030211480362
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            3,
+            7,
+            16,
+            17,
+            24,
+            42,
+            331
+          ],
+          "ece": 0.05793181818181825
+        },
+        "xgboost": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.5,
+            0.8,
+            0.5625,
+            0.7333333333333333,
+            1.0,
+            0.9973333333333333
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.22681665420532227,
+            0.0,
+            0.48267388343811035,
+            0.5475311875343323,
+            0.6496337652206421,
+            0.7525336742401123,
+            0.8534603118896484,
+            0.9719057679176331
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            5,
+            16,
+            15,
+            26,
+            375
+          ],
+          "ece": 0.038858395273035196
+        }
+      }
+    }
+  },
+  "rag_rerank": {
+    "season": "rabi",
+    "zone_resolution": "state",
+    "zone_id": "AGROCLIM_TAMIL_NADU_KHARIF",
+    "zone_state": "Tamil Nadu",
+    "zone_district": "Ariyalur",
+    "queries": [
+      "Ariyalur rabi suitability maize",
+      "maize constraints risks Ariyalur rabi",
+      "Ariyalur dominant crops rabi",
+      "Ariyalur rabi suitability mango",
+      "mango constraints risks Ariyalur rabi",
+      "Ariyalur dominant crops rabi",
+      "Ariyalur rabi suitability mothbeans",
+      "mothbeans constraints risks Ariyalur rabi",
+      "Ariyalur dominant crops rabi"
+    ],
+    "per_crop_suitability": {
+      "maize": 0.46,
+      "mango": 0.46,
+      "mothbeans": 0.46
+    },
+    "retrieval_hits": [
+      {
+        "id": "chunk_014607",
+        "title": "ICAR Zone Memory Row 14606",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_KHARIF\nZONE_NAME:Tamil Nadu kharif memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014606_tamil_nadu_ariyalur_kharif_maize.md"
+      },
+      {
+        "id": "chunk_014622",
+        "title": "ICAR Zone Memory Row 14621",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_ZAID\nZONE_NAME:Tamil Nadu zaid memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:zaid\nCROP:fodder_maize\nSUITABILITY:MED\nFAMILY:cereal\nRISK:heat\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Fodder maize seasonal cultivation guidance references short summer window. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014621_tamil_nadu_ariyalur_zaid_fodder_maize.md"
+      },
+      {
+        "id": "chunk_014613",
+        "title": "ICAR Zone Memory Row 14612",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014612_tamil_nadu_ariyalur_rabi_barley.md"
+      },
+      {
+        "id": "chunk_014620",
+        "title": "ICAR Zone Memory Row 14619",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014619_tamil_nadu_ariyalur_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_014613",
+        "title": "ICAR Zone Memory Row 14612",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014612_tamil_nadu_ariyalur_rabi_barley.md"
+      },
+      {
+        "id": "chunk_014620",
+        "title": "ICAR Zone Memory Row 14619",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014619_tamil_nadu_ariyalur_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_014618",
+        "title": "ICAR Zone Memory Row 14617",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014617_tamil_nadu_ariyalur_rabi_oat.md"
+      },
+      {
+        "id": "chunk_014617",
+        "title": "ICAR Zone Memory Row 14616",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014616_tamil_nadu_ariyalur_rabi_mustard.md"
+      },
+      {
+        "id": "chunk_014613",
+        "title": "ICAR Zone Memory Row 14612",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014612_tamil_nadu_ariyalur_rabi_barley.md"
+      },
+      {
+        "id": "chunk_014620",
+        "title": "ICAR Zone Memory Row 14619",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014619_tamil_nadu_ariyalur_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_014618",
+        "title": "ICAR Zone Memory Row 14617",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014617_tamil_nadu_ariyalur_rabi_oat.md"
+      },
+      {
+        "id": "chunk_014617",
+        "title": "ICAR Zone Memory Row 14616",
+        "text": "ZONE_ID:AGROCLIM_TAMIL_NADU_RABI\nZONE_NAME:Tamil Nadu rabi memory zone\nSTATE:Tamil Nadu\nDISTRICT:Ariyalur\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/014616_tamil_nadu_ariyalur_rabi_mustard.md"
+      }
+    ],
+    "zone_match": {
+      "zone_id": "AGROCLIM_TAMIL_NADU_KHARIF",
+      "zone_name": "Tamil Nadu kharif memory zone",
+      "zone_type": "AGROCLIM_CURATED",
+      "state": "Tamil Nadu",
+      "district": "Ariyalur",
+      "season": "kharif",
+      "crop": "bajra",
+      "suitability": "MED",
+      "crop_family": "cereal",
+      "key_risks": "drought",
+      "soil_notes": "district-level soil detail unavailable in source snapshot",
+      "climate_notes": "seasonal crop guidance extracted from cited official sources",
+      "evidence_text": "Pearl millet package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Tamil Nadu, district=Ariyalur, lgd=610.",
+      "source_name": "Vikaspedia (MeitY/C-DAC Government Knowledge Portal)",
+      "source_ref": "https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/bajra",
+      "data_quality": "incomplete",
+      "_state_norm": "tamil nadu",
+      "_district_norm": "ariyalur",
+      "_season_norm": "kharif",
+      "_crop_norm": "bajra"
+    }
+  },
+  "calendar_adjustment": {
+    "region": "Tamil Nadu",
+    "month": 2,
+    "suitability": {
+      "maize": 0.46,
+      "mango": 0.46,
+      "mothbeans": 0.46
+    },
+    "details": {
+      "raw_topk": [
+        {
+          "rank": 1,
+          "crop": "maize",
+          "confidence": 0.9160025715827942
+        },
+        {
+          "rank": 2,
+          "crop": "mango",
+          "confidence": 0.04274411499500275
+        },
+        {
+          "rank": 3,
+          "crop": "mothbeans",
+          "confidence": 0.016105756163597107
+        }
+      ],
+      "adjusted_topk": [
+        {
+          "crop": "maize",
+          "raw_model_confidence": 0.9160025715827942,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.297815336085856,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "mango",
+          "raw_model_confidence": 0.04274411499500275,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.01389718038775027,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "mothbeans",
+          "raw_model_confidence": 0.016105756163597107,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.005236383972689509,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        }
+      ]
+    },
+    "base_model": "xgboost",
+    "conflict": false
+  },
+  "rerank_conflict": null,
+  "zone_resolution": "state",
+  "zone_id": "AGROCLIM_TAMIL_NADU_KHARIF",
+  "calendar_conflict": null,
+  "deprecation": {
+    "calendar_suitability": "Deprecated alias. Use rag_suitability.",
+    "calendar_conflict": "Deprecated alias. Use rerank_conflict."
+  },
+  "agreement_metrics": {
+    "all_three_agree": false,
+    "pairwise_agreement": {
+      "xgboost==random_forest": true,
+      "xgboost==logistic_regression": false,
+      "random_forest==logistic_regression": false
+    },
+    "prob_std": 0.30163973454191323,
+    "disagreement_detected": true
+  },
+  "confidence_components": {
+    "raw_model_confidence": 0.9160025715827942,
+    "rag_suitability": 0.46,
+    "eps": 0.05,
+    "data_quality_factor": 0.75,
+    "disagreement_multiplier": 0.85,
+    "final_confidence": 0.297815336085856,
+    "calendar_term": 0.51
+  },
+  "provenance": {
+    "N": {
+      "value": 60.0,
+      "source": "user"
+    },
+    "P": {
+      "value": 25.0,
+      "source": "user"
+    },
+    "K": {
+      "value": 20.0,
+      "source": "user"
+    },
+    "temperature": {
+      "value": 29.4,
+      "source": "weather_api"
+    },
+    "humidity": {
+      "value": 52.0,
+      "source": "weather_api"
+    },
+    "ph": {
+      "value": 6.5,
+      "source": "soil_api_fallback"
+    }
+  },
+  "tool_calls": [
+    "geocode_location",
+    "get_weather",
+    "get_soil_properties"
+  ],
+  "warnings": [
+    "Weather values are estimated from Open-Meteo current conditions.",
+    "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+    "Soil values are estimated from SoilGrids.",
+    "Localization strength is limited; rerank based on coarse zone match.",
+    "Model disagreement detected.",
+    "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+    "LLM fallback applied: validation_failed: Contains internal reasoning leak; round2: Missing required sections"
+  ]
+}

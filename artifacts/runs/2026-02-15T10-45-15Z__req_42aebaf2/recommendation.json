@@ -1,0 +1,673 @@
+{
+  "final_crop": "coffee",
+  "confidence": 0.375676417350769,
+  "raw_model_confidence": 0.9821605682373047,
+  "rag_suitability": 0.46,
+  "adjusted_confidence": 0.375676417350769,
+  "eps": 0.05,
+  "calendar_suitability": 0.46,
+  "top3": [
+    {
+      "crop": "coffee",
+      "raw_model_confidence": 0.9821605682373047,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.375676417350769,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "mothbeans",
+      "raw_model_confidence": 0.0020251208916306496,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.0007746087410487235,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "jute",
+      "raw_model_confidence": 0.001360747846774757,
+      "rag_suitability": 0.46,
+      "adjusted_confidence": 0.0005204860513913445,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    }
+  ],
+  "shap": {
+    "base_value": 0.5501730442047119,
+    "values": {
+      "N": 2.556267499923706,
+      "P": 0.23455330729484558,
+      "K": 0.1590684950351715,
+      "temperature": 0.028504343703389168,
+      "humidity": 1.8349171876907349,
+      "ph": 0.03651786968111992
+    },
+    "sorted_by_abs": [
+      {
+        "feature": "N",
+        "value": 2.556267499923706,
+        "abs_value": 2.556267499923706
+      },
+      {
+        "feature": "humidity",
+        "value": 1.8349171876907349,
+        "abs_value": 1.8349171876907349
+      },
+      {
+        "feature": "P",
+        "value": 0.23455330729484558,
+        "abs_value": 0.23455330729484558
+      },
+      {
+        "feature": "K",
+        "value": 0.1590684950351715,
+        "abs_value": 0.1590684950351715
+      },
+      {
+        "feature": "ph",
+        "value": 0.03651786968111992,
+        "abs_value": 0.03651786968111992
+      },
+      {
+        "feature": "temperature",
+        "value": 0.028504343703389168,
+        "abs_value": 0.028504343703389168
+      }
+    ]
+  },
+  "lime": {
+    "class_index": 5,
+    "explanations": [
+      {
+        "feature": "N",
+        "weight": 0.06878269606210843
+      },
+      {
+        "feature": "humidity",
+        "weight": -0.03995134850215904
+      },
+      {
+        "feature": "K",
+        "weight": 0.032954815169079436
+      },
+      {
+        "feature": "P",
+        "weight": -0.02556406808403487
+      },
+      {
+        "feature": "temperature",
+        "weight": 0.003529466274660375
+      },
+      {
+        "feature": "ph",
+        "weight": -0.00044142353995684153
+      }
+    ]
+  },
+  "curves": {
+    "topk_confidence": {
+      "x": [
+        "coffee",
+        "mothbeans",
+        "jute"
+      ],
+      "y": [
+        0.9821605682373047,
+        0.0020251208916306496,
+        0.001360747846774757
+      ]
+    }
+  },
+  "llm_curves": {
+    "decision_stages": {
+      "x": [
+        "raw_model",
+        "rag_rerank",
+        "final"
+      ],
+      "y": [
+        0.9821605682373047,
+        0.9821605682373047,
+        0.375676417350769
+      ]
+    },
+    "topk_confidence": {
+      "x": [
+        "coffee",
+        "mothbeans",
+        "jute"
+      ],
+      "y": [
+        0.9821605682373047,
+        0.0020251208916306496,
+        0.001360747846774757
+      ]
+    },
+    "shap_cumulative": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "y": [
+        0.5270840799323614,
+        0.9054308834867284,
+        0.9537940982810665,
+        0.9865928845404628,
+        0.9941226081482376,
+        1.0
+      ],
+      "feature_order": [
+        "N",
+        "humidity",
+        "P",
+        "K",
+        "ph",
+        "temperature"
+      ]
+    }
+  },
+  "xai_eval": {
+    "report": {
+      "shap": {
+        "deletion_auc": 0.1233927789342124,
+        "insertion_auc": 0.6633253107538137
+      },
+      "lime": {
+        "deletion_auc": 0.1380345608711165,
+        "insertion_auc": 0.6387381419516169,
+        "fidelity_r2": 0.2501815785093481,
+        "mean_fidelity_r2": 0.2501815785093481,
+        "median_fidelity_r2": 0.24456816332629205,
+        "fraction_r2_gt_0": 0.9666666666666667,
+        "status": "reliable"
+      },
+      "agreement": {
+        "shap_lime_topk_jaccard": 0.57,
+        "enforce_shap_lime_agreement": true
+      },
+      "stability": {
+        "avg_overlap": 0.978125,
+        "avg_rank_corr": 0.9864285714285714
+      }
+    },
+    "calibration": {
+      "bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "accuracy": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.5,
+        0.8,
+        0.5625,
+        0.7333333333333333,
+        1.0,
+        0.9973333333333333
+      ],
+      "avg_confidence": [
+        0.0,
+        0.0,
+        0.22681665420532227,
+        0.0,
+        0.48267388343811035,
+        0.5475311875343323,
+        0.6496337652206421,
+        0.7525336742401123,
+        0.8534603118896484,
+        0.9719057679176331
+      ],
+      "bucket_sizes": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        16,
+        15,
+        26,
+        375
+      ],
+      "ece": 0.038858395273035196,
+      "per_model": {
+        "logistic_regression": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.75,
+            0.7272727272727273,
+            0.5454545454545454,
+            0.7407407407407407,
+            0.8928571428571429,
+            0.9942528735632183
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.43493545673324085,
+            0.5472614900029297,
+            0.6459563377853166,
+            0.7530185581940445,
+            0.8536346449300598,
+            0.992057530572844
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            22,
+            27,
+            28,
+            348
+          ],
+          "ece": 0.01737529906399907
+        },
+        "random_forest": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.5714285714285714,
+            0.5,
+            0.8823529411764706,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.36999999999999994,
+            0.4385714285714286,
+            0.556875,
+            0.6399999999999999,
+            0.7491666666666666,
+            0.865,
+            0.9790030211480362
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            3,
+            7,
+            16,
+            17,
+            24,
+            42,
+            331
+          ],
+          "ece": 0.05793181818181825
+        },
+        "xgboost": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.5,
+            0.8,
+            0.5625,
+            0.7333333333333333,
+            1.0,
+            0.9973333333333333
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.22681665420532227,
+            0.0,
+            0.48267388343811035,
+            0.5475311875343323,
+            0.6496337652206421,
+            0.7525336742401123,
+            0.8534603118896484,
+            0.9719057679176331
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            5,
+            16,
+            15,
+            26,
+            375
+          ],
+          "ece": 0.038858395273035196
+        }
+      }
+    }
+  },
+  "rag_rerank": {
+    "season": "rabi",
+    "zone_resolution": "state",
+    "zone_id": "AGROCLIM_ASSAM_KHARIF",
+    "zone_state": "Assam",
+    "zone_district": "Bajali",
+    "queries": [
+      "Bajali rabi suitability coffee",
+      "coffee constraints risks Bajali rabi",
+      "Bajali dominant crops rabi",
+      "Bajali rabi suitability mothbeans",
+      "mothbeans constraints risks Bajali rabi",
+      "Bajali dominant crops rabi",
+      "Bajali rabi suitability jute",
+      "jute constraints risks Bajali rabi",
+      "Bajali dominant crops rabi"
+    ],
+    "per_crop_suitability": {
+      "coffee": 0.46,
+      "mothbeans": 0.46,
+      "jute": 0.46
+    },
+    "retrieval_hits": [
+      {
+        "id": "chunk_001413",
+        "title": "ICAR Zone Memory Row 1412",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+      },
+      {
+        "id": "chunk_001420",
+        "title": "ICAR Zone Memory Row 1419",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_001418",
+        "title": "ICAR Zone Memory Row 1417",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+      },
+      {
+        "id": "chunk_001417",
+        "title": "ICAR Zone Memory Row 1416",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001416_assam_bajali_rabi_mustard.md"
+      },
+      {
+        "id": "chunk_001413",
+        "title": "ICAR Zone Memory Row 1412",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+      },
+      {
+        "id": "chunk_001420",
+        "title": "ICAR Zone Memory Row 1419",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_001418",
+        "title": "ICAR Zone Memory Row 1417",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+      },
+      {
+        "id": "chunk_001417",
+        "title": "ICAR Zone Memory Row 1416",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:mustard\nSUITABILITY:HIGH\nFAMILY:oilseed\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/oilseeds-1/mustard\nDATA_QUALITY:incomplete\n\nEVIDENCE:Mustard package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001416_assam_bajali_rabi_mustard.md"
+      },
+      {
+        "id": "chunk_001406",
+        "title": "ICAR Zone Memory Row 1405",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_KHARIF\nZONE_NAME:Assam kharif memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001405_assam_bajali_kharif_jute.md"
+      },
+      {
+        "id": "chunk_001413",
+        "title": "ICAR Zone Memory Row 1412",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001412_assam_bajali_rabi_barley.md"
+      },
+      {
+        "id": "chunk_001420",
+        "title": "ICAR Zone Memory Row 1419",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001419_assam_bajali_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_001418",
+        "title": "ICAR Zone Memory Row 1417",
+        "text": "ZONE_ID:AGROCLIM_ASSAM_RABI\nZONE_NAME:Assam rabi memory zone\nSTATE:Assam\nDISTRICT:Bajali\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/001417_assam_bajali_rabi_oat.md"
+      }
+    ],
+    "zone_match": {
+      "zone_id": "AGROCLIM_ASSAM_KHARIF",
+      "zone_name": "Assam kharif memory zone",
+      "zone_type": "AGROCLIM_CURATED",
+      "state": "Assam",
+      "district": "Bajali",
+      "season": "kharif",
+      "crop": "bajra",
+      "suitability": "MED",
+      "crop_family": "cereal",
+      "key_risks": "drought",
+      "soil_notes": "district-level soil detail unavailable in source snapshot",
+      "climate_notes": "seasonal crop guidance extracted from cited official sources",
+      "evidence_text": "Pearl millet package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Assam, district=Bajali, lgd=739.",
+      "source_name": "Vikaspedia (MeitY/C-DAC Government Knowledge Portal)",
+      "source_ref": "https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/bajra",
+      "data_quality": "incomplete",
+      "_state_norm": "assam",
+      "_district_norm": "bajali",
+      "_season_norm": "kharif",
+      "_crop_norm": "bajra"
+    }
+  },
+  "calendar_adjustment": {
+    "region": "Assam",
+    "month": 2,
+    "suitability": {
+      "coffee": 0.46,
+      "mothbeans": 0.46,
+      "jute": 0.46
+    },
+    "details": {
+      "raw_topk": [
+        {
+          "rank": 1,
+          "crop": "coffee",
+          "confidence": 0.9821605682373047
+        },
+        {
+          "rank": 2,
+          "crop": "mothbeans",
+          "confidence": 0.0020251208916306496
+        },
+        {
+          "rank": 3,
+          "crop": "jute",
+          "confidence": 0.001360747846774757
+        }
+      ],
+      "adjusted_topk": [
+        {
+          "crop": "coffee",
+          "raw_model_confidence": 0.9821605682373047,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.375676417350769,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "mothbeans",
+          "raw_model_confidence": 0.0020251208916306496,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.0007746087410487235,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "jute",
+          "raw_model_confidence": 0.001360747846774757,
+          "rag_suitability": 0.46,
+          "adjusted_confidence": 0.0005204860513913445,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        }
+      ]
+    },
+    "base_model": "xgboost",
+    "conflict": false
+  },
+  "rerank_conflict": null,
+  "zone_resolution": "state",
+  "zone_id": "AGROCLIM_ASSAM_KHARIF",
+  "calendar_conflict": null,
+  "deprecation": {
+    "calendar_suitability": "Deprecated alias. Use rag_suitability.",
+    "calendar_conflict": "Deprecated alias. Use rerank_conflict."
+  },
+  "agreement_metrics": {
+    "all_three_agree": true,
+    "pairwise_agreement": {
+      "xgboost==random_forest": true,
+      "xgboost==logistic_regression": true,
+      "random_forest==logistic_regression": true
+    },
+    "prob_std": 0.0586950994761449,
+    "disagreement_detected": false
+  },
+  "confidence_components": {
+    "raw_model_confidence": 0.9821605682373047,
+    "rag_suitability": 0.46,
+    "eps": 0.05,
+    "data_quality_factor": 0.75,
+    "disagreement_multiplier": 1.0,
+    "final_confidence": 0.375676417350769,
+    "calendar_term": 0.51
+  },
+  "provenance": {
+    "N": {
+      "value": 80.0,
+      "source": "user"
+    },
+    "P": {
+      "value": 35.0,
+      "source": "user"
+    },
+    "K": {
+      "value": 28.0,
+      "source": "user"
+    },
+    "temperature": {
+      "value": 25.7,
+      "source": "weather_api"
+    },
+    "humidity": {
+      "value": 57.0,
+      "source": "weather_api"
+    },
+    "ph": {
+      "value": 6.5,
+      "source": "soil_api_fallback"
+    }
+  },
+  "tool_calls": [
+    "geocode_location",
+    "get_weather",
+    "get_soil_properties"
+  ],
+  "warnings": [
+    "Weather values are estimated from Open-Meteo current conditions.",
+    "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+    "Soil values are estimated from SoilGrids.",
+    "Localization strength is limited; rerank based on coarse zone match.",
+    "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+    "LLM fallback applied: validation_failed: Action checklist must contain exactly 3 bullet points; round2: Missing required sections"
+  ]
+}

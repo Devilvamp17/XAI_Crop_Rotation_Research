@@ -1,0 +1,23 @@
+{
+  "request_id": "req_e387eb04",
+  "timestamp": "2026-02-15T10-59-00Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Give the recommendation in the strict 5-section format.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 88.0,
+    "P": 40.0,
+    "K": 42.0,
+    "temperature": 26.1,
+    "humidity": 70.2,
+    "ph": 6.5,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

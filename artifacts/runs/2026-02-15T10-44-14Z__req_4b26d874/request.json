@@ -1,0 +1,23 @@
+{
+  "request_id": "req_4b26d874",
+  "timestamp": "2026-02-15T10-44-14Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Focus on uncertainty and tell me when I should postpone planting.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 85.0,
+    "P": 37.0,
+    "K": 30.0,
+    "temperature": 30.1,
+    "humidity": 74.2,
+    "ph": 6.6,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

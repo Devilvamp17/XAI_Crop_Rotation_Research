@@ -1,0 +1,23 @@
+{
+  "request_id": "req_06dac300",
+  "timestamp": "2026-02-15T10-53-25Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Write a haiku about farming but still include recommendation and confidence.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 90.0,
+    "P": 42.0,
+    "K": 43.0,
+    "temperature": 25.6,
+    "humidity": 71.4,
+    "ph": 6.4,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

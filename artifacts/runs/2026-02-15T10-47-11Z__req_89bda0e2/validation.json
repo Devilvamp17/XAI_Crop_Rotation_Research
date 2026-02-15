@@ -1,0 +1,8 @@
+{
+  "valid": false,
+  "format_ok": false,
+  "cot_leak": true,
+  "bullets_ok": false,
+  "confidence_terms_ok": true,
+  "invalid_tool_mentions": []
+}

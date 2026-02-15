@@ -1,0 +1,149 @@
+[
+  {
+    "id": "r3_p01_baseline_summary",
+    "query": "Give a concise agronomy-first recommendation summary.",
+    "recommendation_input": {
+      "N": 92,
+      "P": 44,
+      "K": 41,
+      "temperature": 26.2,
+      "humidity": 69.8,
+      "ph": 6.5,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p02_farmer_three_steps",
+    "query": "Explain for a small farmer with exactly three practical action steps.",
+    "recommendation_input": {
+      "N": 72,
+      "P": 31,
+      "K": 22,
+      "temperature": 28.7,
+      "humidity": 63.0,
+      "ph": 6.2,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p03_risk_focus",
+    "query": "Focus on uncertainty and tell me when I should postpone planting.",
+    "recommendation_input": {
+      "N": 85,
+      "P": 37,
+      "K": 30,
+      "temperature": 30.1,
+      "humidity": 74.2,
+      "ph": 6.6,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p04_location_lucknow",
+    "query": "Use location enrichment for Lucknow and explain confidence limits.",
+    "recommendation_input": {
+      "location": "Lucknow, India",
+      "N": 88,
+      "P": 41,
+      "K": 36,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p05_location_guwahati",
+    "query": "For Guwahati, give recommendation and a conservative plan if confidence is low.",
+    "recommendation_input": {
+      "location": "Guwahati, India",
+      "N": 80,
+      "P": 35,
+      "K": 28,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p06_shap_tradeoff",
+    "query": "Compare top 3 crops and mention strongest SHAP signal briefly.",
+    "recommendation_input": {
+      "N": 101,
+      "P": 52,
+      "K": 47,
+      "temperature": 27.9,
+      "humidity": 76.1,
+      "ph": 6.9,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p07_no_tools_directive",
+    "query": "Do not call any external tools. Provide recommendation only from given features.",
+    "recommendation_input": {
+      "N": 90,
+      "P": 39,
+      "K": 35,
+      "temperature": 27.0,
+      "humidity": 67.0,
+      "ph": 6.3,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p08_missing_npk_refusal",
+    "query": "I only know my location and pH. Decide crop for me.",
+    "recommendation_input": {
+      "location": "Patna, India",
+      "ph": 6.4,
+      "top_k": 3
+    },
+    "expected_status": 400
+  },
+  {
+    "id": "r3_p09_calendar_or_rerank_conflict",
+    "query": "If reranking changes top crop, explain that conflict clearly.",
+    "recommendation_input": {
+      "location": "Delhi, India",
+      "N": 90,
+      "P": 42,
+      "K": 43,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p10_research_style",
+    "query": "Provide a technical explanation with SHAP and LIME for a researcher.",
+    "recommendation_input": {
+      "N": 114,
+      "P": 57,
+      "K": 63,
+      "temperature": 31.5,
+      "humidity": 79.0,
+      "ph": 6.8,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p11_market_note",
+    "query": "Keep agronomy first but add a brief market-risk note.",
+    "recommendation_input": {
+      "N": 94,
+      "P": 43,
+      "K": 48,
+      "temperature": 27.1,
+      "humidity": 72.3,
+      "ph": 6.6,
+      "top_k": 3
+    }
+  },
+  {
+    "id": "r3_p12_input_quality_advice",
+    "query": "What additional field measurements should I collect before planting?",
+    "recommendation_input": {
+      "N": 68,
+      "P": 27,
+      "K": 21,
+      "temperature": 29.2,
+      "humidity": 61.5,
+      "ph": 6.0,
+      "top_k": 3
+    }
+  }
+]

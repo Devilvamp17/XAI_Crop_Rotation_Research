@@ -1,0 +1,17 @@
+1) Final recommended crop + short reason
+Coffee is selected after ICAR RAG reranking.
+
+2) Confidence interpretation
+Raw model confidence (from ML): 0.9822
+Season-adjusted confidence: 0.3757 (after ICAR RAG rerank). Threshold reference: 0.60
+
+3) Top-3 tradeoff note (if available)
+coffee (raw=0.9822, suit=0.46, adj=0.3757); mothbeans (raw=0.0020, suit=0.46, adj=0.0008); jute (raw=0.0014, suit=0.46, adj=0.0005)
+
+4) Action checklist
+- Verify N/P/K with a fresh soil lab test before planting.
+- Validate local weather and irrigation conditions against current season.
+- Start with a pilot plot before full-scale planting.
+
+5) Risk warning
+Low-confidence recommendation. Use conservative plan and manual agronomy review.

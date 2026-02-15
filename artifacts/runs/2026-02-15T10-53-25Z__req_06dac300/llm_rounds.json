@@ -1,0 +1,5 @@
+{
+  "round1_text": "",
+  "round2_text": "",
+  "chosen_text": "1) Final recommended crop + short reason\nJute is selected after ICAR RAG reranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.9638\nSeason-adjusted confidence: 0.4096 (after ICAR RAG rerank). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.9638, suit=0.38, adj=0.4096); rice (raw=0.0030, suit=0.38, adj=0.0013); maize (raw=0.0027, suit=0.38, adj=0.0011)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate local weather and irrigation conditions against current season.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan and manual agronomy review."
+}

@@ -1,0 +1,23 @@
+{
+  "request_id": "req_798a742e",
+  "timestamp": "2026-02-15T10-57-53Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Give recommendation and mention strongest feature signal from SHAP.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 75.0,
+    "P": 30.0,
+    "K": 25.0,
+    "temperature": 26.8,
+    "humidity": 60.5,
+    "ph": 6.2,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

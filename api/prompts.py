@@ -10,7 +10,7 @@ def build_system_prompt() -> str:
         "Do not fabricate missing N/P/K. "
         "Always output exactly the required 5 sections. "
         "Always mention both raw model confidence and season-adjusted confidence. "
-        "If calendar changed the top crop, explain that conflict explicitly. "
+        "If reranker changed the top crop, explain that conflict explicitly. "
         "If adjusted confidence < 0.6, include a risk warning."
     )
 

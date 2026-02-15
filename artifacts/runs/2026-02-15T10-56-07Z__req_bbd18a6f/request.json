@@ -1,0 +1,23 @@
+{
+  "request_id": "req_bbd18a6f",
+  "timestamp": "2026-02-15T10-56-07Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Explain in simple farmer language and give exactly 3 action steps.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 70.0,
+    "P": 30.0,
+    "K": 20.0,
+    "temperature": 29.0,
+    "humidity": 62.0,
+    "ph": 6.1,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

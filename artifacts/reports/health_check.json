@@ -1,0 +1,11 @@
+{
+  "ok": true,
+  "checks": {
+    "model_health": 200,
+    "agent_health": 200,
+    "agent_tools": 200,
+    "agent_rag_health": 200,
+    "agent_metrics_xai": 200,
+    "agent_metrics_xai_curves": 200
+  }
+}

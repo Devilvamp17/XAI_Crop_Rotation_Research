@@ -83,7 +83,8 @@
       "P": 42,
       "K": 43,
       "top_k": 3
-    }
+    },
+    "expected_status": 400
   },
   {
     "id": "p08_low_confidence_action",

@@ -16,7 +16,7 @@ REQUIRED_SECTIONS = [
     "5)",
 ]
 BANNED_COT = ["okay, let me", "i need to", "let me think", "i will now"]
-TOOL_NAMES = ["geocode_location", "get_weather", "get_soil_properties", "get_crop_calendar"]
+TOOL_NAMES = ["geocode_location", "get_weather", "get_soil_properties", "get_icar_rag_rerank"]
 
 
 def infer_tools_used(response_json: dict[str, Any]) -> list[str]:
@@ -33,9 +33,9 @@ def infer_tools_used(response_json: dict[str, Any]) -> list[str]:
         if source in {"soil_api", "soil_api_fallback"}:
             tools.add("get_soil_properties")
 
-    calendar_adj = response_json.get("recommendation", {}).get("calendar_adjustment", {})
+    calendar_adj = response_json.get("recommendation", {}).get("rag_rerank", {})
     if calendar_adj:
-        tools.add("get_crop_calendar")
+        tools.add("get_icar_rag_rerank")
 
     if any(
         str(v.get("source", "")).endswith("api") or str(v.get("source", "")).endswith("fallback")
@@ -99,13 +99,19 @@ def render_markdown(entries: list[dict[str, Any]], model_api: str, agent_api: st
         lines.append("")
         lines.append(f"> {item['query']}")
         lines.append("")
+        lines.append(f"- Expected HTTP: `{item.get('expected_status', 200)}`")
 
         if item.get("ok"):
-            rec = item["response"]["recommendation"]
-            lines.append(f"- Final Crop: `{rec.get('final_crop')}`")
-            lines.append(f"- Confidence: `{rec.get('confidence')}`")
-            lines.append(f"- Warnings: `{rec.get('warnings', [])}`")
-            lines.append(f"- Inferred Tools Used: `{item.get('inferred_tools_used', [])}`")
+            if item.get("status_code") == 200:
+                rec = item["response"]["recommendation"]
+                lines.append(f"- Final Crop: `{rec.get('final_crop')}`")
+                lines.append(f"- Confidence: `{rec.get('confidence')}`")
+                lines.append(f"- Warnings: `{rec.get('warnings', [])}`")
+                lines.append(f"- Inferred Tools Used: `{item.get('inferred_tools_used', [])}`")
+            else:
+                lines.append(f"- Status: `PASSED (expected non-200)`")
+                lines.append(f"- HTTP: `{item.get('status_code')}`")
+                lines.append(f"- Response: `{item.get('response')}`")
             q = item.get("quality", {})
             lines.append(
                 f"- Quality Score: `{q.get('score')}` (required_hits={q.get('required_hits')}, bullets={q.get('checklist_bullet_count')}, cot_leaks={q.get('cot_leaks')}, invalid_tool_mentions={q.get('invalid_tool_mentions')}, no_tools_violation={q.get('no_tools_violation')}, length_ok={q.get('length_ok')})"
@@ -114,7 +120,10 @@ def render_markdown(entries: list[dict[str, Any]], model_api: str, agent_api: st
             lines.append("**LLM Output**")
             lines.append("")
             lines.append("```text")
-            lines.append(str(item["response"].get("llm_response", "")).strip())
+            if item.get("status_code") == 200:
+                lines.append(str(item["response"].get("llm_response", "")).strip())
+            else:
+                lines.append("N/A (expected non-200 case)")
             lines.append("```")
         else:
             lines.append(f"- Status: `FAILED`")
@@ -134,6 +143,7 @@ def run_suite(prompt_file: Path, out_json: Path, out_md: Path, model_api: str, a
         client.get(f"{agent_api.rstrip('/')}/health").raise_for_status()
 
         for p in prompts:
+            expected_status = int(p.get("expected_status", 200))
             body = {
                 "query": p["query"],
                 "recommendation_input": p["recommendation_input"],
@@ -142,13 +152,43 @@ def run_suite(prompt_file: Path, out_json: Path, out_md: Path, model_api: str, a
                 "id": p["id"],
                 "query": p["query"],
                 "request": body,
+                "expected_status": expected_status,
             }
             try:
                 r = client.post(f"{agent_api.rstrip('/')}/recommend_with_llm", json=body)
                 entry["status_code"] = r.status_code
-                if r.status_code == 200:
-                    resp = r.json()
+                if r.status_code == expected_status:
                     entry["ok"] = True
+                    if r.status_code == 200:
+                        resp = r.json()
+                        entry["response"] = resp
+                        entry["inferred_tools_used"] = infer_tools_used(resp)
+                        entry["quality"] = score_llm_output(
+                            str(resp.get("llm_response", "")),
+                            inferred_tools=entry["inferred_tools_used"],
+                            query=p["query"],
+                        )
+                    else:
+                        try:
+                            entry["response"] = r.json()
+                        except Exception:
+                            entry["response"] = {"raw": r.text}
+                        entry["inferred_tools_used"] = []
+                        entry["quality"] = {
+                            "score": 100,
+                            "required_hits": 0,
+                            "cot_leaks": [],
+                            "has_raw_confidence": False,
+                            "has_adjusted_confidence": False,
+                            "checklist_bullet_count": 0,
+                            "invalid_tool_mentions": [],
+                            "no_tools_violation": False,
+                            "length_ok": True,
+                            "note": f"Non-200 response matched expected_status={expected_status}",
+                        }
+                elif r.status_code == 200:
+                    resp = r.json()
+                    entry["ok"] = False
                     entry["response"] = resp
                     entry["inferred_tools_used"] = infer_tools_used(resp)
                     entry["quality"] = score_llm_output(
@@ -156,6 +196,7 @@ def run_suite(prompt_file: Path, out_json: Path, out_md: Path, model_api: str, a
                         inferred_tools=entry["inferred_tools_used"],
                         query=p["query"],
                     )
+                    entry["error"] = {"message": f"Unexpected status: got 200 expected {expected_status}"}
                 else:
                     entry["ok"] = False
                     try:

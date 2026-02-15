@@ -1,0 +1,61 @@
+{
+  "ablations": [
+    "full",
+    "no_calendar",
+    "no_rag",
+    "no_validation",
+    "no_disagreement",
+    "no_quality_factor"
+  ],
+  "rows": [
+    {
+      "component_removed": "full",
+      "metric": "mean_final_confidence",
+      "full_value": 0.2977985772853037,
+      "ablated_value_or_proxy": 0.2977985772853037,
+      "delta": 0.0,
+      "notes": "baseline from archived full pipeline"
+    },
+    {
+      "component_removed": "no_calendar",
+      "metric": "mean_final_confidence",
+      "full_value": 0.2977985772853037,
+      "ablated_value_or_proxy": 0.5519541990466235,
+      "delta": 0.2541556217613198,
+      "notes": "proxy using raw*dq*disagreement; calendar_conflict_rate=0.0000"
+    },
+    {
+      "component_removed": "no_rag",
+      "metric": "llm_quality_delta",
+      "full_value": "UNAVAILABLE",
+      "ablated_value_or_proxy": "UNAVAILABLE",
+      "delta": "UNAVAILABLE",
+      "notes": "no controlled with/without-RAG paired run found"
+    },
+    {
+      "component_removed": "no_validation",
+      "metric": "invalid_outputs_unblocked_rate",
+      "full_value": 0.0,
+      "ablated_value_or_proxy": 1.3902439024390243,
+      "delta": 1.3902439024390243,
+      "notes": "proxy from archived validation failures prevented by validation layer"
+    },
+    {
+      "component_removed": "no_disagreement",
+      "metric": "mean_final_confidence",
+      "full_value": 0.2977985772853037,
+      "ablated_value_or_proxy": 0.3355638770559213,
+      "delta": 0.0377652997706176,
+      "notes": "proxy; disagreement_detected_rate=0.8293"
+    },
+    {
+      "component_removed": "no_quality_factor",
+      "metric": "mean_final_confidence",
+      "full_value": 0.2977985772853037,
+      "ablated_value_or_proxy": 0.3234029186205348,
+      "delta": 0.025604341335231096,
+      "notes": "proxy from confidence_components"
+    }
+  ],
+  "notes": []
+}

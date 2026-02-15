@@ -1,0 +1,23 @@
+{
+  "request_id": "req_90f59bdc",
+  "timestamp": "2026-02-15T10-42-54Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Give a concise agronomy-first recommendation summary.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 92.0,
+    "P": 44.0,
+    "K": 41.0,
+    "temperature": 26.2,
+    "humidity": 69.8,
+    "ph": 6.5,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

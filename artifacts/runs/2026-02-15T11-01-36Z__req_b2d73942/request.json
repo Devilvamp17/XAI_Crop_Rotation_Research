@@ -1,0 +1,23 @@
+{
+  "request_id": "req_b2d73942",
+  "timestamp": "2026-02-15T11-01-36Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "If confidence is below 0.6, provide a conservative plan with risk warning.",
+  "recommendation_input": {
+    "location": "Chennai, India",
+    "region": null,
+    "month": null,
+    "N": 60.0,
+    "P": 25.0,
+    "K": 20.0,
+    "temperature": null,
+    "humidity": null,
+    "ph": null,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

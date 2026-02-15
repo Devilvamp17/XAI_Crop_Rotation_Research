@@ -1,0 +1,23 @@
+{
+  "request_id": "req_bece5110",
+  "timestamp": "2026-02-15T10-55-47Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "If calendar changes top crop, explain that conflict clearly.",
+  "recommendation_input": {
+    "location": "Delhi, India",
+    "region": null,
+    "month": null,
+    "N": 90.0,
+    "P": 42.0,
+    "K": 43.0,
+    "temperature": null,
+    "humidity": null,
+    "ph": null,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

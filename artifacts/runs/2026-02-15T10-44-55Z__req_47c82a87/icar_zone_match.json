@@ -1,0 +1,28 @@
+{
+  "zone_resolution": "state",
+  "zone_id": "AGROCLIM_UTTAR_PRADESH_KHARIF",
+  "zone_state": "Uttar Pradesh",
+  "zone_district": "Agra",
+  "zone_match": {
+    "zone_id": "AGROCLIM_UTTAR_PRADESH_KHARIF",
+    "zone_name": "Uttar Pradesh kharif memory zone",
+    "zone_type": "AGROCLIM_CURATED",
+    "state": "Uttar Pradesh",
+    "district": "Agra",
+    "season": "kharif",
+    "crop": "bajra",
+    "suitability": "MED",
+    "crop_family": "cereal",
+    "key_risks": "drought",
+    "soil_notes": "district-level soil detail unavailable in source snapshot",
+    "climate_notes": "seasonal crop guidance extracted from cited official sources",
+    "evidence_text": "Pearl millet package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Agra, lgd=118.",
+    "source_name": "Vikaspedia (MeitY/C-DAC Government Knowledge Portal)",
+    "source_ref": "https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/bajra",
+    "data_quality": "incomplete",
+    "_state_norm": "uttar pradesh",
+    "_district_norm": "agra",
+    "_season_norm": "kharif",
+    "_crop_norm": "bajra"
+  }
+}

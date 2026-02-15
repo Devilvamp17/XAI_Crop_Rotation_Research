@@ -1,0 +1,673 @@
+{
+  "final_crop": "jute",
+  "confidence": 0.17794377330690622,
+  "raw_model_confidence": 0.5075045228004456,
+  "rag_suitability": 0.5,
+  "adjusted_confidence": 0.17794377330690622,
+  "eps": 0.05,
+  "calendar_suitability": 0.5,
+  "top3": [
+    {
+      "crop": "jute",
+      "raw_model_confidence": 0.5075045228004456,
+      "rag_suitability": 0.5,
+      "adjusted_confidence": 0.17794377330690622,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "coffee",
+      "raw_model_confidence": 0.39057043194770813,
+      "rag_suitability": 0.5,
+      "adjusted_confidence": 0.13694375770166517,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    },
+    {
+      "crop": "kidneybeans",
+      "raw_model_confidence": 0.01151262316852808,
+      "rag_suitability": 0.5,
+      "adjusted_confidence": 0.0040366134984651586,
+      "explanation_tokens": {
+        "suitability_token": "NOT_FOUND",
+        "risk_tokens": "",
+        "source": "",
+        "match_source": "none"
+      }
+    }
+  ],
+  "shap": {
+    "base_value": 0.684004545211792,
+    "values": {
+      "N": 1.7508041858673096,
+      "P": 0.3193492293357849,
+      "K": 0.6560285687446594,
+      "temperature": -0.18169955909252167,
+      "humidity": -0.35334113240242004,
+      "ph": 0.19434449076652527
+    },
+    "sorted_by_abs": [
+      {
+        "feature": "N",
+        "value": 1.7508041858673096,
+        "abs_value": 1.7508041858673096
+      },
+      {
+        "feature": "K",
+        "value": 0.6560285687446594,
+        "abs_value": 0.6560285687446594
+      },
+      {
+        "feature": "humidity",
+        "value": -0.35334113240242004,
+        "abs_value": 0.35334113240242004
+      },
+      {
+        "feature": "P",
+        "value": 0.3193492293357849,
+        "abs_value": 0.3193492293357849
+      },
+      {
+        "feature": "ph",
+        "value": 0.19434449076652527,
+        "abs_value": 0.19434449076652527
+      },
+      {
+        "feature": "temperature",
+        "value": -0.18169955909252167,
+        "abs_value": 0.18169955909252167
+      }
+    ]
+  },
+  "lime": {
+    "class_index": 8,
+    "explanations": [
+      {
+        "feature": "K",
+        "weight": 0.01691362064391578
+      },
+      {
+        "feature": "N",
+        "weight": 0.007680316975072957
+      },
+      {
+        "feature": "temperature",
+        "weight": 0.0035148922955252947
+      },
+      {
+        "feature": "ph",
+        "weight": 0.001622795971375767
+      },
+      {
+        "feature": "humidity",
+        "weight": 0.0010324746912537084
+      },
+      {
+        "feature": "P",
+        "weight": 0.0007845189209426769
+      }
+    ]
+  },
+  "curves": {
+    "topk_confidence": {
+      "x": [
+        "jute",
+        "coffee",
+        "kidneybeans"
+      ],
+      "y": [
+        0.5075045228004456,
+        0.39057043194770813,
+        0.01151262316852808
+      ]
+    }
+  },
+  "llm_curves": {
+    "decision_stages": {
+      "x": [
+        "raw_model",
+        "rag_rerank",
+        "final"
+      ],
+      "y": [
+        0.5075045228004456,
+        0.5075045228004456,
+        0.17794377330690622
+      ]
+    },
+    "topk_confidence": {
+      "x": [
+        "jute",
+        "coffee",
+        "kidneybeans"
+      ],
+      "y": [
+        0.5075045228004456,
+        0.39057043194770813,
+        0.01151262316852808
+      ]
+    },
+    "shap_cumulative": {
+      "x": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "y": [
+        0.5066618883834206,
+        0.6965087462768897,
+        0.798761463531996,
+        0.8911773287070645,
+        0.9474183106989504,
+        1.0
+      ],
+      "feature_order": [
+        "N",
+        "K",
+        "humidity",
+        "P",
+        "ph",
+        "temperature"
+      ]
+    }
+  },
+  "xai_eval": {
+    "report": {
+      "shap": {
+        "deletion_auc": 0.1233927789342124,
+        "insertion_auc": 0.6633253107538137
+      },
+      "lime": {
+        "deletion_auc": 0.1380345608711165,
+        "insertion_auc": 0.6387381419516169,
+        "fidelity_r2": 0.2501815785093481,
+        "mean_fidelity_r2": 0.2501815785093481,
+        "median_fidelity_r2": 0.24456816332629205,
+        "fraction_r2_gt_0": 0.9666666666666667,
+        "status": "reliable"
+      },
+      "agreement": {
+        "shap_lime_topk_jaccard": 0.57,
+        "enforce_shap_lime_agreement": true
+      },
+      "stability": {
+        "avg_overlap": 0.978125,
+        "avg_rank_corr": 0.9864285714285714
+      }
+    },
+    "calibration": {
+      "bins": [
+        0.0,
+        0.1,
+        0.2,
+        0.30000000000000004,
+        0.4,
+        0.5,
+        0.6000000000000001,
+        0.7000000000000001,
+        0.8,
+        0.9,
+        1.0
+      ],
+      "accuracy": [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.5,
+        0.8,
+        0.5625,
+        0.7333333333333333,
+        1.0,
+        0.9973333333333333
+      ],
+      "avg_confidence": [
+        0.0,
+        0.0,
+        0.22681665420532227,
+        0.0,
+        0.48267388343811035,
+        0.5475311875343323,
+        0.6496337652206421,
+        0.7525336742401123,
+        0.8534603118896484,
+        0.9719057679176331
+      ],
+      "bucket_sizes": [
+        0,
+        0,
+        1,
+        0,
+        2,
+        5,
+        16,
+        15,
+        26,
+        375
+      ],
+      "ece": 0.038858395273035196,
+      "per_model": {
+        "logistic_regression": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.75,
+            0.7272727272727273,
+            0.5454545454545454,
+            0.7407407407407407,
+            0.8928571428571429,
+            0.9942528735632183
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.43493545673324085,
+            0.5472614900029297,
+            0.6459563377853166,
+            0.7530185581940445,
+            0.8536346449300598,
+            0.992057530572844
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            0,
+            4,
+            11,
+            22,
+            27,
+            28,
+            348
+          ],
+          "ece": 0.01737529906399907
+        },
+        "random_forest": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            0.0,
+            0.6666666666666666,
+            0.5714285714285714,
+            0.5,
+            0.8823529411764706,
+            1.0,
+            1.0,
+            1.0
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.0,
+            0.36999999999999994,
+            0.4385714285714286,
+            0.556875,
+            0.6399999999999999,
+            0.7491666666666666,
+            0.865,
+            0.9790030211480362
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            0,
+            3,
+            7,
+            16,
+            17,
+            24,
+            42,
+            331
+          ],
+          "ece": 0.05793181818181825
+        },
+        "xgboost": {
+          "bins": [
+            0.0,
+            0.1,
+            0.2,
+            0.30000000000000004,
+            0.4,
+            0.5,
+            0.6000000000000001,
+            0.7000000000000001,
+            0.8,
+            0.9,
+            1.0
+          ],
+          "accuracy": [
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.5,
+            0.8,
+            0.5625,
+            0.7333333333333333,
+            1.0,
+            0.9973333333333333
+          ],
+          "avg_confidence": [
+            0.0,
+            0.0,
+            0.22681665420532227,
+            0.0,
+            0.48267388343811035,
+            0.5475311875343323,
+            0.6496337652206421,
+            0.7525336742401123,
+            0.8534603118896484,
+            0.9719057679176331
+          ],
+          "bucket_sizes": [
+            0,
+            0,
+            1,
+            0,
+            2,
+            5,
+            16,
+            15,
+            26,
+            375
+          ],
+          "ece": 0.038858395273035196
+        }
+      }
+    }
+  },
+  "rag_rerank": {
+    "season": "rabi",
+    "zone_resolution": "district",
+    "zone_id": "AGROCLIM_DELHI_KHARIF",
+    "zone_state": "Delhi",
+    "zone_district": "New Delhi",
+    "queries": [
+      "New Delhi rabi suitability jute",
+      "jute constraints risks New Delhi rabi",
+      "New Delhi dominant crops rabi",
+      "New Delhi rabi suitability coffee",
+      "coffee constraints risks New Delhi rabi",
+      "New Delhi dominant crops rabi",
+      "New Delhi rabi suitability kidneybeans",
+      "kidneybeans constraints risks New Delhi rabi",
+      "New Delhi dominant crops rabi"
+    ],
+    "per_crop_suitability": {
+      "jute": 0.5,
+      "coffee": 0.5,
+      "kidneybeans": 0.5
+    },
+    "retrieval_hits": [
+      {
+        "id": "chunk_004131",
+        "title": "ICAR Zone Memory Row 4130",
+        "text": "ZONE_ID:AGROCLIM_DELHI_KHARIF\nZONE_NAME:Delhi kharif memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004130_delhi_new_delhi_kharif_jute.md"
+      },
+      {
+        "id": "chunk_004138",
+        "title": "ICAR Zone Memory Row 4137",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+      },
+      {
+        "id": "chunk_004145",
+        "title": "ICAR Zone Memory Row 4144",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_004143",
+        "title": "ICAR Zone Memory Row 4142",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+      },
+      {
+        "id": "chunk_004138",
+        "title": "ICAR Zone Memory Row 4137",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+      },
+      {
+        "id": "chunk_004145",
+        "title": "ICAR Zone Memory Row 4144",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_004143",
+        "title": "ICAR Zone Memory Row 4142",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+      },
+      {
+        "id": "chunk_004139",
+        "title": "ICAR Zone Memory Row 4138",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:chickpea\nSUITABILITY:HIGH\nFAMILY:pulse\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/chickpea\nDATA_QUALITY:incomplete\n\nEVIDENCE:Chickpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004138_delhi_new_delhi_rabi_chickpea.md"
+      },
+      {
+        "id": "chunk_004138",
+        "title": "ICAR Zone Memory Row 4137",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:barley\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/barley\nDATA_QUALITY:incomplete\n\nEVIDENCE:Barley package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004137_delhi_new_delhi_rabi_barley.md"
+      },
+      {
+        "id": "chunk_004145",
+        "title": "ICAR Zone Memory Row 4144",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:wheat\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/wheat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Wheat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004144_delhi_new_delhi_rabi_wheat.md"
+      },
+      {
+        "id": "chunk_004143",
+        "title": "ICAR Zone Memory Row 4142",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:oat\nSUITABILITY:MED\nFAMILY:cereal\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/oat\nDATA_QUALITY:incomplete\n\nEVIDENCE:Oat package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004142_delhi_new_delhi_rabi_oat.md"
+      },
+      {
+        "id": "chunk_004139",
+        "title": "ICAR Zone Memory Row 4138",
+        "text": "ZONE_ID:AGROCLIM_DELHI_RABI\nZONE_NAME:Delhi rabi memory zone\nSTATE:Delhi\nDISTRICT:New Delhi\nSEASON:rabi\nCROP:chickpea\nSUITABILITY:HIGH\nFAMILY:pulse\nRISK:frost\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/pulses/chickpea\nDATA_QUALITY:incomplete\n\nEVIDENCE:Chickpea package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.\n\nSummary: This is a structured memory row for deterministic reranking.",
+        "source": "rag_corpus/icar_zones/004138_delhi_new_delhi_rabi_chickpea.md"
+      }
+    ],
+    "zone_match": {
+      "zone_id": "AGROCLIM_DELHI_KHARIF",
+      "zone_name": "Delhi kharif memory zone",
+      "zone_type": "AGROCLIM_CURATED",
+      "state": "Delhi",
+      "district": "New Delhi",
+      "season": "kharif",
+      "crop": "bajra",
+      "suitability": "MED",
+      "crop_family": "cereal",
+      "key_risks": "drought",
+      "soil_notes": "district-level soil detail unavailable in source snapshot",
+      "climate_notes": "seasonal crop guidance extracted from cited official sources",
+      "evidence_text": "Pearl millet package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Delhi, district=New Delhi, lgd=79.",
+      "source_name": "Vikaspedia (MeitY/C-DAC Government Knowledge Portal)",
+      "source_ref": "https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/bajra",
+      "data_quality": "incomplete",
+      "_state_norm": "delhi",
+      "_district_norm": "delhi",
+      "_season_norm": "kharif",
+      "_crop_norm": "bajra"
+    }
+  },
+  "calendar_adjustment": {
+    "region": "India",
+    "month": 2,
+    "suitability": {
+      "jute": 0.5,
+      "coffee": 0.5,
+      "kidneybeans": 0.5
+    },
+    "details": {
+      "raw_topk": [
+        {
+          "rank": 1,
+          "crop": "jute",
+          "confidence": 0.5075045228004456
+        },
+        {
+          "rank": 2,
+          "crop": "coffee",
+          "confidence": 0.39057043194770813
+        },
+        {
+          "rank": 3,
+          "crop": "kidneybeans",
+          "confidence": 0.01151262316852808
+        }
+      ],
+      "adjusted_topk": [
+        {
+          "crop": "jute",
+          "raw_model_confidence": 0.5075045228004456,
+          "rag_suitability": 0.5,
+          "adjusted_confidence": 0.17794377330690622,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "coffee",
+          "raw_model_confidence": 0.39057043194770813,
+          "rag_suitability": 0.5,
+          "adjusted_confidence": 0.13694375770166517,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        },
+        {
+          "crop": "kidneybeans",
+          "raw_model_confidence": 0.01151262316852808,
+          "rag_suitability": 0.5,
+          "adjusted_confidence": 0.0040366134984651586,
+          "explanation_tokens": {
+            "suitability_token": "NOT_FOUND",
+            "risk_tokens": "",
+            "source": "",
+            "match_source": "none"
+          }
+        }
+      ]
+    },
+    "base_model": "xgboost",
+    "conflict": false
+  },
+  "rerank_conflict": null,
+  "zone_resolution": "district",
+  "zone_id": "AGROCLIM_DELHI_KHARIF",
+  "calendar_conflict": null,
+  "deprecation": {
+    "calendar_suitability": "Deprecated alias. Use rag_suitability.",
+    "calendar_conflict": "Deprecated alias. Use rerank_conflict."
+  },
+  "agreement_metrics": {
+    "all_three_agree": false,
+    "pairwise_agreement": {
+      "xgboost==random_forest": false,
+      "xgboost==logistic_regression": false,
+      "random_forest==logistic_regression": false
+    },
+    "prob_std": 0.230218135857084,
+    "disagreement_detected": true
+  },
+  "confidence_components": {
+    "raw_model_confidence": 0.5075045228004456,
+    "rag_suitability": 0.5,
+    "eps": 0.05,
+    "data_quality_factor": 0.75,
+    "disagreement_multiplier": 0.85,
+    "final_confidence": 0.17794377330690622,
+    "calendar_term": 0.55
+  },
+  "provenance": {
+    "N": {
+      "value": 90.0,
+      "source": "user"
+    },
+    "P": {
+      "value": 42.0,
+      "source": "user"
+    },
+    "K": {
+      "value": 43.0,
+      "source": "user"
+    },
+    "temperature": {
+      "value": 27.1,
+      "source": "weather_api"
+    },
+    "humidity": {
+      "value": 33.0,
+      "source": "weather_api"
+    },
+    "ph": {
+      "value": 6.5,
+      "source": "soil_api_fallback"
+    }
+  },
+  "tool_calls": [
+    "geocode_location",
+    "get_weather",
+    "get_soil_properties"
+  ],
+  "warnings": [
+    "Weather values are estimated from Open-Meteo current conditions.",
+    "SoilGrids pH unavailable at this point; using fallback pH=6.5.",
+    "Soil values are estimated from SoilGrids.",
+    "Model disagreement detected.",
+    "Low confidence recommendation (<0.6). Consider manual agronomy review.",
+    "LLM fallback applied: validation_failed: Missing required sections; round2: Action checklist must contain exactly 3 bullet points"
+  ]
+}

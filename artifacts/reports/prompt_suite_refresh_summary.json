@@ -1,0 +1,13 @@
+{
+  "suite": "refresh",
+  "prompt_file": "prompts/llm_prompt_suite_refresh.json",
+  "total": 12,
+  "passed": 12,
+  "failed": 0,
+  "status_counts": {
+    "200": 11,
+    "400": 1
+  },
+  "output_json": "artifacts/llm_prompt_outputs_refresh.json",
+  "output_md": "artifacts/llm_prompt_outputs_refresh.md"
+}

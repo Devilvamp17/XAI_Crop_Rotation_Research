@@ -1,0 +1,23 @@
+{
+  "request_id": "req_bc077a8b",
+  "timestamp": "2026-02-15T10-43-54Z",
+  "endpoint_name": "recommend_with_llm",
+  "query": "Explain for a small farmer with exactly three practical action steps.",
+  "recommendation_input": {
+    "location": null,
+    "region": null,
+    "month": null,
+    "N": 72.0,
+    "P": 31.0,
+    "K": 22.0,
+    "temperature": 28.7,
+    "humidity": 63.0,
+    "ph": 6.2,
+    "models": [
+      "xgboost",
+      "random_forest",
+      "logistic_regression"
+    ],
+    "top_k": 3
+  }
+}

@@ -1,0 +1,2 @@
+success_rate,format_ok_rate,cot_leak_rate,bullets_ok_rate,raw_adjusted_conf_rate,conflict_explained_rate,tool_match_rate,fallback_rate,source
+1.0,0.3902439024390244,0.24390243902439024,0.21951219512195122,0.36585365853658536,1.0,UNAVAILABLE,1.0,latest_runs

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "chunk_014256",
+    "title": "ICAR Zone Memory Row 14255",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/014255_rajasthan_pratapgarh_kharif_jute.md"
+  },
+  {
+    "id": "chunk_017481",
+    "title": "ICAR Zone Memory Row 17480",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Hamirpur\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Hamirpur, lgd=149.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/017480_uttar_pradesh_hamirpur_kharif_jute.md"
+  },
+  {
+    "id": "chunk_018131",
+    "title": "ICAR Zone Memory Row 18130",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Pratapgarh, lgd=174.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/018130_uttar_pradesh_pratapgarh_kharif_jute.md"
+  },
+  {
+    "id": "chunk_013606",
+    "title": "ICAR Zone Memory Row 13605",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Bharatpur\nSEASON:kharif\nCROP:jute\nSUITABILITY:HIGH\nFAMILY:fiber\nRISK:flood\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/fibres-1/jute\nDATA_QUALITY:incomplete\n\nEVIDENCE:Jute package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Bharatpur, lgd=91.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/013605_rajasthan_bharatpur_kharif_jute.md"
+  },
+  {
+    "id": "chunk_014259",
+    "title": "ICAR Zone Memory Row 14258",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:rice\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:flood|drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/rice\nDATA_QUALITY:incomplete\n\nEVIDENCE:Rice package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/014258_rajasthan_pratapgarh_kharif_rice.md"
+  },
+  {
+    "id": "chunk_018134",
+    "title": "ICAR Zone Memory Row 18133",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:rice\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:flood|drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/rice\nDATA_QUALITY:incomplete\n\nEVIDENCE:Rice package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Pratapgarh, lgd=174.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/018133_uttar_pradesh_pratapgarh_kharif_rice.md"
+  },
+  {
+    "id": "chunk_017484",
+    "title": "ICAR Zone Memory Row 17483",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Hamirpur\nSEASON:kharif\nCROP:rice\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:flood|drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/rice\nDATA_QUALITY:incomplete\n\nEVIDENCE:Rice package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Hamirpur, lgd=149.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/017483_uttar_pradesh_hamirpur_kharif_rice.md"
+  },
+  {
+    "id": "chunk_013609",
+    "title": "ICAR Zone Memory Row 13608",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Bharatpur\nSEASON:kharif\nCROP:rice\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:flood|drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/rice\nDATA_QUALITY:incomplete\n\nEVIDENCE:Rice package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Bharatpur, lgd=91.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/013608_rajasthan_bharatpur_kharif_rice.md"
+  },
+  {
+    "id": "chunk_014257",
+    "title": "ICAR Zone Memory Row 14256",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Pratapgarh, lgd=629.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/014256_rajasthan_pratapgarh_kharif_maize.md"
+  },
+  {
+    "id": "chunk_018132",
+    "title": "ICAR Zone Memory Row 18131",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Pratapgarh\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Pratapgarh, lgd=174.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/018131_uttar_pradesh_pratapgarh_kharif_maize.md"
+  },
+  {
+    "id": "chunk_017482",
+    "title": "ICAR Zone Memory Row 17481",
+    "text": "ZONE_ID:AGROCLIM_UTTAR_PRADESH_KHARIF\nZONE_NAME:Uttar Pradesh kharif memory zone\nSTATE:Uttar Pradesh\nDISTRICT:Hamirpur\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Uttar Pradesh, district=Hamirpur, lgd=149.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/017481_uttar_pradesh_hamirpur_kharif_maize.md"
+  },
+  {
+    "id": "chunk_013607",
+    "title": "ICAR Zone Memory Row 13606",
+    "text": "ZONE_ID:AGROCLIM_RAJASTHAN_KHARIF\nZONE_NAME:Rajasthan kharif memory zone\nSTATE:Rajasthan\nDISTRICT:Bharatpur\nSEASON:kharif\nCROP:maize\nSUITABILITY:HIGH\nFAMILY:cereal\nRISK:drought\nSOIL:district-level soil detail unavailable in source snapshot\nCLIMATE:seasonal crop guidance extracted from cited official sources\nSOURCE_NAME:Vikaspedia (MeitY/C-DAC Government Knowledge Portal)\nSOURCE_REF:https://en.vikaspedia.in/agriculture/crop-production/package-of-practices/cereals-1/maize\nDATA_QUALITY:incomplete\n\nEVIDENCE:Maize package-of-practices page used as season reference on Government Vikaspedia portal. Localization key: state=Rajasthan, district=Bharatpur, lgd=91.\n\nSummary: This is a structured memory row for deterministic reranking.",
+    "source": "rag_corpus/icar_zones/013606_rajasthan_bharatpur_kharif_maize.md"
+  }
+]

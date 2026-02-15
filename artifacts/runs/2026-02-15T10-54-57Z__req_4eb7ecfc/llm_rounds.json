@@ -1,0 +1,5 @@
+{
+  "round1_text": "",
+  "round2_text": "",
+  "chosen_text": "1) Final recommended crop + short reason\nJute is selected after ICAR RAG reranking.\n\n2) Confidence interpretation\nRaw model confidence (from ML): 0.5075\nSeason-adjusted confidence: 0.1779 (after ICAR RAG rerank). Threshold reference: 0.60\n\n3) Top-3 tradeoff note (if available)\njute (raw=0.5075, suit=0.50, adj=0.1779); coffee (raw=0.3906, suit=0.50, adj=0.1369); kidneybeans (raw=0.0115, suit=0.50, adj=0.0040)\n\n4) Action checklist\n- Verify N/P/K with a fresh soil lab test before planting.\n- Validate local weather and irrigation conditions against current season.\n- Start with a pilot plot before full-scale planting.\n\n5) Risk warning\nLow-confidence recommendation. Use conservative plan and manual agronomy review."
+}
