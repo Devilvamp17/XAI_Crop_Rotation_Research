@@ -323,11 +323,18 @@ def _recommend_core(payload: AgentRequest, *, no_tools_mode: bool) -> AgentRespo
                 for x in base_output.get("top3", [])
             ],
             "rerank_conflict": None,
+            "xai_rag_reasoning": {
+                "enabled": False,
+                "top_shap_features": [],
+                "query_terms": [],
+                "per_crop": [],
+            },
         }
     else:
         rerank = rerank_with_icar_rag(
             topk=base_output["top3"],
             features=features,
+            shap_sorted=base_output.get("shap", {}).get("sorted_by_abs", []),
             location=payload.location,
             region=region,
             month=month,
@@ -373,6 +380,7 @@ def _recommend_core(payload: AgentRequest, *, no_tools_mode: bool) -> AgentRespo
         "per_crop_suitability": {x["crop"]: x["rag_suitability"] for x in adjusted_topk},
         "retrieval_hits": rerank.get("retrieval_hits", []),
         "zone_match": rerank.get("zone_match"),
+        "xai_rag_reasoning": rerank.get("xai_rag_reasoning", {}),
     }
 
     return AgentResponse(

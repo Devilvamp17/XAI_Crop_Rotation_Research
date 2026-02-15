@@ -48,6 +48,9 @@ Reranker behavior:
 - Parse strict tokens from retrieved snippets:
   - `ZONE_ID`, `STATE`, `DISTRICT`, `SEASON`, `CROP`, `SUITABILITY`, `RISK`, `SOURCE_*`
 - Compute per-crop `rag_suitability` deterministically
+- Add XAI-aware signals from top SHAP features:
+  - query expansion using feature keywords
+  - small deterministic boost when retrieved evidence matches top SHAP feature context
 - Re-rank top-k by adjusted confidence
 
 Conflict handling:

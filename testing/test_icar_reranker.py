@@ -45,8 +45,37 @@ def test_unknown_location_default_behavior() -> None:
     assert all(0.0 <= x["rag_suitability"] <= 1.0 for x in out["adjusted_topk"])
 
 
+def test_xai_rag_reasoning_is_exposed() -> None:
+    topk = [
+        {"crop": "rice", "confidence": 0.70},
+        {"crop": "maize", "confidence": 0.65},
+    ]
+    features = {"temperature": 29.0, "humidity": 80.0, "ph": 6.7}
+    shap_sorted = [
+        {"feature": "humidity", "abs_value": 0.12},
+        {"feature": "N", "abs_value": 0.10},
+        {"feature": "temperature", "abs_value": 0.08},
+    ]
+    out = rerank_with_icar_rag(
+        topk=topk,
+        features=features,
+        shap_sorted=shap_sorted,
+        location=None,
+        region="West Bengal",
+        month=8,
+    )
+    assert "xai_rag_reasoning" in out
+    reasoning = out["xai_rag_reasoning"]
+    assert reasoning.get("enabled") is True
+    assert "humidity" in reasoning.get("top_shap_features", [])
+    assert isinstance(reasoning.get("per_crop"), list)
+    assert len(reasoning["per_crop"]) == len(topk)
+    assert "xai_feature_matches" in out["adjusted_topk"][0]["explanation_tokens"]
+
+
 if __name__ == "__main__":
     test_punjab_rabi_wheat_over_rice()
     test_west_bengal_kharif_rice_over_wheat()
     test_unknown_location_default_behavior()
+    test_xai_rag_reasoning_is_exposed()
     print("ICAR reranker tests passed.")

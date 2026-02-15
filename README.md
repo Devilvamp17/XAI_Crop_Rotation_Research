@@ -39,11 +39,16 @@ Scoring:
 - `rag_suitability` from retrieved tokenized docs (`SUITABILITY:HIGH|MED|LOW`)
 - deterministic penalties for explicit risks
 - match-quality factor by localization strength
+- XAI-aware adjustment from top SHAP features (query expansion + feature-token match boost)
 
 Final confidence:
 ```text
 adjusted_confidence = raw_model_confidence * (rag_suitability + eps) * data_quality_factor * disagreement_multiplier
 ```
+
+Rerank metadata now includes:
+- `rag_rerank.xai_rag_reasoning.top_shap_features`
+- `rag_rerank.xai_rag_reasoning.per_crop[*].matched_features`
 
 Backward-compatible aliases (deprecated):
 - `calendar_suitability` -> `rag_suitability`

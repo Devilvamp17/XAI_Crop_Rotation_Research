@@ -1,0 +1,15 @@
+{
+  "source": "run",
+  "shap_curve": "artifacts/reports/reranker_shap_cumulative_curve.png",
+  "xai_boost_curve": "artifacts/reports/reranker_xai_boost_curve.png",
+  "top_crop": "rice",
+  "features": [
+    "N",
+    "K",
+    "humidity",
+    "P",
+    "temperature",
+    "ph"
+  ],
+  "xai_reasoning_present": true
+}

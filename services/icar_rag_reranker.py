@@ -14,6 +14,8 @@ from services.rag import rag_search
 DATA_PATH = Path("data") / "icar_agro_zones_india_exploded.csv"
 BASE_PATH = Path("data") / "icar_agro_zones_india.csv"
 EPS = 0.05
+XAI_FEATURE_BOOST = 0.02
+XAI_FEATURE_BOOST_MAX = 0.06
 
 _LOCATION_ALIASES = {
     "national capital territory of delhi": "delhi",
@@ -36,6 +38,15 @@ _CITY_TO_STATE = {
     "hyderabad": "telangana",
     "ahmedabad": "gujarat",
     "jaipur": "rajasthan",
+}
+
+_FEATURE_KEYWORDS = {
+    "n": ["nitrogen", "npk", "nutrient"],
+    "p": ["phosphorus", "npk", "nutrient"],
+    "k": ["potassium", "npk", "nutrient"],
+    "temperature": ["temperature", "heat", "cool", "climate"],
+    "humidity": ["humidity", "moisture", "rainfall", "flood"],
+    "ph": ["ph", "soil reaction", "salinity", "alkaline", "acidic"],
 }
 
 
@@ -86,6 +97,24 @@ def _norm(s: str | None) -> str:
     text = re.sub(r"[^a-z0-9]+", " ", text)
     text = re.sub(r"\s+", " ", text).strip()
     return text
+
+
+def _extract_top_shap_features(shap_sorted: list[dict[str, Any]] | None, max_features: int = 3) -> list[str]:
+    if not shap_sorted:
+        return []
+    out: list[str] = []
+    for row in shap_sorted:
+        name = _norm(str(row.get("feature", "")))
+        if not name:
+            continue
+        if name not in _FEATURE_KEYWORDS:
+            continue
+        if name in out:
+            continue
+        out.append(name)
+        if len(out) >= max_features:
+            break
+    return out
 
 
 def _candidate_tokens(region: str | None, location: str | None) -> list[str]:
@@ -263,6 +292,16 @@ def _season_hits_for_crop(
     return out
 
 
+def _xai_feature_matches_in_text(text: str, top_features: list[str]) -> list[str]:
+    low = text.lower()
+    matched: list[str] = []
+    for feat in top_features:
+        words = _FEATURE_KEYWORDS.get(feat, [])
+        if any(w in low for w in words):
+            matched.append(feat)
+    return matched
+
+
 def _fallback_row_for_crop(crop: str, season: str, state: str | None, district: str | None) -> dict[str, Any] | None:
     df = _load_exploded()
     c = _norm(crop)
@@ -288,6 +327,7 @@ def rerank_with_icar_rag(
     *,
     topk: list[dict[str, Any]],
     features: dict[str, float],
+    shap_sorted: list[dict[str, Any]] | None = None,
     location: str | None,
     region: str | None,
     month: int | None,
@@ -301,10 +341,13 @@ def rerank_with_icar_rag(
     state = zone.state
     district = zone.district
     zone_name = district or state or _norm(region or location) or "unknown"
+    top_shap_features = _extract_top_shap_features(shap_sorted, max_features=3)
+    xai_query_terms = sorted({kw for f in top_shap_features for kw in _FEATURE_KEYWORDS.get(f, [])})
 
     all_queries: list[str] = []
     all_hits: list[dict[str, str]] = []
     scored: list[dict[str, Any]] = []
+    xai_per_crop: list[dict[str, Any]] = []
 
     for item in topk:
         crop = str(item["crop"]).lower()
@@ -314,6 +357,9 @@ def rerank_with_icar_rag(
         q2 = f"{crop} constraints risks {zone_name} {season}"
         q3 = f"{zone_name} dominant crops {season}"
         queries = [q1, q2, q3]
+        if xai_query_terms:
+            q4 = f"{zone_name} {season} {crop} {' '.join(xai_query_terms)}"
+            queries.append(q4)
         all_queries.extend(queries)
 
         hits: list[dict[str, str]] = []
@@ -333,12 +379,16 @@ def rerank_with_icar_rag(
         all_hits.extend(filtered_hits[:4])
 
         relevant = _season_hits_for_crop(filtered_hits, crop, season, state, district)
+        xai_matches: list[str] = []
 
         if relevant:
             chosen = relevant[0]
             chosen_text = chosen.get("text", "")
             suit_token = _token_value(chosen_text, "SUITABILITY")
             risks = _token_value(chosen_text, "RISK") or ""
+            for h in relevant[:3]:
+                xai_matches.extend(_xai_feature_matches_in_text(h.get("text", ""), top_shap_features))
+            xai_matches = sorted(set(xai_matches))
             explain_tokens = {
                 "suitability_token": suit_token or "NOT_FOUND",
                 "risk_tokens": risks,
@@ -350,6 +400,15 @@ def rerank_with_icar_rag(
             if row:
                 suit_token = str(row.get("suitability", ""))
                 risks = str(row.get("key_risks", ""))
+                row_text = " ".join(
+                    [
+                        str(row.get("evidence_text", "")),
+                        str(row.get("soil_notes", "")),
+                        str(row.get("climate_notes", "")),
+                        str(row.get("key_risks", "")),
+                    ]
+                )
+                xai_matches = sorted(set(_xai_feature_matches_in_text(row_text, top_shap_features)))
                 explain_tokens = {
                     "suitability_token": suit_token or "NOT_FOUND",
                     "risk_tokens": risks,
@@ -368,9 +427,12 @@ def rerank_with_icar_rag(
 
         base_score = _base_from_token(suit_token)
         risk_adj = _risk_adjust(risks, features)
+        xai_adj = min(XAI_FEATURE_BOOST * len(xai_matches), XAI_FEATURE_BOOST_MAX)
         match_q = _match_quality(zone.zone_resolution)
-        rag_suitability = float(np.clip((base_score + risk_adj) * match_q, 0.0, 1.0))
+        rag_suitability = float(np.clip(((base_score + risk_adj + xai_adj) * match_q), 0.0, 1.0))
         adjusted = raw * (rag_suitability + eps)
+        explain_tokens["xai_feature_matches"] = xai_matches
+        explain_tokens["xai_adjustment"] = float(xai_adj)
 
         scored.append(
             {
@@ -379,6 +441,15 @@ def rerank_with_icar_rag(
                 "rag_suitability": rag_suitability,
                 "adjusted_confidence": adjusted,
                 "explanation_tokens": explain_tokens,
+            }
+        )
+        xai_per_crop.append(
+            {
+                "crop": crop,
+                "top_shap_features": top_shap_features,
+                "matched_features": xai_matches,
+                "xai_adjustment": float(xai_adj),
+                "query_terms_used": xai_query_terms,
             }
         )
 
@@ -410,4 +481,10 @@ def rerank_with_icar_rag(
         "retrieval_hits": all_hits,
         "adjusted_topk": scored,
         "rerank_conflict": conflict,
+        "xai_rag_reasoning": {
+            "enabled": bool(top_shap_features),
+            "top_shap_features": top_shap_features,
+            "query_terms": xai_query_terms,
+            "per_crop": xai_per_crop,
+        },
     }
