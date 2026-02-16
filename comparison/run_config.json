@@ -1,0 +1,30 @@
+{
+  "timestamp_utc": "2026-02-15T22:10:17.493634+00:00",
+  "corpus_dir": "rag_corpus/icar_zones",
+  "corpus_size": 19425,
+  "query_count": 300,
+  "retrievers": [
+    "baseline_tfidf",
+    "fielded_tfidf",
+    "bm25",
+    "ensemble_sparse"
+  ],
+  "weights": {
+    "loc": 0.45,
+    "crop_season": 0.3,
+    "risk_suit": 0.15,
+    "body": 0.1
+  },
+  "weights_raw": "loc=0.45,crop_season=0.30,risk_suit=0.15,body=0.10",
+  "alpha": 0.6,
+  "min_df": 2,
+  "max_df": 0.9,
+  "ngram": "1,2",
+  "k_values": [
+    5,
+    8,
+    10
+  ],
+  "sample_top_k": 8,
+  "seed": 42
+}

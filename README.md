@@ -54,6 +54,63 @@ Backward-compatible aliases (deprecated):
 - `calendar_suitability` -> `rag_suitability`
 - `calendar_conflict` -> `rerank_conflict`
 
+## Sparse Retrieval Upgrade (TF-IDF/BM25/Ensemble)
+Retriever options now supported in `services/rag.py`:
+- `baseline_tfidf` (existing baseline)
+- `fielded_tfidf` (new: weighted fields)
+- `bm25` (new sparse lexical retriever)
+- `ensemble_sparse` / `ensemble` (new: BM25 + fielded TF-IDF)
+
+Fielded indexing/scoring schema:
+- `loc` (`STATE` + `DISTRICT`) weight `0.45`
+- `crop_season` (`CROP` + `SEASON`) weight `0.30`
+- `risk_suit` (`RISK` + `SUITABILITY`) weight `0.15`
+- `body` (remaining text) weight `0.10`
+
+Supported TF-IDF config:
+- `ngram_range=(1,2)`
+- `sublinear_tf=True`
+- `smooth_idf=True`
+- `min_df=2` (configurable)
+- `max_df=0.9` (configurable)
+
+Query rewrite/normalization:
+- `monsoon -> kharif`
+- `winter -> rabi`
+- `summer -> zaid`
+- tag alignment normalization (`STATE Punjab -> STATE:Punjab`, etc.) for fielded matching.
+
+Runtime config (`.env` via `core/config.py`):
+- `RAG_RETRIEVER`
+- `RAG_FIELD_WEIGHTS`
+- `RAG_ENSEMBLE_ALPHA`
+- `RAG_MIN_DF`
+- `RAG_MAX_DF`
+- `RAG_NGRAM`
+
+Run benchmark:
+```bash
+make eval-sparse-retrieval
+# or
+PYTHONPATH=. uv run python scripts/eval_sparse_retrieval.py --k 8 --out comparison/
+```
+
+Artifacts generated under `comparison/`:
+- `metrics.json`
+- `metrics.csv`
+- `run_config.json`
+- `queries_sample.jsonl`
+- `README.md` (auto summary + delta table)
+
+Latest run snapshot (`comparison/`, 300 synthetic labeled queries, corpus size 19,425):
+
+| Retriever | Recall@8 | MRR@8 | nDCG@8 | ΔRecall@8 vs baseline |
+| --- | ---: | ---: | ---: | ---: |
+| baseline_tfidf | 0.9500 | 0.9472 | 0.9476 | +0.0000 |
+| fielded_tfidf | 1.0000 | 1.0000 | 0.9986 | +0.0500 |
+| bm25 | 1.0000 | 0.9983 | 0.9982 | +0.0500 |
+| ensemble_sparse | 1.0000 | 1.0000 | 0.9994 | +0.0500 |
+
 ## Build Dataset + Corpus
 ```bash
 uv run python scripts/build_icar_dataset.py

@@ -46,5 +46,16 @@ class Settings:
     openrouter_http_referer: str = os.getenv("OPENROUTER_HTTP_REFERER", "http://localhost")
     openrouter_x_title: str = os.getenv("OPENROUTER_X_TITLE", "xai-crop-rotation-research")
 
+    # Sparse retriever configuration
+    rag_retriever: str = os.getenv("RAG_RETRIEVER", "baseline_tfidf")
+    rag_field_weights: str = os.getenv(
+        "RAG_FIELD_WEIGHTS",
+        "loc=0.45,crop_season=0.30,risk_suit=0.15,body=0.10",
+    )
+    rag_ensemble_alpha: float = float(os.getenv("RAG_ENSEMBLE_ALPHA", "0.6"))
+    rag_min_df: int = int(os.getenv("RAG_MIN_DF", "2"))
+    rag_max_df: float = float(os.getenv("RAG_MAX_DF", "0.9"))
+    rag_ngram: str = os.getenv("RAG_NGRAM", "1,2")
+
 
 settings = Settings()

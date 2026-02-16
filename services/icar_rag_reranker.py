@@ -242,6 +242,25 @@ def _risk_adjust(risks: str, features: dict[str, float]) -> float:
     return adj
 
 
+def _query_risk_terms(features: dict[str, float]) -> str:
+    terms: list[str] = []
+    humidity = float(features.get("humidity", 0.0))
+    temperature = float(features.get("temperature", 0.0))
+    ph = float(features.get("ph", 7.0))
+    if humidity > 80:
+        terms.append("flood")
+    if humidity < 45 or temperature > 34:
+        terms.append("drought")
+    if ph > 8.0:
+        terms.append("salinity")
+    if temperature < 10:
+        terms.append("frost")
+    if not terms:
+        return ""
+    uniq = " ".join(sorted(set(terms)))
+    return f"RISK {uniq}"
+
+
 def _is_authentic_hit(text: str) -> bool:
     source_name = (_token_value(text, "SOURCE_NAME") or "").lower()
     source_ref = (_token_value(text, "SOURCE_REF") or "").strip().lower()
@@ -362,9 +381,34 @@ def rerank_with_icar_rag(
             queries.append(q4)
         all_queries.extend(queries)
 
+        loc_parts: list[str] = []
+        if state:
+            loc_parts.append(f"STATE {state}")
+        if district:
+            loc_parts.append(f"DISTRICT {district}")
+        if not loc_parts and zone_name and zone_name != "unknown":
+            loc_parts.append(f"STATE {zone_name}")
+        loc_field = " ".join(loc_parts).strip()
+
+        crop_season_field = f"CROP {crop} SEASON {season}".strip()
+        risk_terms = _query_risk_terms(features)
+        risk_suit_field = " ".join(x for x in [risk_terms, "SUITABILITY high medium low"] if x).strip()
+
         hits: list[dict[str, str]] = []
         for q in queries:
-            hits.extend(rag_search(q, k=8, corpus_dir="rag_corpus/icar_zones"))
+            hits.extend(
+                rag_search(
+                    q,
+                    k=8,
+                    corpus_dir="rag_corpus/icar_zones",
+                    query_fields={
+                        "loc": loc_field,
+                        "crop_season": crop_season_field,
+                        "risk_suit": risk_suit_field,
+                        "body": q,
+                    },
+                )
+            )
 
         seen = set()
         dedup_hits = []
